@@ -27,7 +27,6 @@ public class PhoneManager : MonoBehaviour
         public bool isPlayer;
         //[Header("Dialogue")]
         public string text;
-        public int numLines;
         public float delay;
     }
     [Serializable]
@@ -35,6 +34,7 @@ public class PhoneManager : MonoBehaviour
     {
         public Message[] messages;
         public int[] to;
+        public bool[] available;
     }
 
     [Serializable]
@@ -50,7 +50,7 @@ public class PhoneManager : MonoBehaviour
     {
         public int id;
         public user with;
-        public MessageComplex[] messageConversations;
+        public List<MessageComplex> messages;
     }
 
     [Header("Dependencies")]
@@ -58,23 +58,28 @@ public class PhoneManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI contactName;
     [SerializeField] Image contactIcon;
     [SerializeField] Transform scrollParent;
+    [SerializeField] Transform optionsParent;
 
     [Header("Prefabs")]
     [SerializeField] GameObject msgOtherPrefab;
     [SerializeField] GameObject msgPlayerPrefab;
+    [SerializeField] GameObject brokenPlayerPrefab;
 
     [Header("Stats")]
     public float scrollSpeed = 5;
     public float messageLineLength = 10;
     public float messageBubbleBuffer = 10;
+    public float messageBubbleHorizontalBuffer = 10;
     public float messageGapSpacer = 40;
+    public float messageCharacterWidth = 8;
+    public float numCharPerLine = 10;
+    float scrollParentStartBuffer = 10;
+    float scrollMinimumPageLength = 90;
 
     [Header("Data")]
     public List<Contact> contacts;
-    public MessageConversations[] messageConversations;
-    public float scrollValue;
-    public float currentMessagesLength;
-    public int currentMessageID;
+    public List<MessageConversations> listMessageConversations;
+    
 
 
 
@@ -82,6 +87,10 @@ public class PhoneManager : MonoBehaviour
 
     public int currentConversationID;
     public MessageConversations currentConversation;
+    public float scrollValue;
+    public float currentMessagesLength;
+    public int currentMessageID;
+    public List<GameObject> optionButtons;
 
     private void OnEnable()
     {
@@ -92,7 +101,7 @@ public class PhoneManager : MonoBehaviour
     {
         currentConversationID = num;
 
-        currentConversation = messageConversations[currentConversationID];
+        currentConversation = listMessageConversations[currentConversationID];
 
 
         SetCurrentContact(findContactFromUser(currentConversation.with));
@@ -115,10 +124,20 @@ public class PhoneManager : MonoBehaviour
 
     public void NextMessage()
     {
-        if (currentMessageID < currentConversation.messageConversations.Length)
+        if (currentMessageID < currentConversation.messages.Count)
         {
-            CreateNewMessage(currentConversation.messageConversations[currentMessageID]);
-            currentMessageID++;
+
+            if (currentConversation.messages[currentMessageID].type == messageType.choice)
+            {
+                Debug.LogWarning("CHOICE");
+                GenerateChoiceOptions();
+            }
+            else
+            {
+                CreateNewMessage(currentConversation.messages[currentMessageID].message);
+                currentMessageID++;
+            }
+            
 
         }
         else
@@ -127,35 +146,76 @@ public class PhoneManager : MonoBehaviour
             EndConversation();
         }
     }
+
+    public void GenerateChoiceOptions()
+    {
+        float optionMessagesLength = 0;
+        optionButtons.Clear();
+        for(int i = 0; i < currentConversation.messages[currentMessageID].choice.messages.Length; i++)
+        {
+            Message msg = currentConversation.messages[currentMessageID].choice.messages[i];
+            Choice ch = currentConversation.messages[currentMessageID].choice;
+            int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
+            GameObject _message = ch.available[i] ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
+            
+            
+            _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
+            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
+            if (_msgLines <= 1)
+            {
+                _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
+            }
+
+            optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer/2;
+            _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
+            _message.GetComponent<MessageChoice>().optionId = i;
+            optionButtons.Add(_message);
+        }
+
+    }
+
+    public void OptionChosen(int id)
+    {
+        CreateNewMessage(currentConversation.messages[currentMessageID].choice.messages[id]);
+        currentMessageID = currentConversation.messages[currentMessageID].choice.to[id];
+        foreach (GameObject obj in optionButtons)
+        {
+            Destroy(obj);
+        }
+    }
+
     public void EndConversation()
     {
         Debug.LogWarning("End of conversation");
     }
-    public void CreateNewMessage(MessageComplex msgC)
+    public void CreateNewMessage(Message msg)
     {
-        Message msg = msgC.message;
 
-        GameObject _message;
+        int _msgLines =  Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
 
-        _message = msg.isPlayer? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, scrollParent) : Instantiate(msgOtherPrefab, Vector3.zero, Quaternion.identity, scrollParent);
-        
-        
-        
+        GameObject _message = msg.isPlayer? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, scrollParent) : Instantiate(msgOtherPrefab, Vector3.zero, Quaternion.identity, scrollParent);
+
+
         _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0,-currentMessagesLength);
-        _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, msg.numLines * messageLineLength + messageBubbleBuffer);
-        currentMessagesLength += Mathf.Clamp(msgC.message.numLines,1,Mathf.Infinity) * messageLineLength + messageBubbleBuffer + messageGapSpacer;
+        _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
+        if (_msgLines <= 1)
+        {
+            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length*messageCharacterWidth + messageBubbleHorizontalBuffer);
+        }
+
+        currentMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
+        scrollValue += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
         _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
+        ScrollMessages(0);
 
-
-
-
-
-
-
-
-
-        StartCoroutine(NextMessageAfterDelay(msg.delay));
-
+        if (currentConversation.messages[currentMessageID].type == messageType.end)
+        {
+            EndConversation();
+        }
+        else
+        {
+            StartCoroutine(NextMessageAfterDelay(msg.delay));
+        }
     }
     private void Update()
     {
@@ -166,11 +226,11 @@ public class PhoneManager : MonoBehaviour
     }
     public void ScrollMessages(float val)
     {
-        scrollValue += val* scrollSpeed;
+        scrollValue += -val* scrollSpeed;
 
-        scrollValue = Mathf.Clamp(scrollValue, 0, currentMessagesLength);
+        scrollValue = Mathf.Clamp(scrollValue, scrollParentStartBuffer, currentMessagesLength-scrollMinimumPageLength>scrollParentStartBuffer? currentMessagesLength - scrollMinimumPageLength:scrollParentStartBuffer );
 
-        scrollParent.position = new Vector3(scrollParent.position.x, currentMessagesLength - scrollValue);
+        scrollParent.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, scrollValue);
 
 
 

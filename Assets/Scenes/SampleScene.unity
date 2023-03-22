@@ -155,6 +155,7 @@ RectTransform:
   m_Children:
   - {fileID: 543457874}
   - {fileID: 193317660}
+  - {fileID: 931290705}
   m_Father: {fileID: 1662024613}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -478,6 +479,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 193317659}
   m_CullTransparentMesh: 1
+--- !u!1 &451186910
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451186911}
+  m_Layer: 5
+  m_Name: OptionsParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &451186911
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451186910}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 931290705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 82, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -595,7 +632,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 10}
   m_SizeDelta: {x: 82, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &801671050
@@ -674,6 +711,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 801671050}
   m_CullTransparentMesh: 1
+--- !u!1 &931290704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 931290705}
+  - component: {fileID: 931290707}
+  - component: {fileID: 931290706}
+  m_Layer: 5
+  m_Name: KeyboardBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &931290705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931290704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 451186911}
+  m_Father: {fileID: 16403573}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 87, y: 55}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &931290706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931290704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &931290707
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931290704}
+  m_CullTransparentMesh: 1
 --- !u!1 &1662024612
 GameObject:
   m_ObjectHideFlags: 0
@@ -688,7 +802,7 @@ GameObject:
   - component: {fileID: 1662024616}
   m_Layer: 5
   m_Name: Phone
-  m_TagString: Untagged
+  m_TagString: Phone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -767,12 +881,17 @@ MonoBehaviour:
   contactName: {fileID: 88719478}
   contactIcon: {fileID: 801671052}
   scrollParent: {fileID: 543457874}
+  optionsParent: {fileID: 451186911}
   msgOtherPrefab: {fileID: 7103466031102305365, guid: daef42f5e3e20474682bac980013bcd5, type: 3}
   msgPlayerPrefab: {fileID: 7892511767234582284, guid: ac82ecf71ea194443976eec24753d2f5, type: 3}
-  scrollSpeed: 5
-  messageLineLength: 10
-  messageBubbleBuffer: 10
-  messageGapSpacer: 40
+  brokenPlayerPrefab: {fileID: 7892511767234582284, guid: c33d955da795b404ba6529a1aa432e66, type: 3}
+  scrollSpeed: 50
+  messageLineLength: 6
+  messageBubbleBuffer: 6
+  messageBubbleHorizontalBuffer: 5
+  messageGapSpacer: 10
+  messageCharacterWidth: 3
+  numCharPerLine: 15
   contacts:
   - user: 0
     name: MomName
@@ -780,71 +899,91 @@ MonoBehaviour:
   - user: 1
     name: FriendName
     photo: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a, type: 3}
-  messageConversations:
+  listMessageConversations:
   - id: 0
-    with: 0
-    messageConversations:
+    with: 1
+    messages:
     - type: 0
       message:
         isPlayer: 0
-        text: Start Dialogue!
-        numLines: 1
-        delay: 0
+        text: hey man
+        delay: 2
       choice:
         messages: []
         to: 
+        available: 
     - type: 1
       message:
         isPlayer: 1
-        text: Crazy response
-        numLines: 1
-        delay: 0
+        text: super mario in real life
+        delay: 3
       choice:
         messages: []
         to: 
+        available: 
     - type: 1
       message:
         isPlayer: 0
-        text: 'Lorem ipsum dolor met Lorem ipsum dolor met Lorem ipsum dolor met '
-        numLines: 3
+        text: what
         delay: 0
       choice:
         messages: []
         to: 
+        available: 
     - type: 2
       message:
         isPlayer: 1
         text: 
-        numLines: 0
         delay: 0
       choice:
         messages:
         - isPlayer: 1
-          text: Choice 1
-          numLines: 0
-          delay: 0
+          text: Where are you?
+          delay: 2
         - isPlayer: 1
-          text: Choice 2
-          numLines: 0
-          delay: 0
-        to: 0000000001000000
-    - type: 0
+          text: Bower
+          delay: 2
+        to: 0400000005000000
+        available: 0001
+    - type: 1
       message:
         isPlayer: 0
-        text: 
-        numLines: 0
+        text: I'm standing behind you on april fourteenth, 2023, at exactly midday.
+          this is not a joke. I know it seems like a funny little joke i could have
+          written here but no. I really mean it. You. The one reading this. It is
+          inevitable
+        delay: 6
+      choice:
+        messages: []
+        to: 
+        available: 
+    - type: 4
+      message:
+        isPlayer: 0
+        text: Goodbye.
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+    - type: 4
+      message:
+        isPlayer: 0
+        text: LOL!
         delay: 0
       choice:
         messages: []
         to: 
+        available: 
   scrollValue: 0
   currentMessagesLength: 0
   currentMessageID: 0
+  optionButtons: []
   currentConversationID: 0
   currentConversation:
     id: 0
     with: 0
-    messageConversations: []
+    messages: []
 --- !u!1 &1758165690
 GameObject:
   m_ObjectHideFlags: 0
