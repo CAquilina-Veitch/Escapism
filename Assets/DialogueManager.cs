@@ -8,6 +8,8 @@ using TMPro;
 public enum speaker { mom, friend }
 public enum dialogueType { start, response, choice, link, end }
 
+enum dialogueState { empty, typing, full }
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -23,11 +25,9 @@ public class DialogueManager : MonoBehaviour
     [Serializable]
     public struct Dialogue
     {
-        //[Header("Is the player talking?")]
         public bool isPlayer;
-        //[Header("Dialogue")]
         public string text;
-        public float delay;
+        public int expression;
     }
     [Serializable]
     public struct Choice
@@ -56,7 +56,8 @@ public class DialogueManager : MonoBehaviour
 
     [Header("Dependencies")]
 
-    [SerializeField] TextMeshProUGUI contactName;
+    [SerializeField] TextMeshProUGUI speakerName;
+    [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] Image contactIcon;
     [SerializeField] Transform scrollParent;
     [SerializeField] Transform optionsParent;
@@ -66,16 +67,24 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] GameObject msgPlayerPrefab;
     [SerializeField] GameObject brokenPlayerPrefab;
 
-/*    [Header("Stats")]
-    public float scrollSpeed = 5;
-    public float messageLineLength = 10;
-    public float messageBubbleBuffer = 10;
-    public float messageBubbleHorizontalBuffer = 10;
-    public float messageGapSpacer = 40;
-    public float messageCharacterWidth = 8;
-    public float numCharPerLine = 10;
-    float scrollParentStartBuffer = 10;
-    float scrollMinimumPageLength = 90;*/
+    [Header("Stats")]
+    public float numCharPerLine = 15;
+    public float optionBuffer = 10;
+    public float optionGapSpacer = 40;
+    public float optionCharacterWidth = 8;
+    public float optionLineHeight = 10;
+
+    public float speakDelay;
+    /*    [Header("Stats")]
+        public float scrollSpeed = 5;
+        public float messageLineLength = 10;
+        public float messageBubbleBuffer = 10;
+        public float messageBubbleHorizontalBuffer = 10;
+        public float messageGapSpacer = 40;
+        public float messageCharacterWidth = 8;
+        public float numCharPerLine = 10;
+        float scrollParentStartBuffer = 10;
+        float scrollMinimumPageLength = 90;*/
 
     [Header("Data")]
     public List<Person> people;
@@ -162,18 +171,18 @@ public class DialogueManager : MonoBehaviour
         {
             Dialogue msg = currentConversation.lines[currentDialogueID].choice.messages[i];
             Choice ch = currentConversation.lines[currentDialogueID].choice;
-            //int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
+            int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
             GameObject _message = ch.available[i] ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
 
 
             _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
-            //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
+            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * optionLineHeight + optionBuffer);
             /*if (_msgLines <= 1)
             {
                 _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
             }*/
 
-            //optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer / 2;
+            optionMessagesLength += _msgLines * optionLineHeight + optionBuffer + optionGapSpacer / 2;
             _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
             _message.GetComponent<MessageChoice>().optionId = i;
             optionButtons.Add(_message);
@@ -194,6 +203,10 @@ public class DialogueManager : MonoBehaviour
     public void EndConversation()
     {
         Debug.LogWarning("End of conversation");
+    }
+    public void StartNextDialogue(Dialogue dia)
+    {
+        
     }
     public void CreateNewDialogue(Dialogue dia)
     {
@@ -221,7 +234,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            StartCoroutine(NextDialogueAfterDelay(dia.delay));
+            //StartCoroutine(NextDialogueAfterDelay(dia.delay));
         }
     }
 /*    private void Update()
@@ -249,7 +262,17 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         NextDialogueLine();
     }
+    IEnumerator TypeLetter(Dialogue dia)
+    {
+        yield return new WaitForSeconds(0);
+        for (int i = 0; i < dia.text.Length; i++)
+        {
+            dialogueText.text = dia.text.Substring(0, i);
+            yield return new WaitForSeconds(speakDelay);
+        }
 
+
+    }
 
 
 }
