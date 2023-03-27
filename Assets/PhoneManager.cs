@@ -43,6 +43,7 @@ public class PhoneManager : MonoBehaviour
         public messageType type;
         public Message message;
         public Choice choice;
+        public int link;
     }
 
     [Serializable]
@@ -131,6 +132,11 @@ public class PhoneManager : MonoBehaviour
             {
                 Debug.LogWarning("CHOICE");
                 GenerateChoiceOptions();
+            }else if(currentConversation.messages[currentMessageID].type == messageType.link)
+            {
+                currentMessageID = currentConversation.messages[currentMessageID].link;
+                CreateNewMessage(currentConversation.messages[currentMessageID].message);
+                currentMessageID++;
             }
             else
             {
@@ -223,6 +229,7 @@ public class PhoneManager : MonoBehaviour
         {
             ScrollMessages(Input.GetAxis("Mouse ScrollWheel"));
         }
+        Debug.Log(currentMessageID);
     }
     public void ScrollMessages(float val)
     {
