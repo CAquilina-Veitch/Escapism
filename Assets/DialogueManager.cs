@@ -5,10 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public enum speaker { mom, friend }
+public enum speaker {player, mom, friend }
 public enum dialogueType { start, response, choice, link, end }
 
-enum dialogueState { empty, typing, full }
+enum dialogueState { empty, typing, skipTriggered, full }
 
 
 public class DialogueManager : MonoBehaviour
@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     [Serializable]
     public struct Dialogue
     {
-        public bool isPlayer;
+        public speaker speaker;
         public string text;
         public int expression;
     }
@@ -50,7 +50,6 @@ public class DialogueManager : MonoBehaviour
     public struct Conversations
     {
         public int id;
-        public speaker with;
         public List<DialogueComplex> lines;
     }
 
@@ -58,14 +57,12 @@ public class DialogueManager : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI speakerName;
     [SerializeField] TextMeshProUGUI dialogueText;
-    [SerializeField] Image contactIcon;
-    [SerializeField] Transform scrollParent;
+    [SerializeField] Image speakerPortrait;
     [SerializeField] Transform optionsParent;
 
     [Header("Prefabs")]
-    [SerializeField] GameObject msgOtherPrefab;
-    [SerializeField] GameObject msgPlayerPrefab;
-    [SerializeField] GameObject brokenPlayerPrefab;
+    [SerializeField] GameObject diaOptionPrefab;
+    [SerializeField] GameObject diaBrokenOptionPrefab;
 
     [Header("Stats")]
     public float numCharPerLine = 15;
@@ -75,16 +72,6 @@ public class DialogueManager : MonoBehaviour
     public float optionLineHeight = 10;
 
     public float speakDelay;
-    /*    [Header("Stats")]
-        public float scrollSpeed = 5;
-        public float messageLineLength = 10;
-        public float messageBubbleBuffer = 10;
-        public float messageBubbleHorizontalBuffer = 10;
-        public float messageGapSpacer = 40;
-        public float messageCharacterWidth = 8;
-        public float numCharPerLine = 10;
-        float scrollParentStartBuffer = 10;
-        float scrollMinimumPageLength = 90;*/
 
     [Header("Data")]
     public List<Person> people;
@@ -101,6 +88,9 @@ public class DialogueManager : MonoBehaviour
     //public float currentMessagesLength;
     public int currentDialogueID;
     public List<GameObject> optionButtons;
+    dialogueState dState;
+
+    DialogueComplex currentDialogue;
 
     private void OnEnable()
     {
@@ -114,22 +104,22 @@ public class DialogueManager : MonoBehaviour
         currentConversation = listConversations[currentConversationID];
 
 
-        SetCurrentContact(findContactFromUser(currentConversation.with));
+        //SetCurrentPerson(findPersonFromSpeaker(currentConversation.with));
 
         NextDialogueLine();
 
 
 
     }
-    public Person findContactFromUser(speaker speaker)
+    public Person findPersonFromSpeaker(speaker speaker)
     {
         return people.Find(x => x.person == speaker);
     }
 
-    public void SetCurrentContact(Person person)
+    public void SetSpeaker(speaker speaker)
     {
-        /*contactName.text = person.name;
-        contactIcon.sprite = person.sprites[0];*/
+        speakerPortrait.sprite = findPersonFromSpeaker(speaker).sprites[currentDialogue.dialogue.expression];
+        //speakerName.text = findPersonFromSpeaker(speaker).name;///////////////////////////////////////////////////////////////////////////////////////////
     }
 
     public void NextDialogueLine()
@@ -145,12 +135,12 @@ public class DialogueManager : MonoBehaviour
             else if (currentConversation.lines[currentDialogueID].type == dialogueType.link)
             {
                 currentDialogueID = currentConversation.lines[currentDialogueID].link;
-                CreateNewDialogue(currentConversation.lines[currentDialogueID].dialogue);
+                ShowNextDialogue(currentConversation.lines[currentDialogueID]);
                 currentDialogueID++;
             }
             else
             {
-                CreateNewDialogue(currentConversation.lines[currentDialogueID].dialogue);
+                ShowNextDialogue(currentConversation.lines[currentDialogueID]);
                 currentDialogueID++;
             }
 
@@ -172,16 +162,11 @@ public class DialogueManager : MonoBehaviour
             Dialogue msg = currentConversation.lines[currentDialogueID].choice.messages[i];
             Choice ch = currentConversation.lines[currentDialogueID].choice;
             int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
-            GameObject _message = ch.available[i] ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
+            GameObject _message = ch.available[i] ? Instantiate(diaOptionPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(diaBrokenOptionPrefab, Vector3.zero, Quaternion.identity, optionsParent);
 
 
             _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
             _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * optionLineHeight + optionBuffer);
-            /*if (_msgLines <= 1)
-            {
-                _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
-            }*/
-
             optionMessagesLength += _msgLines * optionLineHeight + optionBuffer + optionGapSpacer / 2;
             _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
             _message.GetComponent<MessageChoice>().optionId = i;
@@ -192,8 +177,9 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionChosen(int id)
     {
-        CreateNewDialogue(currentConversation.lines[currentDialogueID].choice.messages[id]);
-        currentDialogueID = currentConversation.lines[currentDialogueID].choice.to[id];
+        SetSpeaker(currentDialogue.choice.messages[id].speaker);
+        StartCoroutine(TypeLetters(currentDialogue.choice.messages[id]));
+        currentDialogueID = currentDialogue.choice.to[id];
         foreach (GameObject obj in optionButtons)
         {
             Destroy(obj);
@@ -204,74 +190,57 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.LogWarning("End of conversation");
     }
-    public void StartNextDialogue(Dialogue dia)
+    public void ShowNextDialogue(DialogueComplex dia)
     {
-        
-    }
-    public void CreateNewDialogue(Dialogue dia)
-    {
-
-        /*int _msgLines = Mathf.CeilToInt((float)dia.text.Length / numCharPerLine);
-
-        GameObject _message = dia.isPlayer ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, scrollParent) : Instantiate(msgOtherPrefab, Vector3.zero, Quaternion.identity, scrollParent);
-
-
-        //_message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -currentMessagesLength);
-        //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
-        if (_msgLines <= 1)
-        {
-            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, dia.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
-        }
-
-        //currentMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
-        //scrollValue += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
-        _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = dia.text;
-        //ScrollMessages(0);
-*/
-        if (currentConversation.lines[currentDialogueID].type == dialogueType.end)
+        currentDialogue = dia;
+        if (dia.type == dialogueType.end)
         {
             EndConversation();
         }
         else
         {
-            //StartCoroutine(NextDialogueAfterDelay(dia.delay));
+            SetSpeaker(currentDialogue.dialogue.speaker);
+
+
+
+
+            StartCoroutine(TypeLetters(dia.dialogue));
         }
     }
-/*    private void Update()
+    private void Update()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") != 0)
+        if (Input.GetKey(KeyCode.Space))
         {
-            ScrollMessages(Input.GetAxis("Mouse ScrollWheel"));
+            if (dState == dialogueState.typing)
+            {
+                dState = dialogueState.skipTriggered;
+
+            }
+            else if (dState == dialogueState.full)
+            {
+                NextDialogueLine();
+            }
         }
-        Debug.Log(currentDialogueID);
     }
-    public void ScrollMessages(float val)
+    IEnumerator TypeLetters(Dialogue dia)
     {
-        scrollValue += -val * scrollSpeed;
-
-        scrollValue = Mathf.Clamp(scrollValue, scrollParentStartBuffer, currentMessagesLength - scrollMinimumPageLength > scrollParentStartBuffer ? currentMessagesLength - scrollMinimumPageLength : scrollParentStartBuffer);
-
-        scrollParent.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, scrollValue);
-
-
-
-
-    }*/
-    IEnumerator NextDialogueAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        NextDialogueLine();
-    }
-    IEnumerator TypeLetter(Dialogue dia)
-    {
-        yield return new WaitForSeconds(0);
+        dState = dialogueState.typing;
         for (int i = 0; i < dia.text.Length; i++)
         {
+            if (dState != dialogueState.typing)
+            {
+                if(dState == dialogueState.skipTriggered)
+                {
+                    dialogueText.text = dia.text;
+                    dState = dialogueState.full;
+                }
+                break;
+
+            }
             dialogueText.text = dia.text.Substring(0, i);
             yield return new WaitForSeconds(speakDelay);
         }
-
-
+        dState = dialogueState.full;
     }
 
 

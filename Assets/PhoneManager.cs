@@ -229,7 +229,6 @@ public class PhoneManager : MonoBehaviour
         {
             ScrollMessages(Input.GetAxis("Mouse ScrollWheel"));
         }
-        Debug.Log(currentMessageID);
     }
     public void ScrollMessages(float val)
     {
