@@ -95,7 +95,7 @@ public class PhoneManager : MonoBehaviour
 
     private void OnEnable()
     {
-        StartConversation(0);
+        StartConversation(2);
     }
 
     public void StartConversation(int num)

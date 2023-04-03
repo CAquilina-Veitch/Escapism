@@ -1355,7 +1355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1662024613
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1446,21 +1446,27 @@ MonoBehaviour:
     name: MomName
     photo: {fileID: 21300000, guid: 9c0d6ec706e01ce448aea81584af092b, type: 3}
   - user: 1
-    name: FriendName
+    name: Jamie
     photo: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a, type: 3}
   listMessageConversations:
   - id: 0
     with: 1
     messages:
-    - type: 0
+    - type: 3
       message:
         isPlayer: 0
-        text: hey man
+        text: man man
         delay: 2
       choice:
-        messages: []
-        to: 
-        available: 
+        messages:
+        - isPlayer: 0
+          text: 
+          delay: 0
+        - isPlayer: 0
+          text: 
+          delay: 0
+        to: 0000000000000000
+        available: 0101
       link: 0
     - type: 1
       message:
@@ -1541,6 +1547,492 @@ MonoBehaviour:
         to: 
         available: 
       link: 37
+  - id: 1
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: hey val, how are you doing?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 0
+          text: 
+          delay: 0
+        - isPlayer: 0
+          text: 
+          delay: 0
+        to: 0000000000000000
+        available: 0101
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 1
+        text: super mario in real life
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm fine, hbu?
+          delay: 2
+        - isPlayer: 1
+          text: I've just been playing Hunter's Quest
+          delay: 2
+        to: 0500000002000000
+        available: 0101
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: yo nice, u beat the boss yet?
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: Not yet
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Where are you?
+          delay: 2
+        - isPlayer: 1
+          text: Bower
+          delay: 2
+        to: 0400000006000000
+        available: 0100
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: L
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: im great thanks
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: sad you couldn't make it yesterday tho
+        delay: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: Yeah sorry, just wasn't feeling it
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: np, we'll do something next time
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 1
+        text: Ye
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+  - id: 2
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: yo, u wanna get lunch today?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 0
+          text: 
+          delay: 0
+        - isPlayer: 0
+          text: 
+          delay: 0
+        to: 0000000000000000
+        available: 0101
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: yo, u wanna get lunch today?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Yeh sure, I probably should get out of the house
+          delay: 2
+        - isPlayer: 1
+          text: I'm pretty busy sorry, don't think I'd be abe to make it
+          delay: 3
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: ahh damn, next time then?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Yeh sure, I probably should get out of the house
+          delay: 2
+        - isPlayer: 1
+          text: I'm pretty busy sorry, don't think I'd be abe to make it
+          delay: 3
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: Ye maybe
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Yeh sure, I probably should get out of the house
+          delay: 2
+        - isPlayer: 1
+          text: I'm pretty busy sorry, don't think I'd be abe to make it
+          delay: 3
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: you doing good?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Yeh sure, I probably should get out of the house
+          delay: 2
+        - isPlayer: 1
+          text: I'm pretty busy sorry, don't think I'd be abe to make it
+          delay: 3
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 1
+        text: you doing good?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Tbh, I'm not sure
+          delay: 2
+        - isPlayer: 1
+          text: Yeh, I'm fine
+          delay: 2
+        to: 0000000006000000
+        available: 0001
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: good good
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Tbh, I'm not sure
+          delay: 2
+        - isPlayer: 1
+          text: Yeh, I'm fine
+          delay: 2
+        to: 0000000006000000
+        available: 0001
+      link: 0
+  - id: 3
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: i haven't seen u in a while, u alright?
+        delay: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: i haven't seen u in a while, u alright?
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: thats good i guess
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: u sure?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: u sure?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: just making sure haha
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: hows hunters quest going?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: hows hunters quest going?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: A struggle but it's fun
+          delay: 2
+        - isPlayer: 1
+          text: I fear that it may be overtaking my life
+          delay: 2
+        to: 0800000000000000
+        available: 0100
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: it be like that
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: A struggle but it's fun
+          delay: 2
+        - isPlayer: 1
+          text: I fear that it may be overtaking my life
+          delay: 2
+        to: 0800000000000000
+        available: 0100
+      link: 0
+  - id: 3
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: i haven't seen u in a while, u alright?
+        delay: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: i haven't seen u in a while, u alright?
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: thats good i guess
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: u sure?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I feel like I'm losing my mind
+          delay: 2
+        - isPlayer: 1
+          text: I'm fine haha
+          delay: 2
+        to: 0000000002000000
+        available: 
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: u sure?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: just making sure haha
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: hows hunters quest going?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Not really tbh
+          delay: 2
+        - isPlayer: 1
+          text: Yeyeye
+          delay: 2
+        to: 0000000005000000
+        available: 0001
+      link: 0
   currentConversationID: 0
   currentConversation:
     id: 0
