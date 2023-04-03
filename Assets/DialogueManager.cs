@@ -4,11 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.Mathematics;
+using UnityEngine.PlayerLoop;
 
 public enum speaker {player, mom, friend }
 public enum dialogueType { start, response, choice, link, end }
 
-enum dialogueState { empty, typing, skipTriggered, full }
+enum dialogueState { empty, typing, skipTriggered, choosing, full }
 
 
 public class DialogueManager : MonoBehaviour
@@ -59,6 +61,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI dialogueText;
     [SerializeField] Image speakerPortrait;
     [SerializeField] Transform optionsParent;
+    [SerializeField] GameObject nextIndicator;
 
     [Header("Prefabs")]
     [SerializeField] GameObject diaOptionPrefab;
@@ -88,7 +91,7 @@ public class DialogueManager : MonoBehaviour
     //public float currentMessagesLength;
     public int currentDialogueID;
     public List<GameObject> optionButtons;
-    dialogueState dState;
+    [SerializeField] dialogueState dState;
 
     DialogueComplex currentDialogue;
 
@@ -137,6 +140,9 @@ public class DialogueManager : MonoBehaviour
                 currentDialogueID = currentConversation.lines[currentDialogueID].link;
                 ShowNextDialogue(currentConversation.lines[currentDialogueID]);
                 currentDialogueID++;
+            } else if (currentDialogueID > 0 && currentConversation.lines[currentDialogueID - 1].type == dialogueType.end) 
+            {
+                EndConversation();
             }
             else
             {
@@ -148,6 +154,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("This happened");
             //out of messages
             EndConversation();
         }
@@ -155,12 +162,16 @@ public class DialogueManager : MonoBehaviour
 
     public void GenerateChoiceOptions()
     {
+        currentDialogue = currentConversation.lines[currentDialogueID];
+        dState = dialogueState.choosing;
         float optionMessagesLength = 0;
         optionButtons.Clear();
-        for (int i = 0; i < currentConversation.lines[currentDialogueID].choice.messages.Length; i++)
+        dialogueText.text = "";
+        speakerPortrait.enabled = false;
+        for (int i = 0; i < currentDialogue.choice.messages.Length; i++)
         {
-            Dialogue msg = currentConversation.lines[currentDialogueID].choice.messages[i];
-            Choice ch = currentConversation.lines[currentDialogueID].choice;
+            Dialogue msg = currentDialogue.choice.messages[i];
+            Choice ch = currentDialogue.choice;
             int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
             GameObject _message = ch.available[i] ? Instantiate(diaOptionPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(diaBrokenOptionPrefab, Vector3.zero, Quaternion.identity, optionsParent);
 
@@ -169,7 +180,7 @@ public class DialogueManager : MonoBehaviour
             _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * optionLineHeight + optionBuffer);
             optionMessagesLength += _msgLines * optionLineHeight + optionBuffer + optionGapSpacer / 2;
             _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
-            _message.GetComponent<MessageChoice>().optionId = i;
+            _message.GetComponent<DialogueChoice>().optionId = i;
             optionButtons.Add(_message);
         }
 
@@ -177,6 +188,8 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionChosen(int id)
     {
+        speakerPortrait.enabled = true;
+        Debug.Log(currentDialogue.dialogue.text);
         SetSpeaker(currentDialogue.choice.messages[id].speaker);
         StartCoroutine(TypeLetters(currentDialogue.choice.messages[id]));
         currentDialogueID = currentDialogue.choice.to[id];
@@ -189,27 +202,17 @@ public class DialogueManager : MonoBehaviour
     public void EndConversation()
     {
         Debug.LogWarning("End of conversation");
+        gameObject.SetActive(false);
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {
         currentDialogue = dia;
-        if (dia.type == dialogueType.end)
-        {
-            EndConversation();
-        }
-        else
-        {
-            SetSpeaker(currentDialogue.dialogue.speaker);
-
-
-
-
-            StartCoroutine(TypeLetters(dia.dialogue));
-        }
+        SetSpeaker(currentDialogue.dialogue.speaker);
+        StartCoroutine(TypeLetters(dia.dialogue));
     }
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (dState == dialogueState.typing)
             {
@@ -222,11 +225,27 @@ public class DialogueManager : MonoBehaviour
             }
         }
     }
+    private void FixedUpdate()
+    {
+        if(dState == dialogueState.full && !nextIndicator.activeSelf)
+        {
+            nextIndicator.SetActive(true);
+        }
+        else if(dState != dialogueState.full && nextIndicator.activeSelf)
+        {
+            nextIndicator.SetActive(false);
+        }
+    }
+
     IEnumerator TypeLetters(Dialogue dia)
     {
+        Debug.Log("Triggered");
         dState = dialogueState.typing;
-        for (int i = 0; i < dia.text.Length; i++)
+        //RectTransform textBase = dialogueText.GetComponent<RectTransform>();
+        //Vector3 textBasePos = textBase.anchoredPosition;
+        for (int i = 0; i <= dia.text.Length; i++)
         {
+            Debug.Log($"{i}, length {dia.text.Length} of {dia.text}, {dState}");
             if (dState != dialogueState.typing)
             {
                 if(dState == dialogueState.skipTriggered)
@@ -237,8 +256,10 @@ public class DialogueManager : MonoBehaviour
                 break;
 
             }
-            dialogueText.text = dia.text.Substring(0, i);
+            dialogueText.text = dia.text[..i];
+            //textBase.anchoredPosition = textBasePos + new Vector3(UnityEngine.Random.Range(-1,1), UnityEngine.Random.Range(-1,1f));
             yield return new WaitForSeconds(speakDelay);
+            //textBase.anchoredPosition = textBasePos;
         }
         dState = dialogueState.full;
     }
