@@ -55,14 +55,10 @@ public class EnemyScript : MonoBehaviour
             currentDirection = -currentDirection;
             if (wallCheck.collider.tag == "Player")
             {
-                if (!wallCheck.collider.GetComponent<PlatformerPlayerController>().isInvisible)
+                currentDirection = -currentDirection;
+                if (canAttack)
                 {
-                    currentDirection = -currentDirection;
-                    if (canAttack)
-                    {
-                        attack();
-                    }
-                    
+                    attack();
                 }
             }
         }
@@ -70,8 +66,6 @@ public class EnemyScript : MonoBehaviour
         {
             //check for walk off edge
             RaycastHit2D edgeCheck = Physics2D.Raycast(transform.position + new Vector3(currentDirection * hitboxWidth, 0) + offset, Vector2.down, 1.11f);
-            //Debug.DrawRay(transform.position + new Vector3(currentDirection * hitboxWidth, 0)  + offset, Vector2.down*1.11f, Color.cyan, 5);
-            //Debug.Log(edgeCheck.collider);
             if (edgeCheck.collider != null)
             {
                 if (edgeCheck.collider.tag != "GroundCollision")
@@ -83,18 +77,14 @@ public class EnemyScript : MonoBehaviour
             else
             {
                 RaycastHit2D floor = Physics2D.Raycast(transform.position - (new Vector3(currentDirection * hitboxWidth, 0) + offset), Vector2.down, 1.6f);
-                //Debug.DrawRay(transform.position - (new Vector3(currentDirection * hitboxWidth, 0)  + offset), Vector2.down*1.6f, Color.green, 5);
-                //Debug.LogError("AAAAAAAAAAAAAAAAA" + floor.collider);
                 if (floor.collider != null)
                 {
-                    //Debug.LogError("HGHGGGGGG" + floor.collider.tag);
                     if (floor.collider.tag == "GroundCollision")
                     {
                         currentDirection = -currentDirection;
                     }
 
                 }
-                //Debug.Log(floor.collider);
 
             }
         }
@@ -167,11 +157,7 @@ public class EnemyScript : MonoBehaviour
                 Debug.Log(upCheck.collider.gameObject.name);
                 if (upCheck.collider.tag == "Player")
                 {
-                    if (!upCheck.collider.GetComponent<PlatformerPlayerController>().isInvisible)
-                    {
-
-                        attack();
-                    }
+                    attack();
                 }
             }
 

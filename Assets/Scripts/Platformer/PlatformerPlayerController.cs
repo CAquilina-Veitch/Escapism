@@ -20,31 +20,17 @@ public class PlatformerPlayerController : MonoBehaviour
 
     [SerializeField] DamagingHitbox dmgHitbox;
 
-    //[SerializeField] dialogueManager dM;
-    [SerializeField] Image invisBar;
-    [SerializeField] GameObject WinObject;
-    [SerializeField] Text WinText;
-    //[SerializeField] GameObject pauseScreen;
-
-    [Header("Animations")]
-
-    [SerializeField] Material SpriteMaterial;
-    [SerializeField] Shader GreyscaleShader;
-    [SerializeField] Shader NormalShader;
 
     [Header("STATS")]
     [SerializeField] int maxHealth;
     [SerializeField] float jumpHeight;
     [SerializeField] float speed;
-    [SerializeField] float invisibilityDuration;
 
 
     [SerializeField] float horizMoveSpeed;
     [SerializeField] float vertVel;
     [SerializeField] Vector2 velocity;
     float deathMultiplier = 1;
-    public bool isInvisible;
-    float invisTime;
     public Vector3 spawnpoint;
     bool canJump = true;
     public int maxScene = 0;
@@ -66,9 +52,6 @@ public class PlatformerPlayerController : MonoBehaviour
     {
         DontDestroyOnLoad(this.gameObject);
         gameObject.SetActive(true);
-        SpriteMaterial.shader = NormalShader;
-        invisTime = invisibilityDuration;
-        refreshInvisBar();
         healthScript.healthValue = maxHealth;
         healthScript.maxHealth = maxHealth;
         canJump = true;
@@ -101,19 +84,6 @@ public class PlatformerPlayerController : MonoBehaviour
         {
             Medicine();
         }
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            //turn invisible
-            isInvisible = !isInvisible;
-            if (isInvisible)
-            {
-                SpriteMaterial.shader = GreyscaleShader;
-            }
-            else
-            {
-                SpriteMaterial.shader = NormalShader;
-            }
-        }
         if (Input.GetKeyDown(KeyCode.Mouse0) && grounded)
         {
             //attack
@@ -136,8 +106,6 @@ public class PlatformerPlayerController : MonoBehaviour
         RaycastHit2D groundCheck1 = Physics2D.Raycast(transform.position + offset + transform.right * 0.3f * transform.localScale.x, Vector2.down, 0.1f, groundCheckMask);
         RaycastHit2D groundCheck2 = Physics2D.Raycast(transform.position + offset + transform.right * -0.3f * transform.localScale.x, Vector2.down, 0.1f, groundCheckMask);
         RaycastHit2D groundCheck3 = Physics2D.Raycast(transform.position + offset, Vector2.down, 0.1f, groundCheckMask);
-        /*Debug.DrawRay(transform.position + transform.right * 0.3f - transform.up * 0.75f, Vector2.down, Color.blue, groundCheckMask);
-        Debug.DrawRay(transform.position - transform.right * 0.3f - transform.up * 0.75f, Vector2.down, Color.blue, groundCheckMask);*/
         if (groundCheck1.collider != null || groundCheck2.collider != null || groundCheck3.collider != null)
         {
             grounded = true;
@@ -146,25 +114,6 @@ public class PlatformerPlayerController : MonoBehaviour
         else
         {
             grounded = false;
-        }
-        if (isInvisible)
-        {
-            invisTime -= Time.deltaTime;
-            if (invisTime <= 0)
-            {
-                invisTime = 0;
-                isInvisible = false;
-                SpriteMaterial.shader = NormalShader;
-            }
-
-            refreshInvisBar();
-        }
-        else if (invisTime != invisibilityDuration)
-        {
-            invisTime += Time.deltaTime;
-            invisTime = invisTime > invisibilityDuration ? invisibilityDuration : invisTime;
-
-            refreshInvisBar();
         }
 
 
@@ -227,22 +176,12 @@ public class PlatformerPlayerController : MonoBehaviour
 
 
     }
-    void refreshInvisBar()
-    {
-        invisBar.fillAmount = invisTime / invisibilityDuration;
-    }
     public void LoadScene(int id)
     {
-        //Debug.Log("LOADING " + id);
         maxScene = id > maxScene ? id : maxScene;
-        isInvisible = false;
-        refreshInvisBar();
-        SpriteMaterial.shader = NormalShader;
 
         SceneManager.LoadScene(id);
 
-        //dM.End();
-        //dM.End();
         canJump = true;
         deathMultiplier = 1;
     }
@@ -254,8 +193,4 @@ public class PlatformerPlayerController : MonoBehaviour
         canJump = true;
     }
 
-/*    public void Quit()
-    {
-        Application.Quit();
-    }*/
 }

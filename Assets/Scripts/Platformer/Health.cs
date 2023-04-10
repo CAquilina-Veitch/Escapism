@@ -6,12 +6,10 @@ using UnityEngine.UI;
 public class Health : MonoBehaviour
 {
     public bool isPlayer;
-    [SerializeField] Rigidbody2D rb;
-    [SerializeField] float knockBack;
+    //[SerializeField] Rigidbody2D rb;
+    //[SerializeField] float knockBack;
 
-    [SerializeField] Image Heart1;
-    [SerializeField] Image Heart2;
-    [SerializeField] Image Heart3;
+    [SerializeField] Image[] Hearts;
     [Header("Dont set these in inspector, but in their controller scripts")]
     public int maxHealth=1000;
     public int healthValue=1000;
@@ -43,7 +41,7 @@ public class Health : MonoBehaviour
         {
             //take damage
             healthValue += dmg;
-            rb.velocity = Vector3.zero;
+            //rb.velocity = Vector3.zero;
 
         }
 
@@ -74,9 +72,10 @@ public class Health : MonoBehaviour
     }
     public void UpdateHealthBar()
     {
-        Heart1.enabled = healthValue >= 1 ? true : false;
-        Heart2.enabled = healthValue >= 2 ? true : false;
-        Heart3.enabled = healthValue >= 3 ? true : false;
+        for(int i = 0; i < 3; i++) 
+        { 
+            Hearts[i].enabled = healthValue>= i-1?true:false;
+        }
 
     }
     IEnumerator ColourFlash( bool heal)
