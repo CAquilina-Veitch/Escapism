@@ -1,7 +1,6 @@
 - platformer player
 	- death
 - realk life player
-	- walk lr
 	- interact with objects/people
 		- e when near
 		-can trigger cutscenes

@@ -34,7 +34,6 @@ public class PlatformerPlayerController : MonoBehaviour
     public Vector3 spawnpoint;
     bool canJump = true;
     public int maxScene = 0;
-    public bool hasGottenChest = false;
 
     [Header("Data")]
     int currentPotions;
@@ -175,22 +174,5 @@ public class PlatformerPlayerController : MonoBehaviour
         deathMultiplier = 1;
 
 
-    }
-    public void LoadScene(int id)
-    {
-        maxScene = id > maxScene ? id : maxScene;
-
-        SceneManager.LoadScene(id);
-
-        canJump = true;
-        deathMultiplier = 1;
-    }
-    public void Restart()
-    {
-        Destroy(gameObject);
-        LoadScene(0);
-        //Destroy(gameObject);
-        canJump = true;
-    }
-
+    }   
 }
