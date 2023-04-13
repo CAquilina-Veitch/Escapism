@@ -2,7 +2,7 @@
 	- death
 - realk life player
 	- interact with objects/people
-		- e when near
+		- e when near#######
 		-can trigger cutscenes
 		- can be unclickable
 - enemies

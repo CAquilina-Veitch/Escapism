@@ -43,13 +43,9 @@ public class PlatformerPlayerController : MonoBehaviour
 
 
 
-
-
-
     // Start is called before the first frame update
     public void Init()
     {
-        DontDestroyOnLoad(this.gameObject);
         gameObject.SetActive(true);
         healthScript.healthValue = maxHealth;
         healthScript.maxHealth = maxHealth;
@@ -175,4 +171,10 @@ public class PlatformerPlayerController : MonoBehaviour
 
 
     }   
+
+
+
+
+
+
 }
