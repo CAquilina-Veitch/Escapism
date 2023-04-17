@@ -47,8 +47,7 @@ public class PlatformerPlayerController : MonoBehaviour
     public void Init()
     {
         gameObject.SetActive(true);
-        healthScript.healthValue = maxHealth;
-        healthScript.maxHealth = maxHealth;
+        healthScript.setHealth(maxHealth);
         canJump = true;
         anim.SetTrigger("Land");
         Time.timeScale = 1f;

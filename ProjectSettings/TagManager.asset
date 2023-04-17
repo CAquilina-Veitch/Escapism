@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Phone
   - DialogueController
+  - Enemy
+  - GroundCollision
   layers:
   - Default
   - TransparentFX

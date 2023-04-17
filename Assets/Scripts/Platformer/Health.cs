@@ -10,9 +10,9 @@ public class Health : MonoBehaviour
     //[SerializeField] float knockBack;
 
     [SerializeField] Image[] Hearts;
-    [Header("Dont set these in inspector, but in their controller scripts")]
-    public int maxHealth=1000;
-    public int healthValue=1000;
+    //[Header("Dont set these in inspector, but in their controller scripts")]
+    int maxHealth=1000;
+    int healthValue=1000;
     SpriteRenderer sR;
 
 
@@ -22,11 +22,10 @@ public class Health : MonoBehaviour
     {
         sR = GetComponent<SpriteRenderer>();
     }
-
-    // Update is called once per frame
-    void Update()
+    public void setHealth (int to)
     {
-        
+        maxHealth = to;
+        healthValue = to;
     }
     public void HealthChange(int dmg)
     {
