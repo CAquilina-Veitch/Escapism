@@ -5,26 +5,39 @@ using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public bool isPlayer;
+    public attackOwner owner;
+    PlatformerPlayerController player;
+    Animator anim;
+    EnemyScript enemy;
+    //public bool isPlayer;
     //[SerializeField] Rigidbody2D rb;
     //[SerializeField] float knockBack;
 
     [SerializeField] Image[] Hearts;
     //[Header("Dont set these in inspector, but in their controller scripts")]
-    int maxHealth=1000;
-    int healthValue=1000;
+    public int maxHealth=3;
+    public int healthValue=3;
     SpriteRenderer sR;
+    public float stunFor;
 
-
-
-    // Start is called before the first frame update
-    void Start()
+    private void OnEnable()
     {
         sR = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        healthValue = maxHealth;
+        if(owner == attackOwner.player)
+        {
+            player = GetComponent<PlatformerPlayerController>();
+        }
+        else if (owner == attackOwner.skeleton)
+        {
+            enemy = GetComponent<EnemyScript>();
+        }
     }
+
     public void setHealth (int to)
     {
-        maxHealth = to;
+        //maxHealth = to;
         healthValue = to;
     }
     public void HealthChange(int dmg)
@@ -43,29 +56,49 @@ public class Health : MonoBehaviour
             //rb.velocity = Vector3.zero;
 
         }
+        if(owner == attackOwner.player)
+        {
+            if (player.attackTime > 0)
+            {
+                player.attackInterupted = true;
+                player.attackTime = stunFor;
+                stunFor = 0;
+            }
+            
 
+        }else if (owner == attackOwner.skeleton)
+        {
+            if (enemy.attackTime > 0)
+            {
+                enemy.attackInterupted = true;
+                enemy.attackTime = stunFor;
+                stunFor = 0;
+                
+            }
+            
+        }
         if (healthValue <= 0)
         {
             //die
 
-            if (isPlayer)
+            if (owner==attackOwner.player)
             {
-                GetComponent<PlatformerPlayerController>().Die();
+                player.Die();
                 UpdateHealthBar();
             }
-            else
+            else if (owner == attackOwner.skeleton)
             {
-                GetComponent<EnemyScript>().Die();
+                enemy.Die();
             }
 
         }
         else
         {
-            if (isPlayer)
+            if (owner == attackOwner.player)
             {
                 UpdateHealthBar();
             }
-            StartCoroutine(HurtDelay());
+            anim.SetTrigger("Hurt");
         }
 
     }
@@ -79,8 +112,8 @@ public class Health : MonoBehaviour
     }
     IEnumerator ColourFlash( bool heal)
     {
-        
-        yield return new WaitForSeconds(0.25f);
+
+        //GetComponent<Animator>().SetTrigger("Hurt");
         sR.color = heal ? Color.green : Color.red;
         yield return new WaitForSeconds(0.25f);
         sR.color = Color.white;
@@ -89,12 +122,7 @@ public class Health : MonoBehaviour
             GetComponent<Animator>().ResetTrigger("Hurt");
         }
     }
-    IEnumerator HurtDelay()
-    {
-        yield return new WaitForSeconds(0.3f);
-        GetComponent<Animator>().SetTrigger("Hurt");
 
-    }
 
 
 

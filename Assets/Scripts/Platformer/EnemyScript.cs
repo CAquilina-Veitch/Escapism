@@ -5,7 +5,6 @@ using UnityEngine;
 public class EnemyScript : MonoBehaviour
 {
     [Header("Stats")]
-    public int maxHealth;
     public int speed;
     public int damage;
     [SerializeField] float attackAnimationTime;
@@ -13,17 +12,21 @@ public class EnemyScript : MonoBehaviour
     [SerializeField] float hitboxWidth;
     float dropChance;
     [SerializeField] Vector2 xBounds;
+    [SerializeField] LayerMask wallMask;
 
 
     [Header("Data")]
-    int currentDirection=-1;
+    public int currentDirection=-1;
+    [SerializeField]int attackMult =1;
     Vector2 velocity;
     bool dead = false;
-    bool canAttack = true;
+    public float attackTime;
+    public bool attackInterupted;
+
 
     [Header("Dependencies")]
     [SerializeField] Animator anim;
-    [SerializeField] DamagingHitbox dmgHitbox;
+    [SerializeField] Attack dmgHitbox;
     [SerializeField] GameObject itemDropPrefab;
     [SerializeField] SpriteRenderer sR;
     [SerializeField] Rigidbody2D rb;
@@ -35,8 +38,6 @@ public class EnemyScript : MonoBehaviour
     void Start()
     {
         dmgHitbox.damage = damage;
-        healthScript.setHealth(maxHealth);
-        returnToLoop();
     }
 
 
@@ -52,38 +53,47 @@ public class EnemyScript : MonoBehaviour
         if (wallCheck.collider != null)
         {
             
+
             if (wallCheck.collider.tag == "Player")
             {
-                if (canAttack)
+                if (attackTime==0)
                 {
-                    attack();
+                    anim.SetTrigger("Attack");
+                    attackTime = dmgHitbox.attackDelay();
                 }
             }
             else
             {
-                currentDirection = -currentDirection;
+                RaycastHit2D wallcheck2 = Physics2D.Raycast(transform.position + new Vector3(currentDirection * hitboxWidth, 0) + offset, Vector2.down, 0.1f, wallMask);
+                if (wallcheck2.collider != null)
+                {
+                    currentDirection = -currentDirection;
+                }
+                
             }
         }
         else
         {
             //check for walk off edge
-            RaycastHit2D edgeCheck = Physics2D.Raycast(transform.position + new Vector3(currentDirection * hitboxWidth, 0) + offset, Vector2.down, 1.11f);
+            RaycastHit2D edgeCheck = Physics2D.Raycast(transform.position + new Vector3(currentDirection * hitboxWidth, 0) + offset, Vector2.down, 1.11f, wallMask);
             Debug.DrawRay(transform.position + new Vector3(currentDirection * hitboxWidth, 0) + offset, Vector2.down, Color.yellow, 5);
             if (edgeCheck.collider != null)
             {
                 if (edgeCheck.collider.tag != "GroundCollision")
                 {
+                    Debug.Log("1");
                     currentDirection = -currentDirection;
                 }
             }
             else
             {
-                RaycastHit2D floor = Physics2D.Raycast(transform.position - (new Vector3(currentDirection * hitboxWidth, 0) + offset), Vector2.down, 1.6f);
+                RaycastHit2D floor = Physics2D.Raycast(transform.position - (new Vector3(currentDirection * hitboxWidth, 0) + offset), Vector2.down, 1.6f, wallMask);
                 Debug.DrawRay(transform.position - (new Vector3(currentDirection * hitboxWidth, 0) + offset), Vector2.down, Color.green, 5) ;
                 if (floor.collider != null)
                 {
                     if (floor.collider.tag == "GroundCollision")
                     {
+                        Debug.Log("2");
                         currentDirection = -currentDirection;
                     }
 
@@ -91,35 +101,47 @@ public class EnemyScript : MonoBehaviour
 
             }
         }
-        currentDirection = transform.position.x < xBounds.x && currentDirection == -1?1:currentDirection;
-        currentDirection = transform.position.x > xBounds.y && currentDirection == 1?-1:currentDirection;
 
 
-        velocity.x = Mathf.Lerp(rb.velocity.x, currentDirection * speed, Time.deltaTime * 10);
+        bool was = attackTime == 0;
+
+        attackTime -= attackTime == 0 ? 0 : Time.deltaTime;
+
+        if (attackTime <= 0 && !was)
+        {
+            attackTime = 0;
+            attackMult = 1;
+
+        }
+        else if (attackTime != 0)
+        {
+            attackMult = 0;
+            if (attackInterupted)
+            {
+                dmgHitbox.interupt = true;
+                attackInterupted = false;
+            }
+
+        }
+
+        
+        currentDirection = transform.position.x < xBounds.x && currentDirection == -1 ? 1 : currentDirection;
+        currentDirection = transform.position.x > xBounds.y && currentDirection == 1 ? -1 : currentDirection;
+
+
+        velocity.x = Mathf.Lerp(rb.velocity.x, currentDirection * speed * attackMult, Time.deltaTime * 10);
         rb.velocity = new Vector3(velocity.x, rb.velocity.y);
 
-        sR.flipX = rb.velocity.x > 0 ? false : true;
+
+        sR.flipX = currentDirection > 0 ? false : true;
+        
 
 
-    }
-    void attack()
-    {
-        canAttack = false;
-        StartCoroutine(attackHitbox());
-    }
-    IEnumerator attackHitbox()
-    {
-        anim.SetTrigger("Attack");
-        yield return new WaitForSeconds(attackAnimationTime*0.5f);
-        if (dead) { dmgHitbox.GetComponent<BoxCollider2D>().enabled = false; yield break; }
-        dmgHitbox.GetComponent<BoxCollider2D>().enabled = true;
-        yield return new WaitForSeconds(0.2f);
-        dmgHitbox.GetComponent<BoxCollider2D>().enabled = false;
-        yield return new WaitForSeconds(0.4f);
-        canAttack = true;
     }
     public void Die()
     {
+        speed = 0;
+        rb.velocity = Vector2.zero;
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         GetComponent<CapsuleCollider2D>().enabled = false;
         //drop item
@@ -131,44 +153,21 @@ public class EnemyScript : MonoBehaviour
             itemobj.GetComponent<Rigidbody2D>().velocity = new Vector3(0, 3);
         }
         
-        GetComponent<Health>().enabled = false;
+        //GetComponent<Health>().enabled = false;
         anim.SetTrigger("Die");
         StartCoroutine(Death());
-        this.enabled = false;
+        //this.enabled = false;
         
 
     }
     IEnumerator Death()
     {
+
         yield return new WaitForSeconds(3);
 
         Destroy(gameObject);
     }
 
-    void returnToLoop()
-    {
-        StartCoroutine(headattackloop());
-    }
-    IEnumerator headattackloop()
-    {
-        yield return new WaitForSeconds(1);
-        if (canAttack)
-        {
-            RaycastHit2D upCheck = Physics2D.Raycast(transform.position + new Vector3(currentDirection * hitboxWidth, 1.3f) + offset, new Vector3(-currentDirection, 0), 1.11f);
-            Debug.DrawRay(transform.position + new Vector3(currentDirection * hitboxWidth, 1.3f) + offset, new Vector3(-currentDirection, 0), Color.cyan, 5);
-            if (upCheck.collider != null)
-            {
-                Debug.Log(upCheck.collider.gameObject.name);
-                if (upCheck.collider.tag == "Player")
-                {
-                    attack();
-                }
-            }
-
-        }
-        returnToLoop();
-
-    }
 
 
 

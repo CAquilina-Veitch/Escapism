@@ -46,7 +46,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.05103731}
+  m_Offset: {x: 0.75, y: -0.05103731}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -72,6 +72,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
+  ownerSprite: {fileID: 5059638830304793215}
+  owner: 1
+  preDelay: 0.5
+  activeTime: 0.2
+  cooldown: 0.8
+  interupt: 0
 --- !u!1 &5059638830304793214
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +157,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -179515058, guid: 5932cfe2a319aa343ab5d2b58d2f7b47, type: 3}
+  m_Sprite: {fileID: 1327848321, guid: a1cb5ae94a7cbc04fa06e7691b4c06ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -174,12 +180,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0271baefa1b97d41be2e56bc2f4dad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
   speed: 1
   damage: 1
   attackAnimationTime: 0.5
-  offset: {x: 0, y: 0, z: 0}
-  hitboxWidth: 0
+  offset: {x: -0.31, y: -0.16, z: 0}
+  hitboxWidth: 0.6
+  xBounds: {x: -9, y: 14}
+  wallMask:
+    serializedVersion: 2
+    m_Bits: 64
+  currentDirection: -1
+  attackMult: 1
+  attackTime: 0
+  attackInterupted: 0
   anim: {fileID: 2078073230454956545}
   dmgHitbox: {fileID: 2078073230148249144}
   itemDropPrefab: {fileID: 0}
@@ -198,10 +211,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcc9526d8cb6b834f9cd2e2940f833fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
+  owner: 1
   Hearts: []
-  maxHealth: 1000
-  healthValue: 1000
+  maxHealth: 2
+  healthValue: 2
+  stunFor: 0
 --- !u!70 &5059638830304793185
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -215,8 +229,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.47047853, y: 0.77287453}
-  m_Size: {x: 0.9481816, y: 1.6148497}
+  m_Offset: {x: -0.3460219, y: -0.19847941}
+  m_Size: {x: 0.9200263, y: 1.609829}
   m_Direction: 0
 --- !u!95 &2078073230454956545
 Animator:
@@ -256,6 +270,6 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4

@@ -18,11 +18,10 @@ public class PlatformerPlayerController : MonoBehaviour
     [SerializeField] Animator anim;
     [SerializeField] Health healthScript;
 
-    [SerializeField] DamagingHitbox dmgHitbox;
+    [SerializeField] Attack dmgHitbox;
 
 
     [Header("STATS")]
-    [SerializeField] int maxHealth;
     [SerializeField] float jumpHeight;
     [SerializeField] float speed;
 
@@ -31,6 +30,7 @@ public class PlatformerPlayerController : MonoBehaviour
     [SerializeField] float vertVel;
     [SerializeField] Vector2 velocity;
     float deathMultiplier = 1;
+    float attackMult = 1;
     public Vector3 spawnpoint;
     bool canJump = true;
     public int maxScene = 0;
@@ -40,6 +40,9 @@ public class PlatformerPlayerController : MonoBehaviour
     bool grounded;
     //bool pause;
     bool wasGrounded = false;
+    public float attackTime;
+    public bool attackInterupted;
+    int comboAttack;
 
 
 
@@ -47,7 +50,6 @@ public class PlatformerPlayerController : MonoBehaviour
     public void Init()
     {
         gameObject.SetActive(true);
-        healthScript.setHealth(maxHealth);
         canJump = true;
         anim.SetTrigger("Land");
         Time.timeScale = 1f;
@@ -57,7 +59,7 @@ public class PlatformerPlayerController : MonoBehaviour
     void Update()
     {
         //Movement
-        velocity.x = Mathf.Lerp(rb.velocity.x, Input.GetAxisRaw("Horizontal") * speed * deathMultiplier, Time.deltaTime * 10);
+        velocity.x = Mathf.Lerp(rb.velocity.x, Input.GetAxisRaw("Horizontal") * speed * deathMultiplier* attackMult, Time.deltaTime * 10);
 
         velocity.y = rb.velocity.y;
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
@@ -78,12 +80,25 @@ public class PlatformerPlayerController : MonoBehaviour
         {
             Medicine();
         }
-        if (Input.GetKeyDown(KeyCode.Mouse0) && grounded)
+        if (Input.GetKeyDown(KeyCode.Mouse0) /*&& grounded*/)
         {
             //attack
-            StartCoroutine(attackHitbox());
+            if (attackTime == 0)
+            {
+                anim.SetTrigger("Attack1");
+                attackTime = dmgHitbox.attackDelay();
+            }
+            else
+            {
+                if (comboAttack < 1)
+                {
+                    comboAttack = 1;
+                }
+            }
+            
         }
     }
+
     public void Medicine()
     {
         if (currentPotions>0)
@@ -125,17 +140,44 @@ public class PlatformerPlayerController : MonoBehaviour
         }
         anim.SetFloat("Horizontal", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
         wasGrounded = grounded;
-    }
-    IEnumerator attackHitbox()
-    {
-        anim.SetTrigger("Attack");
-        dmgHitbox.GetComponent<BoxCollider2D>().enabled = true;
-        deathMultiplier = 0;
-        canJump = false;
-        yield return new WaitForSeconds(0.7f);
-        canJump = true;
-        deathMultiplier = 1;
-        dmgHitbox.GetComponent<BoxCollider2D>().enabled = false;
+
+
+        bool was = attackTime == 0;
+
+        attackTime -= attackTime == 0 ? 0 : Time.deltaTime;
+
+
+
+        if (attackTime <= 0&&!was)
+        {
+            attackTime = 0;
+            attackMult = 1;
+            canJump = true;
+            if (comboAttack == 1)
+            {
+                comboAttack++;
+                anim.SetTrigger("Attack2");
+                attackTime = dmgHitbox.attackDelay();
+            }
+            else
+            {
+                comboAttack = 0;
+            }
+
+        }
+        else if(attackTime!=0)
+        {
+            attackMult = 0;
+            canJump = false;
+            if (attackInterupted)
+            {
+                comboAttack = 0;
+                dmgHitbox.interupt = true;
+                attackInterupted = false;
+            }
+            
+        }
+
     }
     public void Die()
     {
@@ -170,6 +212,14 @@ public class PlatformerPlayerController : MonoBehaviour
 
 
     }   
+    public void Respawn()
+    {
+        healthScript.HealthChange(30);
+    }
+    public void RespawnHere()
+    {
+        spawnpoint= transform.position;
+    }
 
 
 
