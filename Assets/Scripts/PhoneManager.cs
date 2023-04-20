@@ -95,7 +95,8 @@ public class PhoneManager : MonoBehaviour
 
     private void OnEnable()
     {
-        StartConversation(2);
+        //Time.timeScale = 100;
+        StartConversation(1);
     }
 
     public void StartConversation(int num)
@@ -171,6 +172,7 @@ public class PhoneManager : MonoBehaviour
             {
                 _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
             }
+            _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
 
             optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer/2;
             _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
@@ -208,7 +210,7 @@ public class PhoneManager : MonoBehaviour
         {
             _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length*messageCharacterWidth + messageBubbleHorizontalBuffer);
         }
-
+        _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
         currentMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
         scrollValue += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
         _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
