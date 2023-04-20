@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,16 +10,19 @@ public class Health : MonoBehaviour
     PlatformerPlayerController player;
     Animator anim;
     EnemyScript enemy;
+    BossController boss;
     //public bool isPlayer;
     //[SerializeField] Rigidbody2D rb;
     //[SerializeField] float knockBack;
 
+    public bool killable = true;
     [SerializeField] Image[] Hearts;
     //[Header("Dont set these in inspector, but in their controller scripts")]
     public int maxHealth=3;
     public int healthValue=3;
     SpriteRenderer sR;
     public float stunFor;
+
 
     private void OnEnable()
     {
@@ -33,6 +37,10 @@ public class Health : MonoBehaviour
         {
             enemy = GetComponent<EnemyScript>();
         }
+        else if (owner == attackOwner.boss)
+        {
+            boss = GetComponent<BossController>();
+        }
     }
 
     public void setHealth (int to)
@@ -42,6 +50,17 @@ public class Health : MonoBehaviour
     }
     public void HealthChange(int dmg)
     {
+        if(owner == attackOwner.boss)
+        {
+            if (boss.isDead)
+            {
+                return;
+            }
+        }
+        if (!killable&&healthValue==1)
+        {
+            return;
+        }
         StartCoroutine(ColourFlash(dmg > 0));
         if (dmg > 0)
         {
@@ -89,6 +108,10 @@ public class Health : MonoBehaviour
             else if (owner == attackOwner.skeleton)
             {
                 enemy.Die();
+            }else if (owner == attackOwner.boss)
+            {
+                boss.Die();
+                this.enabled = false;
             }
 
         }
@@ -106,7 +129,7 @@ public class Health : MonoBehaviour
     {
         for(int i = 0; i < 3; i++) 
         { 
-            Hearts[i].enabled = healthValue>= i-1?true:false;
+            Hearts[i].enabled = healthValue>= i+1?true:false;
         }
 
     }

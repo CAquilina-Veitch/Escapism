@@ -3,28 +3,48 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
-
+public enum Game { real, platformer}
 public class Interactable : MonoBehaviour
 {
     [SerializeField] GameObject buttonIndicator;
     bool currentlyInRange;
     public UnityEvent interact;
-    RealPlayerController player;
+    public Game game;
+    PlatformerPlayerController ppc;
+    RealPlayerController rpc;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            player = other.GetComponent<RealPlayerController>();
-            player.ChangeInteraction(this, true);
+            if(game == Game.real)
+            {
+                rpc = other.GetComponent<RealPlayerController>();
+                rpc.ChangeInteraction(this, true);
+            }
+            else
+            {
+                ppc = other.GetComponent<PlatformerPlayerController>();
+                ppc.ChangeInteraction(this, true);
+            }
+            
         }
     }
     private void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
-            player.ChangeInteraction(this, false);
-            buttonIndicator.SetActive(false);
+            if (game == Game.real)
+            {
+                rpc.ChangeInteraction(this, false);
+                buttonIndicator.SetActive(false);
+            }
+            else
+            {
+                ppc.ChangeInteraction(this, false);
+                buttonIndicator.SetActive(false);
+            }
+                
         }
     }
 
@@ -32,7 +52,15 @@ public class Interactable : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            buttonIndicator.SetActive(player.currentInteract == interact);
+            if (game == Game.real)
+            {
+                buttonIndicator.SetActive(rpc.currentInteract == interact);
+            }
+            else
+            {
+                buttonIndicator.SetActive(ppc.currentInteract == interact);
+            }
+                
         }
     }
 }

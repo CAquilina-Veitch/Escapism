@@ -76,7 +76,7 @@ MonoBehaviour:
   owner: 1
   preDelay: 0.5
   activeTime: 0.2
-  cooldown: 0.8
+  cooldown: 0.55
   interupt: 0
 --- !u!1 &5059638830304793214
 GameObject:
@@ -212,6 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: 1
+  killable: 0
   Hearts: []
   maxHealth: 2
   healthValue: 2

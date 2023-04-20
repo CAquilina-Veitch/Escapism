@@ -4,6 +4,7 @@ using System.Data;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Events;
 
 public class PlatformerPlayerController : MonoBehaviour
 {
@@ -45,6 +46,28 @@ public class PlatformerPlayerController : MonoBehaviour
     int comboAttack;
 
 
+    public UnityEvent currentInteract;
+    public List<Interactable> inRange;
+
+    public void ChangeInteraction(Interactable interact, bool add)
+    {
+        if (add)
+        {
+            inRange.Add(interact);
+            currentInteract = interact.interact;
+        }
+        else
+        {
+            inRange.Remove(interact);
+            if (inRange.Count == 0)
+            {
+                currentInteract = null;
+            }
+        }
+    }
+
+
+
 
     // Start is called before the first frame update
     public void Init()
@@ -60,6 +83,13 @@ public class PlatformerPlayerController : MonoBehaviour
     {
         //Movement
         velocity.x = Mathf.Lerp(rb.velocity.x, Input.GetAxisRaw("Horizontal") * speed * deathMultiplier* attackMult, Time.deltaTime * 10);
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            currentInteract.Invoke();
+        }
+
+
 
         velocity.y = rb.velocity.y;
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
