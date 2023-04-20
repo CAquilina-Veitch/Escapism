@@ -6,15 +6,12 @@
 		-can trigger cutscenes
 		- can be unclickable
 - enemies
-	-skeleton
 	-boss
 		-unkillable and kills player
 - task cutscenes
 	- sometimes unclickable
 	- sometimes unavailable
 - progress meter
-	- store current progress
-		-current scene
 	- start msgs
 	- where you spawn in
 dialogue
