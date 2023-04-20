@@ -22,3 +22,8 @@ dialogue
 
 
 
+glitch effect particle system thing
+
+levels need to be made
+
+interact with objects to trigger cutscenes and be unlickable 
