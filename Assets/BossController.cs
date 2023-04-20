@@ -19,10 +19,13 @@ public class BossController : MonoBehaviour
     public Rigidbody2D rb;
     public float attackMult = 1;
 
+    bool hasCooledDown;
+
     Rigidbody2D prb;
 
     //charge
     public float chargeStartup = 0.2f;
+    Animator anim;
 
 
 
@@ -30,6 +33,7 @@ public class BossController : MonoBehaviour
     private void OnEnable()
     {
         prb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -48,6 +52,10 @@ public class BossController : MonoBehaviour
         {
             currentAttackDelay = 0;
             attackMult = 1;
+            if (!hasCooledDown)
+            {
+                EndAttack();
+            }
 
         }
         else if (currentAttackDelay != 0)
@@ -63,11 +71,12 @@ public class BossController : MonoBehaviour
     }
     public void Attack(int num)
     {
-        currentAttackDelay = atks[num].attackDelay();
+        hasCooledDown = false;
         switch (num)
         {
             case 0:
-                StartCoroutine(Charge());
+                
+                StartCoroutine(Sweep());
                 break;
             case 1:
                 break;
@@ -91,6 +100,29 @@ public class BossController : MonoBehaviour
 
 
 
+    }
+    IEnumerator Sweep()
+    {
+        currentAttackDelay = atks[0].attackDelay();
+        
+        int playerDirection = prb.transform.position.x < transform.position.x ? -1 : 1;
+        atkMotor = new Vector2(4*playerDirection, 0.3f);
+        rb.gravityScale = 0;
+        yield return new WaitForSeconds(atks[0].preDelay-0.25f-0.2f);
+        atkMotor = new Vector2(4 * playerDirection, -30);
+        rb.gravityScale = 1;
+        yield return new WaitForSeconds(0.2f);
+        anim.SetTrigger("Sweep");
+        yield return new WaitForSeconds(0.25f);
+        atkMotor = Vector2.zero;
+        yield return new WaitForSeconds(atks[0].activeTime + atks[0].cooldown);
+        
+
+    }
+    public void EndAttack()
+    {
+        currentAttackDelay = Random.Range(1, 4);
+        hasCooledDown = true;
     }
 
 
