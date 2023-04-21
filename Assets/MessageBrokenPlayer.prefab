@@ -69,8 +69,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Message text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
+  m_sharedMaterial: {fileID: -3704164700170750789, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -188,7 +188,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 40, y: 34.8}
+  m_SizeDelta: {x: 67.8483, y: 34.8}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &7892511767234582273
 CanvasRenderer:
@@ -211,14 +211,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 0.6650944, b: 0.6650944, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 487e28a015687b649887705edfbc5d0a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -241,3 +241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   optionId: 0
+  msgSprites:
+  - {fileID: 21300000, guid: 04260093d9ed49342b161b8704220516, type: 3}
+  - {fileID: 21300000, guid: 1ce3cf58cce912d4caa4f317514ffe76, type: 3}
+  - {fileID: 21300000, guid: 487e28a015687b649887705edfbc5d0a, type: 3}

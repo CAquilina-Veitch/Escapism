@@ -458,6 +458,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1758165694}
     m_Modifications:
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: currentConversationID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2041612244637347704, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -559,6 +563,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1758165694}
     m_Modifications:
+    - target: {fileID: 4853636368781527377, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
+      propertyPath: currentConversationID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853636368781527377, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
+      propertyPath: currentConversation.id
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853636368781527377, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
+      propertyPath: currentConversation.with
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4853636368781527388, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
