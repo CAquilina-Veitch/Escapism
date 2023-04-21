@@ -17,6 +17,7 @@ public class Health : MonoBehaviour
 
     public bool killable = true;
     [SerializeField] Image[] Hearts;
+    [SerializeField] Image BossHealth;
     //[Header("Dont set these in inspector, but in their controller scripts")]
     public int maxHealth=3;
     public int healthValue=3;
@@ -24,11 +25,12 @@ public class Health : MonoBehaviour
     public float stunFor;
 
 
-    private void OnEnable()
+    private void Awake()
     {
         sR = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         healthValue = maxHealth;
+        BossHealth.transform.parent.gameObject.SetActive(true);
         if(owner == attackOwner.player)
         {
             player = GetComponent<PlatformerPlayerController>();
@@ -50,12 +52,15 @@ public class Health : MonoBehaviour
     }
     public void HealthChange(int dmg)
     {
-        if(owner == attackOwner.boss)
+        if (owner == attackOwner.boss)
         {
             if (boss.isDead)
             {
+                BossHealth.transform.parent.gameObject.SetActive(false);
                 return;
             }
+            
+            
         }
         if (!killable&&healthValue==1)
         {
@@ -95,6 +100,9 @@ public class Health : MonoBehaviour
                 
             }
             
+        }else if (owner == attackOwner.boss)
+        {
+            BossHealth.fillAmount = (float)healthValue / (float)maxHealth;
         }
         if (healthValue <= 0)
         {

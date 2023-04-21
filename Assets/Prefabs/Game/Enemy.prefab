@@ -185,7 +185,7 @@ MonoBehaviour:
   attackAnimationTime: 0.5
   offset: {x: -0.31, y: -0.16, z: 0}
   hitboxWidth: 0.6
-  xBounds: {x: -9, y: 14}
+  xBounds: {x: 14.52, y: 16.94}
   wallMask:
     serializedVersion: 2
     m_Bits: 64
@@ -214,6 +214,7 @@ MonoBehaviour:
   owner: 1
   killable: 0
   Hearts: []
+  BossHealth: {fileID: 0}
   maxHealth: 2
   healthValue: 2
   stunFor: 0

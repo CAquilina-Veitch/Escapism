@@ -188,7 +188,7 @@ MonoBehaviour:
   anim: {fileID: 6715133300465851672}
   healthScript: {fileID: 1641858018}
   dmgHitbox: {fileID: 1073548439}
-  jumpHeight: 10
+  jumpHeight: 6
   speed: 10
   horizMoveSpeed: 0
   vertVel: 0
@@ -197,6 +197,10 @@ MonoBehaviour:
   maxScene: 0
   attackTime: 0
   attackInterupted: 0
+  currentInteract:
+    m_PersistentCalls:
+      m_Calls: []
+  inRange: []
 --- !u!50 &6715133300465851678
 Rigidbody2D:
   serializedVersion: 4
@@ -267,10 +271,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: 0
+  killable: 1
   Hearts:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  BossHealth: {fileID: 0}
   maxHealth: 3
   healthValue: 3
   stunFor: 0
