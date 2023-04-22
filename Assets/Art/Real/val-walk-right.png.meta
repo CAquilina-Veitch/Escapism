@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,43 +102,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -156,19 +120,19 @@ TextureImporter:
       name: val-walk-right_0
       rect:
         serializedVersion: 2
-        x: 140
-        y: 7
-        width: 175
-        height: 566
-      alignment: 9
-      pivot: {x: 0.51317537, y: 0.545}
+        x: 0
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73536bfd65c26114ab3b6569eac4b5a0
-      internalID: 397544521
+      spriteID: 73036022198e3644d8b1de9ef03f103a
+      internalID: 971900316
       vertices: []
       indices: 
       edges: []
@@ -177,19 +141,19 @@ TextureImporter:
       name: val-walk-right_1
       rect:
         serializedVersion: 2
-        x: 393
-        y: 9
-        width: 145
-        height: 570
-      alignment: 9
-      pivot: {x: 0.5406713, y: 0.545}
+        x: 300
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc21392e7e0719f4186333e404bfb17f
-      internalID: -779556853
+      spriteID: 87d7800a7dd2a5a49b97b313f1ed1bc8
+      internalID: 1782839405
       vertices: []
       indices: 
       edges: []
@@ -198,19 +162,19 @@ TextureImporter:
       name: val-walk-right_2
       rect:
         serializedVersion: 2
-        x: 641
-        y: 9
-        width: 159
-        height: 569
-      alignment: 9
-      pivot: {x: 0.5556353, y: 0.545}
+        x: 600
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e381dafb980481540b4d07993b66949f
-      internalID: 1093081220
+      spriteID: 36d30eb635434c343987f79259da0d30
+      internalID: -293654146
       vertices: []
       indices: 
       edges: []
@@ -219,19 +183,19 @@ TextureImporter:
       name: val-walk-right_3
       rect:
         serializedVersion: 2
-        x: 904
-        y: 5
-        width: 176
-        height: 569
-      alignment: 9
-      pivot: {x: 0.4497379, y: 0.545}
+        x: 900
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33c51cc0b53324c4fa694e1389c41789
-      internalID: 1255509455
+      spriteID: 97bac2e904c11b14fab18e288f1186f7
+      internalID: 2070847438
       vertices: []
       indices: 
       edges: []
@@ -240,19 +204,19 @@ TextureImporter:
       name: val-walk-right_4
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 5
-        width: 235
-        height: 559
-      alignment: 9
-      pivot: {x: 0.38428253, y: 0.545}
+        x: 1200
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e604c1bb35e4494dbbbda0be8433f37
-      internalID: 1348112364
+      spriteID: c7cca563ed5702747a57dbe92592344d
+      internalID: 1949187771
       vertices: []
       indices: 
       edges: []
@@ -261,19 +225,19 @@ TextureImporter:
       name: val-walk-right_5
       rect:
         serializedVersion: 2
-        x: 1477
-        y: 9
-        width: 218
-        height: 565
-      alignment: 9
-      pivot: {x: 0.4173405, y: 0.545}
+        x: 1500
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04c3df6184717e446a78507c72f4ef36
-      internalID: 1356220753
+      spriteID: 0fbab3565a4781a4f8c15d38ef9127a0
+      internalID: -366087432
       vertices: []
       indices: 
       edges: []
@@ -282,19 +246,19 @@ TextureImporter:
       name: val-walk-right_6
       rect:
         serializedVersion: 2
-        x: 1776
-        y: 9
-        width: 186
-        height: 564
-      alignment: 9
-      pivot: {x: 0.45948577, y: 0.545}
+        x: 1800
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb48ab4cac79bd14b89899ffcc764b17
-      internalID: -1787960806
+      spriteID: 21295ef0f9725114d9b803baed9af4b6
+      internalID: 427698210
       vertices: []
       indices: 
       edges: []
@@ -303,19 +267,19 @@ TextureImporter:
       name: val-walk-right_7
       rect:
         serializedVersion: 2
-        x: 2068
-        y: 7
-        width: 150
-        height: 572
-      alignment: 9
-      pivot: {x: 0.5393148, y: 0.545}
+        x: 2100
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a12da42c30f6f8469ed6edcebc9d46e
-      internalID: 1306665228
+      spriteID: c2c95f82d87045f41965f14e92de80e2
+      internalID: -1926196779
       vertices: []
       indices: 
       edges: []
@@ -324,19 +288,19 @@ TextureImporter:
       name: val-walk-right_8
       rect:
         serializedVersion: 2
-        x: 2321
-        y: 9
-        width: 143
-        height: 562
-      alignment: 9
-      pivot: {x: 0.55040395, y: 0.545}
+        x: 2400
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c27f3070242b04a43861d61dfb368265
-      internalID: 856327838
+      spriteID: 4bcc4180a59b8fc47a52379383b12480
+      internalID: 2028785781
       vertices: []
       indices: 
       edges: []
@@ -345,19 +309,40 @@ TextureImporter:
       name: val-walk-right_9
       rect:
         serializedVersion: 2
-        x: 2546
-        y: 9
-        width: 173
-        height: 562
-      alignment: 9
-      pivot: {x: 0.52172995, y: 0.545}
+        x: 2700
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e14c8798ff876a4e9707a43f1b520a1
-      internalID: 475498176
+      spriteID: 755d0fc469a296f43aa975f66e26b56a
+      internalID: 1877565396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-walk-right_10
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887c1dc636fe0eb4398f99354d31b576
+      internalID: 510047160
       vertices: []
       indices: 
       edges: []
@@ -366,40 +351,19 @@ TextureImporter:
       name: val-walk-right_11
       rect:
         serializedVersion: 2
-        x: 2813
-        y: 9
-        width: 241
-        height: 557
-      alignment: 9
-      pivot: {x: 0.43568364, y: 0.545}
+        x: 3300
+        y: 0
+        width: 300
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b610a9d497918064cb41853b53558bda
-      internalID: 1320029839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: val-walk-right_12
-      rect:
-        serializedVersion: 2
-        x: 3134
-        y: 9
-        width: 228
-        height: 564
-      alignment: 9
-      pivot: {x: 0.47814512, y: 0.545}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6c6a3a8aecf9904a8697f7094da7489
-      internalID: -1849440262
+      spriteID: 7e7c8c521370b4f43a73c8b9297890b8
+      internalID: 2043351743
       vertices: []
       indices: 
       edges: []
@@ -415,24 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      val-walk-right_14: 610332519
-      val-walk-right_2: 1093081220
-      val-walk-right_15: -2104494561
-      val-walk-right_13: -314210560
-      val-walk-right_9: 475498176
-      val-walk-right_10: 43361791
-      val-walk-right_11: 1320029839
-      val-walk-right_1: -779556853
-      val-walk-right_6: -1787960806
-      val-walk-right_8: 856327838
-      val-walk-right_7: 1306665228
-      val-walk-right_0: 397544521
-      val-walk-right_16: 330884450
-      val-walk-right_3: 1255509455
-      val-walk-right_5: 1356220753
-      val-walk-right_4: 1348112364
-      val-walk-right_12: -1849440262
-      val-walk-right_17: -1821947507
+      val-walk-right_2: -293654146
+      val-walk-right_9: 1877565396
+      val-walk-right_10: 510047160
+      val-walk-right_11: 2043351743
+      val-walk-right_1: 1782839405
+      val-walk-right_6: 427698210
+      val-walk-right_8: 2028785781
+      val-walk-right_7: -1926196779
+      val-walk-right_0: 971900316
+      val-walk-right_3: 2070847438
+      val-walk-right_5: -366087432
+      val-walk-right_4: 1949187771
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

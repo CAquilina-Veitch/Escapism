@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -67,10 +67,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,9 +101,567 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: val-off-computer_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83e289832fd3e594e8cbbbbd9ec57e69
+      internalID: 1489639509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_1
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0954ce1a962774e488e2c32a7da91a6e
+      internalID: 867496286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_2
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c094e7b5c1f69749ba7216c01be453a
+      internalID: -424852636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 394b6d42a9643724b8e879ab20e1db0e
+      internalID: -138182760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8c956a9db77ce94f974cdc7bfd778b4
+      internalID: 282174942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_5
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26b94a8764e42040a1e20ef70304dd3
+      internalID: -1019393799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_6
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b97f89f63d66364bb2f74566afaec62
+      internalID: 74127215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc85eb912f007674f8638e38270bb4ed
+      internalID: 1951978871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649140eccd2231b4ebeab025a9acd095
+      internalID: 1592956702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_9
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0d6efd7a4906f64fa3bf0295c4ee0d1
+      internalID: 1782289822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_10
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f79ccc252a19ed4c963c111bff0964c
+      internalID: -501406362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_11
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc8e63c900c53c4dbfa77863dc46f92
+      internalID: 966531944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_12
+      rect:
+        serializedVersion: 2
+        x: 4800
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa6054549932c34194339b8d7131ea4
+      internalID: -492055333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_13
+      rect:
+        serializedVersion: 2
+        x: 5200
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474ca7080f5c24941a0dbde38246b112
+      internalID: -1457205047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_14
+      rect:
+        serializedVersion: 2
+        x: 5600
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e536126e3d9d9aa44804759e24a4ef73
+      internalID: -937581613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_15
+      rect:
+        serializedVersion: 2
+        x: 6000
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eb122000504da41882bb1e9d8cadc3
+      internalID: 1375283076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_16
+      rect:
+        serializedVersion: 2
+        x: 6400
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1773b9a61fdfd4bb75e25acb3e5340
+      internalID: 2053724953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_17
+      rect:
+        serializedVersion: 2
+        x: 6800
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88850141ba6bc8e458abd1a697f05992
+      internalID: 1405289347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_18
+      rect:
+        serializedVersion: 2
+        x: 7200
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b3ba1d7fc2ae4dba989641e7fef01
+      internalID: -519089789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_19
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8855ebdbc660eb4cbe1682407f1e271
+      internalID: -1550218920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_20
+      rect:
+        serializedVersion: 2
+        x: 8000
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e277a09dc1af586428cbf52f1c0c4f8b
+      internalID: 696103297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_21
+      rect:
+        serializedVersion: 2
+        x: 8400
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e9990a2216456b4daac29422abd1b7b
+      internalID: -183869147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_22
+      rect:
+        serializedVersion: 2
+        x: 8800
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83238cd9253ca8418a9c1087f66096f
+      internalID: -175115692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_23
+      rect:
+        serializedVersion: 2
+        x: 9200
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6feb773cf99f8df44bd5d3e6895c4c93
+      internalID: 545678493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_24
+      rect:
+        serializedVersion: 2
+        x: 9600
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2572f5a152c6c73448605255feb2c417
+      internalID: -2002460556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: val-off-computer_25
+      rect:
+        serializedVersion: 2
+        x: 10000
+        y: 0
+        width: 400
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a03cc30bd6f335c4aaab4dd334568dc9
+      internalID: -117677130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +672,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      val-off-computer_16: 2053724953
+      val-off-computer_19: -1550218920
+      val-off-computer_5: -1019393799
+      val-off-computer_15: 1375283076
+      val-off-computer_2: -424852636
+      val-off-computer_3: -138182760
+      val-off-computer_25: -117677130
+      val-off-computer_1: 867496286
+      val-off-computer_9: 1782289822
+      val-off-computer_14: -937581613
+      val-off-computer_17: 1405289347
+      val-off-computer_10: -501406362
+      val-off-computer_20: 696103297
+      val-off-computer_6: 74127215
+      val-off-computer_8: 1592956702
+      val-off-computer_21: -183869147
+      val-off-computer_23: 545678493
+      val-off-computer_22: -175115692
+      val-off-computer_24: -2002460556
+      val-off-computer_4: 282174942
+      val-off-computer_0: 1489639509
+      val-off-computer_18: -519089789
+      val-off-computer_7: 1951978871
+      val-off-computer_11: 966531944
+      val-off-computer_13: -1457205047
+      val-off-computer_12: -492055333
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

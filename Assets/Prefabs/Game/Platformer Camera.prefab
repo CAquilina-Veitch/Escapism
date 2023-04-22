@@ -104,5 +104,11 @@ MonoBehaviour:
   - 40
   - 70
   - 100
-  yOffset: 3
+  ymin: -1.5
+  yacc: 2
+  defaultYOffset: 1.15
+  currentYOffset: 1.1499997
+  resetacc: 0.2
   currentCameraPos: 0
+  radius: 9
+  yLock: 0
