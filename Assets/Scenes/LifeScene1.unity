@@ -1145,9 +1145,7 @@ MonoBehaviour:
   speed: 3.1
   acceleration: 5
   moveMult: 0
-  currentInteract:
-    m_PersistentCalls:
-      m_Calls: []
+  currentInteractable: {fileID: 0}
   inRange: []
 --- !u!61 &1902492976
 BoxCollider2D:

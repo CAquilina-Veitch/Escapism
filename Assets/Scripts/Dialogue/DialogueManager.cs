@@ -7,7 +7,7 @@ using TMPro;
 using Unity.Mathematics;
 using UnityEngine.PlayerLoop;
 
-public enum speaker {player, mom, friend }
+public enum speaker {player, mom, friend, knight, samurai, bluebandit, whitebandit }
 public enum dialogueType { start, response, choice, link, end }
 
 enum dialogueState { empty, typing, skipTriggered, choosing, full }
