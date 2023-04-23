@@ -200,6 +200,7 @@ public class PhoneManager : MonoBehaviour
     public void EndConversation()
     {
         Debug.LogWarning("End of conversation");
+        GameObject.FindGameObjectWithTag("Requirements").GetComponent<RequirementsToEnable>().FinishRequirement("Text");
     }
     public void CreateNewMessage(Message msg)
     {

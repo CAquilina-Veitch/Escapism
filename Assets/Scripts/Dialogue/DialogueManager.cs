@@ -215,17 +215,21 @@ public class DialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (dState == dialogueState.typing)
-            {
-                dState = dialogueState.skipTriggered;
+            PressedNextButton();
+        }
+    }
+    public void PressedNextButton()
+    {
+        if (dState == dialogueState.typing)
+        {
+            dState = dialogueState.skipTriggered;
 
-            }
-            else if (dState == dialogueState.full)
-            {
-                NextDialogueLine();
-            }
+        }
+        else if (dState == dialogueState.full)
+        {
+            NextDialogueLine();
         }
     }
     private void FixedUpdate()

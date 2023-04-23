@@ -212,7 +212,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: 1
-  killable: 0
+  killable: 1
   Hearts: []
   BossHealth: {fileID: 0}
   maxHealth: 2

@@ -55,6 +55,12 @@ public class RealPlayerController : MonoBehaviour
         sR.flipX = true;
         moveMult = 1;
     }
+    public void Sleep()
+    {
+        anim.SetFloat("SitAnimMult", 1);
+        moveMult = 0;
+        sR.enabled = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -114,4 +120,5 @@ public class RealPlayerController : MonoBehaviour
             currentInteractable = inRange[inRange.Count - 1];
         }
     }
+
 }

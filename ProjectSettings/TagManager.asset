@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - GroundCollision
   - Requirements
+  - Fade
   layers:
   - Default
   - TransparentFX

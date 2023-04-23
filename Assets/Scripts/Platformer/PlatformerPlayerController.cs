@@ -221,7 +221,7 @@ public class PlatformerPlayerController : MonoBehaviour
     {
         StartCoroutine(death());
         canJump = true;
-
+        attackInterupted = false;
         //teleport back to the place.
     }
     IEnumerator death()

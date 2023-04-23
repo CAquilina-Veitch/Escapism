@@ -8,4 +8,8 @@ public static class GlobalFunctions
     {
         return ((numOfItems - 1) * -20) + (40 * i);
     }
+    public static float DeltaFPS(int FramesPerSecond)
+    {
+        return 1f / (float)FramesPerSecond;
+    }
 }

@@ -711,8 +711,8 @@ MonoBehaviour:
   numCharPerLine: 15
   contacts:
   - user: 0
-    name: MomName
-    photo: {fileID: 21300000, guid: 9c0d6ec706e01ce448aea81584af092b, type: 3}
+    name: Mum
+    photo: {fileID: 21300000, guid: 24d760598a4192f4e8727e839c900958, type: 3}
   - user: 1
     name: Jamie
     photo: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a, type: 3}

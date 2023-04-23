@@ -64,11 +64,11 @@ public class ScreenshotTransferer : MonoBehaviour
     {
         StartCoroutine(goToRealLife());
     }
-/*    private void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             TransitionToReal();
         }
-    }*/
+    }
 }

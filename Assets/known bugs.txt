@@ -3,3 +3,5 @@ Button on messages that shouldnt have one.
 clickable unavaible messages - become dcuks
 
 options are too big >:( make wider thgan max half withdsgth.
+
+chair dissapears on stand up

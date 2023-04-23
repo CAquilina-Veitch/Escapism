@@ -30,7 +30,11 @@ public class Health : MonoBehaviour
         sR = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         healthValue = maxHealth;
-        BossHealth.transform.parent.gameObject.SetActive(true);
+        if(owner == attackOwner.boss)
+        {
+            BossHealth.transform.parent.gameObject.SetActive(true);
+        }
+        
         if(owner == attackOwner.player)
         {
             player = GetComponent<PlatformerPlayerController>();
@@ -67,6 +71,14 @@ public class Health : MonoBehaviour
             return;
         }
         StartCoroutine(ColourFlash(dmg > 0));
+
+
+
+
+
+
+
+
         if (dmg > 0)
         {
             //heal
@@ -80,6 +92,15 @@ public class Health : MonoBehaviour
             //rb.velocity = Vector3.zero;
 
         }
+
+
+
+
+
+
+
+
+
         if(owner == attackOwner.player)
         {
             if (player.attackTime > 0)
@@ -104,6 +125,14 @@ public class Health : MonoBehaviour
         {
             BossHealth.fillAmount = (float)healthValue / (float)maxHealth;
         }
+
+
+
+
+
+
+
+
         if (healthValue <= 0)
         {
             //die
