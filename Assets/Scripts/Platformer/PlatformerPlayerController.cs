@@ -46,27 +46,34 @@ public class PlatformerPlayerController : MonoBehaviour
     int comboAttack;
 
 
-    public UnityEvent currentInteract;
+    public Interactable currentInteractable;
     public List<Interactable> inRange;
+
 
     public void ChangeInteraction(Interactable interact, bool add)
     {
         if (add)
         {
             inRange.Add(interact);
-            currentInteract = interact.interact;
+            currentInteractable = interact;
         }
         else
         {
             inRange.Remove(interact);
             if (inRange.Count == 0)
             {
-                currentInteract = null;
+                currentInteractable = null;
             }
         }
     }
 
-
+    public void CheckInteractable()
+    {
+        if (currentInteractable == null && inRange.Count != 0)
+        {
+            currentInteractable = inRange[inRange.Count - 1];
+        }
+    }
 
 
     // Start is called before the first frame update
@@ -86,7 +93,7 @@ public class PlatformerPlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            currentInteract.Invoke();
+            currentInteractable.interact.Invoke();
         }
 
 
@@ -141,6 +148,7 @@ public class PlatformerPlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        CheckInteractable(); 
         Vector3 offset = -transform.up * 0.75f * transform.localScale.x;
         RaycastHit2D groundCheck1 = Physics2D.Raycast(transform.position + offset + transform.right * 0.3f * transform.localScale.x, Vector2.down, 0.1f, groundCheckMask);
         RaycastHit2D groundCheck2 = Physics2D.Raycast(transform.position + offset + transform.right * -0.3f * transform.localScale.x, Vector2.down, 0.1f, groundCheckMask);

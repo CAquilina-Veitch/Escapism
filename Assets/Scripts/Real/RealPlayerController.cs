@@ -26,14 +26,16 @@ public class RealPlayerController : MonoBehaviour
     [SerializeField] float acceleration = 10;
     Vector2 velocity;
     Vector3 spawnpoint;
+    public float moveMult = 0;
 
-
-
-    public UnityEvent currentInteract;
+    public Interactable currentInteractable;
     public List<Interactable> inRange;
 
 
-
+    private void OnEnable()
+    {
+        Stand();
+    }
 
 
     // Start is called before the first frame update
@@ -41,6 +43,17 @@ public class RealPlayerController : MonoBehaviour
     {
         gameObject.SetActive(true);
         Time.timeScale = 1f;
+    }
+    public void Stand()
+    {
+        anim.SetFloat("SitAnimMult", 1);
+        StartCoroutine(StandAnimation());
+    }
+    IEnumerator StandAnimation()
+    {
+        yield return new WaitForSeconds(2.17f);
+        sR.flipX = true;
+        moveMult = 1;
     }
 
     // Update is called once per frame
@@ -50,12 +63,14 @@ public class RealPlayerController : MonoBehaviour
         velocity.x = Mathf.Lerp(rb.velocity.x, Input.GetAxisRaw("Horizontal") * speed, Time.deltaTime * acceleration);
         velocity.y = rb.velocity.y;
 
-        rb.velocity = velocity;
+        rb.velocity = velocity* moveMult;
 
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)&&moveMult!=0)
         {
-            currentInteract.Invoke();
+            //currentInteract.Invoke();
+            CheckInteractable();
+            currentInteractable.interact.Invoke();
         }
 
     }
@@ -64,7 +79,7 @@ public class RealPlayerController : MonoBehaviour
     private void FixedUpdate()
     {
 
-
+        CheckInteractable();
 
 
         //animations
@@ -74,22 +89,29 @@ public class RealPlayerController : MonoBehaviour
         }
 
         
-        anim.SetFloat("Horizontal", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        anim.SetFloat("Horizontal", Mathf.Abs(Input.GetAxisRaw("Horizontal")*moveMult));
     }
     public void ChangeInteraction(Interactable interact, bool add)
     {
         if (add)
         {
             inRange.Add(interact);
-            currentInteract = interact.interact;
+            currentInteractable = interact;
         }
         else
         {
             inRange.Remove(interact);
             if (inRange.Count == 0)
             {
-                currentInteract = null;
+                currentInteractable = null;
             }
+        }
+    }
+    public void CheckInteractable()
+    {
+        if(currentInteractable == null && inRange.Count != 0)
+        {
+            currentInteractable = inRange[inRange.Count - 1];
         }
     }
 }

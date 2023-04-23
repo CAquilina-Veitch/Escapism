@@ -1,20 +1,21 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Tilemaps;
+//using UnityEditor.Tilemaps;
 using UnityEngine;
 
 
 [Serializable]
 public struct Cutscene
 {
-    public int id;
+    public string id;
     public float duration;
     public Animator[] animators;
     public GameObject[] objectsTurningOn;
     public GameObject[] objectsTurningOff;
     public GameObject[] prefabsToBeInstantiated;
     public Vector3[] prefabPositions;
+    public bool playerCanMove;
 }
 
 
@@ -22,20 +23,16 @@ public struct Cutscene
 
 public class CutsceneManager : MonoBehaviour
 {
-    public Cutscene[] cutscenes;
+    public List<Cutscene> cutscenes;
 
-    int currentCutscene;
-
-
-    public void PlayCutscene(int num)
+    public Cutscene findCutsceneFromID(string ID)
     {
-        StartCoroutine(CutsceneProcess(cutscenes[num]));
+        return cutscenes.Find(x => x.id == ID);
     }
 
-    public void PlayNextCutscene()
+    public void PlayCutscene(string id)
     {
-        currentCutscene++;
-        PlayCutscene(currentCutscene);
+        StartCoroutine(CutsceneProcess(findCutsceneFromID(id)));
     }
 
     IEnumerator CutsceneProcess(Cutscene cutscene)
@@ -48,6 +45,8 @@ public class CutsceneManager : MonoBehaviour
             if (!obj.activeSelf)
             {
                 cutsceneObjectsWerentOn.Add(obj);
+                obj.SetActive(true);
+                
             }
         }
         foreach(GameObject obj in cutscene.objectsTurningOff)
@@ -55,6 +54,7 @@ public class CutsceneManager : MonoBehaviour
             if (obj.activeSelf)
             {
                 cutsceneObjectsWerentOff.Add(obj);
+                obj.SetActive(false);
             }
         }
         foreach(Animator anim in cutscene.animators)
@@ -72,10 +72,13 @@ public class CutsceneManager : MonoBehaviour
             }
             cutscenePrefabsInstantiated.Add(temp);
         }
-
+        Debug.Log('A');
+        float _couldMove = GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 0;
         yield return new WaitForSeconds(cutscene.duration);
-
-        foreach(GameObject obj in cutsceneObjectsWerentOn)
+        GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = _couldMove;
+        Debug.Log('B');
+        foreach (GameObject obj in cutsceneObjectsWerentOn)
         {
             obj.SetActive(false);
         }
@@ -92,7 +95,7 @@ public class CutsceneManager : MonoBehaviour
         {
             Destroy(prefab);
         }
-
+        
 
     }
 }

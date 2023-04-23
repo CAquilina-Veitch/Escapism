@@ -76,7 +76,8 @@ public class PhoneManager : MonoBehaviour
     public float numCharPerLine = 10;
     float scrollParentStartBuffer = 10;
     float scrollMinimumPageLength = 90;
-
+    bool started = false;
+    bool showingPhone = false;
     [Header("Data")]
     public List<Contact> contacts;
     public List<MessageConversations> listMessageConversations;
@@ -93,14 +94,18 @@ public class PhoneManager : MonoBehaviour
     public int currentMessageID;
     public List<GameObject> optionButtons;
 
-    private void OnEnable()
+/*    private void OnEnable()
     {
         //Time.timeScale = 100;
         StartConversation(1);
-    }
+    }*/
 
     public void StartConversation(int num)
     {
+        if (started)
+        {
+            return;
+        }
         currentConversationID = num;
 
         currentConversation = listMessageConversations[currentConversationID];
@@ -109,7 +114,7 @@ public class PhoneManager : MonoBehaviour
         SetCurrentContact(findContactFromUser(currentConversation.with));
 
         NextMessage();
-
+        started = true;
 
 
     }
@@ -250,6 +255,11 @@ public class PhoneManager : MonoBehaviour
         NextMessage();
     }
 
+    public void ShowPhone(bool to)
+    {
+        showingPhone = to;
+        transform.GetChild(0).gameObject.SetActive(to);
+    }
 
 
 }

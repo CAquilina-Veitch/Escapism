@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7601188903140051971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7601188903140051972}
+  - component: {fileID: 7601188903140051975}
+  - component: {fileID: 7601188903140051974}
+  - component: {fileID: 7601188903140051973}
+  m_Layer: 5
+  m_Name: Laundry Cutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7601188903140051972
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601188903140051971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 450}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7601188903140051975
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601188903140051971}
+  m_CullTransparentMesh: 1
+--- !u!114 &7601188903140051974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601188903140051971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -2041173098, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7601188903140051973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7601188903140051971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b572545a31697f8489bf344652988f6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: -2041173098, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 800868536, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: -1307714543, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1577535698, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 804998979, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1895223408, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: -911087614, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: -1206496298, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1619720625, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 729668781, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1545899447, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: -1948857605, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1812279857, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 1257323819, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: -301113123, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  fps: 12

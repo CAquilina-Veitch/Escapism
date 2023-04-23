@@ -8,6 +8,7 @@ TagManager:
   - DialogueController
   - Enemy
   - GroundCollision
+  - Requirements
   layers:
   - Default
   - TransparentFX
@@ -47,4 +48,7 @@ TagManager:
     locked: 0
   - name: UI
     uniqueID: 2071992507
+    locked: 0
+  - name: Overlay
+    uniqueID: 1494983719
     locked: 0

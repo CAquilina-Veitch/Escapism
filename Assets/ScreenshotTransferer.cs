@@ -55,6 +55,7 @@ public class ScreenshotTransferer : MonoBehaviour
                 transform.localScale = scale[1];
                 transform.position = pos[1];
                 SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
+                GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().Stand();
             }
             i += Time.deltaTime ;
         }
@@ -63,11 +64,11 @@ public class ScreenshotTransferer : MonoBehaviour
     {
         StartCoroutine(goToRealLife());
     }
-    private void Update()
+/*    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha7))
         {
             TransitionToReal();
         }
-    }
+    }*/
 }

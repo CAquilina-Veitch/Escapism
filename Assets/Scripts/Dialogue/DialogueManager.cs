@@ -92,16 +92,17 @@ public class DialogueManager : MonoBehaviour
     public int currentDialogueID;
     public List<GameObject> optionButtons;
     [SerializeField] dialogueState dState;
-
+    bool showing = false;
     DialogueComplex currentDialogue;
 
-    private void OnEnable()
-    {
-        StartConversation(0);
-    }
+    /*    private void OnEnable()
+        {
+            StartConversation(0);
+        }*/
 
     public void StartConversation(int num)
     {
+        ShowBox(true);
         currentConversationID = num;
 
         currentConversation = listConversations[currentConversationID];
@@ -140,7 +141,7 @@ public class DialogueManager : MonoBehaviour
                 currentDialogueID = currentConversation.lines[currentDialogueID].link;
                 ShowNextDialogue(currentConversation.lines[currentDialogueID]);
                 currentDialogueID++;
-            } else if (currentDialogueID > 0 && currentConversation.lines[currentDialogueID - 1].type == dialogueType.end) 
+            } else if (currentDialogueID > 0 && currentConversation.lines[currentDialogueID - 1].type == dialogueType.end)
             {
                 EndConversation();
             }
@@ -202,7 +203,9 @@ public class DialogueManager : MonoBehaviour
     public void EndConversation()
     {
         Debug.LogWarning("End of conversation");
-        gameObject.SetActive(false);
+        ShowBox(false); 
+        GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {
@@ -212,7 +215,7 @@ public class DialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.E))
         {
             if (dState == dialogueState.typing)
             {
@@ -263,6 +266,15 @@ public class DialogueManager : MonoBehaviour
         }
         dState = dialogueState.full;
     }
-
+    public void ShowBox(bool to)
+    {
+        showing = to;
+        transform.GetChild(0).gameObject.SetActive(to);
+        if (to)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 0;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Idle");
+        }
+    }
 
 }
