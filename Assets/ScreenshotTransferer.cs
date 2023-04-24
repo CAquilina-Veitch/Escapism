@@ -13,6 +13,7 @@ public class ScreenshotTransferer : MonoBehaviour
     public Vector3[] scale;
     public Vector3[] pos;
     public Object NextScene;
+    public GameObject cam;
 
     private void OnEnable()
     {
@@ -33,9 +34,19 @@ public class ScreenshotTransferer : MonoBehaviour
         spriteRenderer.sprite = sprite;
         moving = true;
         SceneManager.LoadScene(NextScene.name);
+        
+
+
+
+
+
+
+
+
     }
     private void FixedUpdate()
     {
+        
         if (moving)
         {
             if (i < preTime)
