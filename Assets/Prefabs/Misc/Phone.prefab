@@ -720,104 +720,6 @@ MonoBehaviour:
   - id: 0
     with: 1
     messages:
-    - type: 3
-      message:
-        isPlayer: 0
-        text: man man
-        delay: 2
-      choice:
-        messages:
-        - isPlayer: 0
-          text: 
-          delay: 0
-        - isPlayer: 0
-          text: 
-          delay: 0
-        to: 0000000000000000
-        available: 0101
-      link: 0
-    - type: 1
-      message:
-        isPlayer: 1
-        text: super mario in real life
-        delay: 3
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-    - type: 1
-      message:
-        isPlayer: 0
-        text: what
-        delay: 0
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-    - type: 2
-      message:
-        isPlayer: 1
-        text: 
-        delay: 0
-      choice:
-        messages:
-        - isPlayer: 1
-          text: Where are you?
-          delay: 2
-        - isPlayer: 1
-          text: Bower
-          delay: 2
-        to: 0400000006000000
-        available: 0100
-      link: 0
-    - type: 1
-      message:
-        isPlayer: 0
-        text: I'm standing behind you on april fourteenth, 2023, at exactly midday.
-          this is not a joke. I know it seems like a funny little joke i could have
-          written here but no. I really mean it. You. The one reading this. It is
-          inevitable
-        delay: 6
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-    - type: 4
-      message:
-        isPlayer: 0
-        text: Goodbye.
-        delay: 2
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-    - type: 4
-      message:
-        isPlayer: 0
-        text: LOL!
-        delay: 0
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-    - type: 3
-      message:
-        isPlayer: 0
-        text: LOL!
-        delay: 0
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 37
-  - id: 1
-    with: 1
-    messages:
     - type: 0
       message:
         isPlayer: 0
@@ -936,7 +838,7 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
-  - id: 2
+  - id: 1
     with: 1
     messages:
     - type: 0
@@ -1051,7 +953,7 @@ MonoBehaviour:
         to: 0000000006000000
         available: 0001
       link: 0
-  - id: 3
+  - id: 2
     with: 1
     messages:
     - type: 0
@@ -1120,7 +1022,7 @@ MonoBehaviour:
       choice:
         messages:
         - isPlayer: 1
-          text: Not really tbh
+          text: I feel like im dead
           delay: 2
         - isPlayer: 1
           text: Yeyeye
@@ -1136,7 +1038,7 @@ MonoBehaviour:
       choice:
         messages:
         - isPlayer: 1
-          text: Not really tbh
+          text: Not really tbhasdfafds
           delay: 2
         - isPlayer: 1
           text: Yeyeye
@@ -1192,7 +1094,7 @@ MonoBehaviour:
         to: 0800000000000000
         available: 0100
       link: 0
-  - id: 4
+  - id: 3
     with: 1
     messages:
     - type: 0
@@ -1333,7 +1235,7 @@ MonoBehaviour:
         to: 0800000000000000
         available: 0100
       link: 0
-  - id: 5
+  - id: 4
     with: 1
     messages:
     - type: 0
@@ -1576,7 +1478,7 @@ MonoBehaviour:
         to: 000000000e000000
         available: 0001
       link: 0
-  - id: 6
+  - id: 5
     with: 1
     messages:
     - type: 0
@@ -1621,7 +1523,7 @@ MonoBehaviour:
         to: 0200000002000000
         available: 0000
       link: 0
-  - id: 7
+  - id: 6
     with: 1
     messages:
     - type: 0
