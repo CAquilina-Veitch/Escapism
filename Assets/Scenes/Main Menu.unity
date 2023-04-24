@@ -728,7 +728,19 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1488643422}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &326154137
 GameObject:
   m_ObjectHideFlags: 0
@@ -4770,6 +4782,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483819141}
   m_CullTransparentMesh: 1
+--- !u!1001 &1488643421
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 114.195564
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9979167
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.14664546
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200371, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: m_Name
+      value: SFX Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+--- !u!1 &1488643422 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6550275244183200371, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+  m_PrefabInstance: {fileID: 1488643421}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1492853966
 GameObject:
   m_ObjectHideFlags: 0
@@ -7518,7 +7592,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2014223175
 RectTransform:
   m_ObjectHideFlags: 0
