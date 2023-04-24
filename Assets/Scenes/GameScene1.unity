@@ -150,6 +150,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knight
       objectReference: {fileID: 0}
+    - target: {fileID: 6323719953710832613, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8413529789942519730, guid: a4b4a6d32bcb19248a754d6602ffc7e4, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -137128,26 +137132,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3462941663774884814, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462941665130660306, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462941665320052492, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462941665371706086, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462941665636566214, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 3462941665764496010, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -137192,10 +137176,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3462941665764496011, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 3462941665764496014, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
       propertyPath: BossHealth
       value: 
@@ -137203,10 +137183,6 @@ PrefabInstance:
     - target: {fileID: 3462941665764496020, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
       propertyPath: m_Name
       value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462941665764496020, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: faa010f6aa373bc4d8fa54b3812ee870, type: 3}
@@ -137243,7 +137219,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6715133300465851679, guid: 1c9bd8407973d314da2df2ed938d3550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 113.9
+      value: 112.4
       objectReference: {fileID: 0}
     - target: {fileID: 6715133300465851679, guid: 1c9bd8407973d314da2df2ed938d3550, type: 3}
       propertyPath: m_LocalPosition.y
