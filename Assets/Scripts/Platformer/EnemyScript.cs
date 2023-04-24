@@ -93,7 +93,6 @@ public class EnemyScript : MonoBehaviour
                 {
                     if (floor.collider.tag == "GroundCollision")
                     {
-                        Debug.Log("2");
                         currentDirection = -currentDirection;
                     }
 
