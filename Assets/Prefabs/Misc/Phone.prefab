@@ -1582,22 +1582,44 @@ MonoBehaviour:
     - type: 0
       message:
         isPlayer: 0
-        text: Yo, this message chain hasn't been completed
-        delay: 2
+        text: i haven't seen u in a while, want to hang?
+        delay: 4
       choice:
         messages: []
         to: 
         available: 
       link: 0
-    - type: 4
+    - type: 5
       message:
         isPlayer: 1
         text: oh shit
-        delay: 2
+        delay: 6
       choice:
-        messages: []
-        to: 
-        available: 
+        messages:
+        - isPlayer: 1
+          text: Yeah, I'd love to hang out
+          delay: 2
+        - isPlayer: 1
+          text: I don't think I'm physically capable of leaving the house
+          delay: 3
+        to: 0200000002000000
+        available: 0000
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: bro
+        delay: 6
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Yeah, I'd love to hang out
+          delay: 2
+        - isPlayer: 1
+          text: I don't think I'm physically capable of leaving the house
+          delay: 3
+        to: 0200000002000000
+        available: 0000
       link: 0
   - id: 7
     with: 1

@@ -464,6 +464,34 @@ PrefabInstance:
       propertyPath: currentConversationID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[1].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[0].dialogue.text
+      value: Hey Valerie, fina
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[1].dialogue.text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[0].dialogue.speaker
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[1].dialogue.speaker
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[0].lines.Array.data[1].dialogue.expression
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2041612244637347704, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
