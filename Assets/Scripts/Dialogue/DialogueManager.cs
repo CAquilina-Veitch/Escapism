@@ -95,10 +95,10 @@ public class DialogueManager : MonoBehaviour
     bool showing = false;
     DialogueComplex currentDialogue;
 
-    /*    private void OnEnable()
+       private void OnEnable()
         {
-            StartConversation(0);
-        }*/
+            StartConversation(1);
+        }
 
     public void StartConversation(int num)
     {
