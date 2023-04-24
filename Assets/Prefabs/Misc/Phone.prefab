@@ -1192,7 +1192,7 @@ MonoBehaviour:
         to: 0800000000000000
         available: 0100
       link: 0
-  - id: 3
+  - id: 4
     with: 1
     messages:
     - type: 0
@@ -1299,6 +1299,391 @@ MonoBehaviour:
           text: Yeyeye
           delay: 2
         to: 0000000005000000
+        available: 0001
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 1
+        text: hows hunters quest going?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: A struggle but its fun
+          delay: 2
+        - isPlayer: 1
+          text: I fear it may be overtaking my life
+          delay: 2
+        to: 0800000000000000
+        available: 0100
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: it be like that
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: A struggle but its fun
+          delay: 2
+        - isPlayer: 1
+          text: I fear it may be overtaking my life
+          delay: 2
+        to: 0800000000000000
+        available: 0100
+      link: 0
+  - id: 5
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: have u talked to sarah lately?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: A struggle but its fun
+          delay: 2
+        - isPlayer: 1
+          text: I fear it may be overtaking my life
+          delay: 2
+        to: 0800000000000000
+        available: 0100
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 1
+        text: have u talked to sarah lately?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I haven't talked to anyone lately
+          delay: 2
+        - isPlayer: 1
+          text: I haven't
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: well she was planning a gatho this weekend
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I haven't talked to anyone lately
+          delay: 2
+        - isPlayer: 1
+          text: I haven't
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: Nice
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I haven't talked to anyone lately
+          delay: 2
+        - isPlayer: 1
+          text: I haven't
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: u coming?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I haven't talked to anyone lately
+          delay: 2
+        - isPlayer: 1
+          text: I haven't
+          delay: 2
+        to: 0000000002000000
+        available: 0001
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 1
+        text: u coming?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Probably not
+          delay: 2
+        - isPlayer: 1
+          text: Sure, I'd love to
+          delay: 2
+        to: 0600000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: dude whyyyy
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Probably not
+          delay: 2
+        - isPlayer: 1
+          text: Sure, I'd love to
+          delay: 2
+        to: 0600000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: havent seen u in agesssss
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: Probably not
+          delay: 2
+        - isPlayer: 1
+          text: Sure, I'd love to
+          delay: 2
+        to: 0600000000000000
+        available: 0100
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: havent seen u in agesssss
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm sorry, my mum doesn't want me going out
+          delay: 2
+        - isPlayer: 1
+          text: I am stuck playing this game, I can no longer tell what is real
+          delay: 2
+        to: 0900000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: Says I need to do housework
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm sorry, my mum doesn't want me going out
+          delay: 2
+        - isPlayer: 1
+          text: I am stuck playing this game, I can no longer tell what is real
+          delay: 2
+        to: 0900000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: rippppp
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm sorry, my mum doesn't want me going out
+          delay: 2
+        - isPlayer: 1
+          text: I am stuck playing this game, I can no longer tell what is real
+          delay: 2
+        to: 0900000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: :(
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm sorry, my mum doesn't want me going out
+          delay: 2
+        - isPlayer: 1
+          text: I am stuck playing this game, I can no longer tell what is real
+          delay: 2
+        to: 0900000000000000
+        available: 0100
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: are u doing ok?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm sorry, my mum doesn't want me going out
+          delay: 2
+        - isPlayer: 1
+          text: I am stuck playing this game, I can no longer tell what is real
+          delay: 2
+        to: 0900000000000000
+        available: 0100
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: are u doing ok?
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I am very much not
+          delay: 2
+        - isPlayer: 1
+          text: Yeah, I'm fine
+          delay: 2
+        to: 000000000e000000
+        available: 0001
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: good
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I am very much not
+          delay: 2
+        - isPlayer: 1
+          text: Yeah, I'm fine
+          delay: 2
+        to: 000000000e000000
+        available: 0001
+      link: 0
+  - id: 6
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: Yo, this message chain hasn't been completed
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 1
+        text: oh shit
+        delay: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+  - id: 7
+    with: 1
+    messages:
+    - type: 0
+      message:
+        isPlayer: 0
+        text: hey, i noticed you havent been acting like yourself lately
+        delay: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: i just want ti make sure ur ok
+        delay: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 2
+      message:
+        isPlayer: 0
+        text: i just want ti make sure ur ok
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm fine
+          delay: 1
+        - isPlayer: 1
+          text: Actually...
+          delay: 2
+        to: 0000000003000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 1
+        text: I haven't been doing great lately...
+        delay: 3
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm fine
+          delay: 1
+        - isPlayer: 1
+          text: Actually...
+          delay: 2
+        to: 0000000003000000
+        available: 0001
+      link: 0
+    - type: 1
+      message:
+        isPlayer: 0
+        text: thats ok, im here if you ever want to talk about it
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm fine
+          delay: 1
+        - isPlayer: 1
+          text: Actually...
+          delay: 2
+        to: 0000000003000000
+        available: 0001
+      link: 0
+    - type: 4
+      message:
+        isPlayer: 0
+        text: no judgement
+        delay: 2
+      choice:
+        messages:
+        - isPlayer: 1
+          text: I'm fine
+          delay: 1
+        - isPlayer: 1
+          text: Actually...
+          delay: 2
+        to: 0000000003000000
         available: 0001
       link: 0
   currentConversationID: 0
