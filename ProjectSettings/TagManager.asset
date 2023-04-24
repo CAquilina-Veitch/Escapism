@@ -10,6 +10,8 @@ TagManager:
   - GroundCollision
   - Requirements
   - Fade
+  - SFXManager
+  - Sound
   layers:
   - Default
   - TransparentFX

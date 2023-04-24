@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BossController : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class BossController : MonoBehaviour
     [SerializeField] ParticleSystem[] ps;
     [SerializeField] LayerMask groundCheckMask;
 
+    public UnityEvent onDeathAction;
 
     private void OnEnable()
     {
@@ -34,6 +36,8 @@ public class BossController : MonoBehaviour
         Physics2D.IgnoreCollision(prb.GetComponent<Collider2D>(), GetComponent<Collider2D>()); 
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+        currentAttackDelay = 3;
+        attackMult = 0;
     }
 
     private void FixedUpdate()
@@ -182,7 +186,7 @@ public class BossController : MonoBehaviour
         if (!isDead)
         {
             transform.position = prb.transform.position;
-            RaycastHit2D floorPoint = Physics2D.Raycast(transform.position + Vector3.up * 20, Vector3.down, 100f, groundCheckMask);
+            RaycastHit2D floorPoint = Physics2D.Raycast(transform.position + Vector3.up * 5, Vector3.down, 10f, groundCheckMask);
             {
                 if (floorPoint.collider != null)
                 {
@@ -268,7 +272,7 @@ public class BossController : MonoBehaviour
     {
 
         yield return new WaitForSeconds(5);
-
+        onDeathAction.Invoke();
         Destroy(gameObject);
     }
 

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 using TMPro;
 
 public enum user {mom, friend}
-public enum messageType { start, response, choice, link, end}
+public enum messageType { start, response, choice, link, end, noChoice}
 
 
 public class PhoneManager : MonoBehaviour
@@ -94,11 +94,11 @@ public class PhoneManager : MonoBehaviour
     public int currentMessageID;
     public List<GameObject> optionButtons;
 
-/*    private void OnEnable()
+   private void OnEnable()
     {
         //Time.timeScale = 100;
-        StartConversation(1);
-    }*/
+        StartConversation(0);
+    }
 
     public void StartConversation(int num)
     {
@@ -143,6 +143,13 @@ public class PhoneManager : MonoBehaviour
                 currentMessageID = currentConversation.messages[currentMessageID].link;
                 CreateNewMessage(currentConversation.messages[currentMessageID].message);
                 currentMessageID++;
+            }else if (currentConversation.messages[currentMessageID].type == messageType.noChoice)
+            {
+                Debug.LogWarning("NOCHOICE");
+                GenerateChoiceOptions();
+                currentMessageID++;
+                StartCoroutine(NextMessageAfterDelay(currentConversation.messages[currentMessageID-1].message.delay));
+                StartCoroutine(DestroyFakeOptions(currentConversation.messages[currentMessageID-1].message.delay));
             }
             else
             {
@@ -156,6 +163,14 @@ public class PhoneManager : MonoBehaviour
         {
             //out of messages
             EndConversation();
+        }
+    }
+    IEnumerator DestroyFakeOptions(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        foreach (GameObject obj in optionButtons)
+        {
+            Destroy(obj);
         }
     }
 

@@ -2,7 +2,6 @@
 	- death
 - realk life player
 	- interact with objects/people
-		- e when near#######
 		-can trigger cutscenes
 		- can be unclickable
 - enemies
@@ -26,3 +25,6 @@ glitch effect particle system thing
 levels need to be made
 
 interact with objects to trigger cutscenes and be unclickable 
+
+
+### STRETCH GOAAL TEXT SIZE OTHERWISE DELETE IT !!!!

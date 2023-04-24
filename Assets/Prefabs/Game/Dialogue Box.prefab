@@ -225,7 +225,7 @@ MonoBehaviour:
   speakDelay: 0.1
   people:
   - person: 0
-    name: Mum
+    name: Valerie
     sprites:
     - {fileID: 21300000, guid: 191d21804554bbb42b106e4a8811dd68, type: 3}
     - {fileID: 21300000, guid: 191d21804554bbb42b106e4a8811dd68, type: 3}
@@ -244,8 +244,18 @@ MonoBehaviour:
     lines:
     - type: 0
       dialogue:
+        speaker: 1
+        text: Ah Valerie, finally out of your room?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
         speaker: 0
-        text: yo.
+        text: Hi mum
         expression: 0
       choice:
         messages: []
@@ -255,8 +265,111 @@ MonoBehaviour:
     - type: 1
       dialogue:
         speaker: 1
-        text: how r u
-        expression: 1
+        text: Did you have a good morning?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: It was fine
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: You get all your study done?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: A bit
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Did you stay up playing video games again:?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ...
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Valerie, you know you need to prioritise things other than your video
+          games
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: I know mum
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+  - id: 1
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 1
+        text: Oh hello Valerie, I feel like I haven't seen you in ages
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: Hi Mum
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: You doing alright sweetie?
+        expression: 0
       choice:
         messages: []
         to: 
@@ -265,44 +378,319 @@ MonoBehaviour:
     - type: 2
       dialogue:
         speaker: 0
-        text: 
+        text: You doing alright sweetie?
         expression: 0
       choice:
         messages:
         - speaker: 0
-          text: good
+          text: I'm fine
           expression: 0
         - speaker: 0
-          text: bad
-          expression: 1
-        to: 0300000005000000
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Ah, thats ok
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: You bEEn p-p-p-pplaying a a a loT of VIDeO gaMeS aG-G-AgAin???
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: Mum?
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ???
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: My bad Valerie, just a little cough
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ...?
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: You should get out of your room a little bit, maybe go outide for a
+          walk or something
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
         available: 0101
       link: 0
     - type: 4
       dialogue:
+        speaker: 0
+        text: I'll think about it
+        expression: 0
+      choice:
+        messages:
+        - speaker: 0
+          text: I'm fine
+          expression: 0
+        - speaker: 0
+          text: Yeah, just tired
+          expression: 0
+        to: 0400000004000000
+        available: 0101
+      link: 0
+  - id: 2
+    lines:
+    - type: 0
+      dialogue:
         speaker: 1
-        text: awesome
-        expression: 1
+        text: Hey sweetie, have you cleaned your room recently? It was a mess last
+          time I went in there
+        expression: 0
       choice:
         messages: []
         to: 
         available: 
       link: 0
-    - type: 3
+    - type: 1
       dialogue:
-        speaker: 1
-        text: 
-        expression: 1
+        speaker: 0
+        text: Mmmm a little
+        expression: 0
       choice:
         messages: []
         to: 
         available: 
-      link: 6
+      link: 0
     - type: 1
       dialogue:
         speaker: 1
-        text: ok
-        expression: 1
+        text: Ah, thats ok, just make sure you finish it later
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Maybe do that instead of pPpPPPpppPlaying viDEo gA-A-A-Ames next-t-t
+          time
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ???
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: Mum?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: Are you ok?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Ah Valerie-
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+  - id: 3
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 1
+        text: Hey Valerie
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ...
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Are you alright?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: ... No
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Thats ok dear, I'm right here
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Do you want to talk about it
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: I think I'm losing touch with reality
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Oh sweetie, how can I help  you?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: I think should go to therapy
+        expression: 0
       choice:
         messages: []
         to: 
@@ -311,8 +699,8 @@ MonoBehaviour:
     - type: 4
       dialogue:
         speaker: 1
-        text: dont care
-        expression: 1
+        text: We can do that
+        expression: 0
       choice:
         messages: []
         to: 
