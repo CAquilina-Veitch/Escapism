@@ -123,7 +123,7 @@ public class DialogueManager : MonoBehaviour
     public void SetSpeaker(speaker speaker)
     {
         speakerPortrait.sprite = findPersonFromSpeaker(speaker).sprites[currentDialogue.dialogue.expression];
-        //speakerName.text = findPersonFromSpeaker(speaker).name;///////////////////////////////////////////////////////////////////////////////////////////
+        //speakerName.text = findPersonFromSpeaker(speaker).name;///////////////////////////////////////////////////////////////////////////////////////////?/////////////////////////////
     }
 
     public void NextDialogueLine()
