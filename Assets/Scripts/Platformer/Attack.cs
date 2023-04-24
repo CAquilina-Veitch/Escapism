@@ -63,6 +63,10 @@ public class Attack : MonoBehaviour
         {
             hitbox.offset = new Vector2(xHitboxOffset * skeleton.currentDirection, hitbox.offset.y);
         }
+        if (interupt)
+        {
+            hitbox.enabled = false;
+        }
     }
     private void Awake()
     {
