@@ -51,6 +51,7 @@ SpriteAtlas:
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: 167f44201ce9c4632b387d0a0822f7f5, type: 3}
+  - {fileID: 21300000, guid: 054bbfa0bbb6c414386d4bc83502a249, type: 3}
   - {fileID: 21300000, guid: 15fdc3c0ac15e4a62b3f968392db8b58, type: 3}
   - {fileID: 920388893, guid: e427a941958c70342b502f3f09e3c544, type: 3}
   - {fileID: -2138277823, guid: e427a941958c70342b502f3f09e3c544, type: 3}
@@ -648,6 +649,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: c9e075b5047b72547932a059854fe9d0, type: 3}
   - {fileID: 21300000, guid: e269db06082f50743b3ce700265ba9e4, type: 3}
   - {fileID: 21300000, guid: de41d366c687a46beb6a9acaa88c12db, type: 3}
+  - {fileID: 21300000, guid: a17a3966bf5741f46a5c91a32e08df46, type: 3}
   - {fileID: 1647000776, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
   - {fileID: -1599908286, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
   - {fileID: 1455832143, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
@@ -692,6 +694,7 @@ SpriteAtlas:
   - {fileID: 21300002, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
   - {fileID: 21300016, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
   - {fileID: 21300018, guid: f2ed27d6c1c3ccc48959bcca269d88f0, type: 3}
+  - {fileID: 21300000, guid: 77f080e6bc871f04c9f85d27df73d08b, type: 3}
   - {fileID: 21300000, guid: 74aaaef6316a24ac7a16c0004285d27f, type: 3}
   - {fileID: 21300000, guid: 7c4d02174fd249948b6b0786b22b72e8, type: 3}
   - {fileID: -770890013, guid: 12e7846765e5d1841966b064d131b537, type: 3}
@@ -799,6 +802,8 @@ SpriteAtlas:
   - {fileID: -1602168869, guid: 461887e74f530dc4fa19bdaacd2d69bd, type: 3}
   - {fileID: 309159630, guid: 461887e74f530dc4fa19bdaacd2d69bd, type: 3}
   - {fileID: 21300000, guid: d0da03481efb24844a48ad7fabce064f, type: 3}
+  - {fileID: 21300000, guid: dbbfc648542fc0f4faadb78796ca7d96, type: 3}
+  - {fileID: 21300000, guid: e8f8ef68a5616bb47a5a41c3e878b6f1, type: 3}
   - {fileID: 21300000, guid: bd9692881685dc64e80caeb84ddd89d1, type: 3}
   - {fileID: 301376609, guid: cb193aa8b4f4df747ba03c93fd81966e, type: 3}
   - {fileID: 107081551, guid: cb193aa8b4f4df747ba03c93fd81966e, type: 3}
@@ -991,6 +996,7 @@ SpriteAtlas:
   - {fileID: -7385789195546760866, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
   - {fileID: 3234629978573100161, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
   - {fileID: 6373048116405451881, guid: f374107ba66790641b6b7c9d0d9a49d3, type: 3}
+  - {fileID: 21300000, guid: 3b2be39bb37c0964aaaa5e85c310b263, type: 3}
   - {fileID: 2129939432, guid: fd046fab0f0ab7642b033bfef150563d, type: 3}
   - {fileID: 1460576144, guid: fd046fab0f0ab7642b033bfef150563d, type: 3}
   - {fileID: -1297555422, guid: fd046fab0f0ab7642b033bfef150563d, type: 3}
@@ -1007,6 +1013,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4aadbdeb8a80c664a8fd117c907b5f3f, type: 3}
   - {fileID: 21300000, guid: d8254b0cb964744a0a12cf381c9356e0, type: 3}
   - {fileID: 21300000, guid: 5bccf13ce09bd43e39c1c3416d5de92c, type: 3}
+  - {fileID: 21300000, guid: 9cf2005c3d467984a94e7497361da505, type: 3}
   - {fileID: 21300000, guid: 41d8855c301eb4f37bddd0d3dfac611b, type: 3}
   - {fileID: 21300000, guid: 795526bcc87d1b0478c8d9bdf3194632, type: 3}
   - {fileID: 21300000, guid: d3ae29bc873704d6197af9ad030f1b1c, type: 3}
@@ -1213,6 +1220,7 @@ SpriteAtlas:
   - {fileID: 21300140, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   - {fileID: 21300008, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
   - {fileID: 21300100, guid: 7810966f0f690954c87305933cabf2b0, type: 3}
+  - {fileID: 21300000, guid: 6a0cf07fd13cd9b459ccc1a36d70c6d6, type: 3}
   - {fileID: 1824757867, guid: 9d9ca9bf5966aa047ac3243ce683fd7c, type: 3}
   - {fileID: 945308610, guid: 9d9ca9bf5966aa047ac3243ce683fd7c, type: 3}
   - {fileID: -1820866692, guid: 9d9ca9bf5966aa047ac3243ce683fd7c, type: 3}
@@ -1230,6 +1238,7 @@ SpriteAtlas:
   - {fileID: 595685240, guid: 9d9ca9bf5966aa047ac3243ce683fd7c, type: 3}
   m_PackedSpriteNamesToIndex:
   - bg-3
+  - Samurai Icon
   - platform-long
   - Air Attack Slam Sprite sheet 246x121_23
   - Air Attack Slam Sprite sheet 246x121_22
@@ -1827,6 +1836,7 @@ SpriteAtlas:
   - tree-house
   - layer 5
   - middle
+  - Knight Icon
   - Idle_4
   - Idle_5
   - Idle_6
@@ -1871,6 +1881,7 @@ SpriteAtlas:
   - LightBandit_1
   - LightBandit_8
   - LightBandit_9
+  - Medieval Man Icon
   - mid-layer-01
   - layer 3
   - Medieval_Idle Glitched_0
@@ -1978,6 +1989,8 @@ SpriteAtlas:
   - HeroKnight Glitched_85
   - HeroKnight Glitched_84
   - background
+  - Hunter Icon
+  - Medieval Glitched Icon
   - Flatten Background
   - Run_7
   - Run_6
@@ -2170,6 +2183,7 @@ SpriteAtlas:
   - Idle_1
   - Idle_2
   - Idle_3
+  - Hunter Glitched Icon
   - Take hit_0
   - Take hit_1
   - Take hit_2
@@ -2186,6 +2200,7 @@ SpriteAtlas:
   - plant-house
   - bg-4
   - block-big
+  - Knight Glitched Icon
   - column
   - layer 1
   - small-platform
@@ -2392,6 +2407,7 @@ SpriteAtlas:
   - TX Village Props - Wheat 01
   - TX Village Props - Barrel
   - TX Village Props - Flower 01
+  - Samurai Glitched Icon
   - Skeleton Dead_9
   - Skeleton Dead_8
   - Skeleton Dead_5
