@@ -34,7 +34,9 @@ public class RealPlayerController : MonoBehaviour
 
     private void OnEnable()
     {
-        Stand();
+        //Stand();
+        sR.flipX = true;
+        //moveMult = 1;
     }
 
 

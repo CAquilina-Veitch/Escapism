@@ -12,6 +12,7 @@ TagManager:
   - Fade
   - SFXManager
   - Sound
+  - CutsceneManager
   layers:
   - Default
   - TransparentFX

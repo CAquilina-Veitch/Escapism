@@ -6,12 +6,6 @@ using UnityEngine.SceneManagement;
 public class ScreenshotTransferer : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
-    public float preTime;
-    public float time;
-    public float i;
-    bool moving;
-    public Vector3[] scale;
-    public Vector3[] pos;
     public Object NextScene;
     public GameObject cam;
 
@@ -32,9 +26,14 @@ public class ScreenshotTransferer : MonoBehaviour
 
         // Set the sprite as the sprite renderer's sprite
         spriteRenderer.sprite = sprite;
-        moving = true;
         SceneManager.LoadScene(NextScene.name);
-        
+        yield return new WaitForFixedUpdate();
+        transform.position = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
+        transform.position = new Vector3(transform.position.x, transform.position.y, -0.5f);
+        //transform.position = new Vector3(-3.93f,-0.991f,-0.5f);
+        transform.localScale = Vector3.one * 0.1115f;
+        SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
+        //GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().Stand();
 
 
 
@@ -43,33 +42,6 @@ public class ScreenshotTransferer : MonoBehaviour
 
 
 
-    }
-    private void FixedUpdate()
-    {
-        
-        if (moving)
-        {
-            if (i < preTime)
-            {
-                pos[0] = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
-                pos[0].z = -0.5f;
-                transform.position = pos[0];
-            } 
-            else if (i < preTime + time)
-            {
-                transform.localScale = Vector3.Lerp(scale[0], scale[1],(i-preTime)/time);
-                transform.position = Vector3.Lerp(pos[0], pos[1],(i-preTime)/time);
-            }
-            else
-            {
-                moving = false;
-                transform.localScale = scale[1];
-                transform.position = pos[1];
-                SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
-                GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().Stand();
-            }
-            i += Time.deltaTime ;
-        }
     }
     public void TransitionToReal()
     {

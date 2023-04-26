@@ -85,19 +85,29 @@ public class Interactable : MonoBehaviour
     {
         if (game == Game.real)
         {
-            if(rpc.currentInteractable == this)
+            if (rpc != null)
             {
-                rpc.ChangeInteraction(this, false);
-                rpc.CheckInteractable();
+                if (rpc.currentInteractable == this)
+                {
+                
+                    rpc.ChangeInteraction(this, false);
+                    rpc.CheckInteractable();
+                }
+                
             }
         }
         else
         {
-            if (ppc.currentInteractable == this)
+            if (ppc != null)
             {
-                ppc.ChangeInteraction(this, false);
-                ppc.CheckInteractable();
+                if (ppc.currentInteractable == this)
+                {
+                
+                    ppc.ChangeInteraction(this, false);
+                    ppc.CheckInteractable();
+                }
             }
+            
         }
     }
 }

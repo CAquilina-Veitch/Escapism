@@ -434,8 +434,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c41f08e5f6c1914d97773adde52a8f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orthographicBounds: {x: 3, y: 5}
-  panFrom: {x: 0, y: 0, z: -10}
+  panTime: 3
+  fadeTime: 3
+  orthographicBounds: {x: 0.6, y: 5}
+  panFrom: {x: -3.92, y: -0.97, z: -10}
   panTo: {x: 0, y: 0, z: -10}
 --- !u!1 &954395692 stripped
 GameObject:
