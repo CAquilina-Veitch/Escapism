@@ -1,0 +1,453 @@
+fileFormatVersion: 2
+guid: 2fb99efe93ba2e34998252b659c1db31
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Val Idle Reversed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68df4df4e1bc6ee489f26d0317201543
+      internalID: -830654439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8f1c461b30d444390e8cd268615a02
+      internalID: -1213426594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daebf5a80ce892548b2b1f6a133171e8
+      internalID: 1740010712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 256a287fe1adccf44bcf1b086d6a1511
+      internalID: -368216826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19d5794a06989d6499dc25a20704b9e7
+      internalID: -1513201936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05f22e22f1e4144fb7a699d95d95d8d
+      internalID: -1382646634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1200
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a8d6d83ba1ad4408e559f4819032de
+      internalID: -679781815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9cdb2918d36034a884969d06964635
+      internalID: -1843521534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f17d95c60391844aad5e45780da3496
+      internalID: -995623039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5ccac09ba59f1f49b5db502cc702b98
+      internalID: 16283387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95c1df0d01d6fe4b8948279a433d660
+      internalID: -1706623234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ab61f94f2a452d43869ac7b298038e6
+      internalID: 1460514642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a0ea376f8f5b74f8561e836ba75d72
+      internalID: 122469360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 600
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483f47bf4d3a8124d93444ce3768890a
+      internalID: -841504086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Val Idle Reversed_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 600
+      alignment: 9
+      pivot: {x: 0.55, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 912ba6fdfa4388442878125d5a677f0f
+      internalID: -1903503163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Val Idle Reversed_7: -1843521534
+      Val Idle Reversed_10: -1706623234
+      Val Idle Reversed_5: -1382646634
+      Val Idle Reversed_12: 122469360
+      Val Idle Reversed_2: 1740010712
+      Val Idle Reversed_9: 16283387
+      Val Idle Reversed_1: -1213426594
+      Val Idle Reversed_13: -841504086
+      Val Idle Reversed_3: -368216826
+      Val Idle Reversed_6: -679781815
+      Val Idle Reversed_11: 1460514642
+      Val Idle Reversed_0: -830654439
+      Val Idle Reversed_14: -1903503163
+      Val Idle Reversed_4: -1513201936
+      Val Idle Reversed_8: -995623039
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

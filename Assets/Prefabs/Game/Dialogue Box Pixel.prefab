@@ -244,21 +244,25 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: dbbfc648542fc0f4faadb78796ca7d96, type: 3}
     - {fileID: 21300000, guid: dbbfc648542fc0f4faadb78796ca7d96, type: 3}
+    - {fileID: 21300000, guid: 3b2be39bb37c0964aaaa5e85c310b263, type: 3}
   - person: 4
     name: Samurai
     sprites:
     - {fileID: 21300000, guid: 054bbfa0bbb6c414386d4bc83502a249, type: 3}
     - {fileID: 21300000, guid: 054bbfa0bbb6c414386d4bc83502a249, type: 3}
+    - {fileID: 21300000, guid: 6a0cf07fd13cd9b459ccc1a36d70c6d6, type: 3}
   - person: 3
     name: Knight
     sprites:
     - {fileID: 21300000, guid: a17a3966bf5741f46a5c91a32e08df46, type: 3}
     - {fileID: 21300000, guid: a17a3966bf5741f46a5c91a32e08df46, type: 3}
+    - {fileID: 21300000, guid: 9cf2005c3d467984a94e7497361da505, type: 3}
   - person: 6
     name: Medievalman
     sprites:
     - {fileID: 21300000, guid: 77f080e6bc871f04c9f85d27df73d08b, type: 3}
     - {fileID: 21300000, guid: 77f080e6bc871f04c9f85d27df73d08b, type: 3}
+    - {fileID: 21300000, guid: e8f8ef68a5616bb47a5a41c3e878b6f1, type: 3}
   listConversations:
   - id: 0
     lines:
