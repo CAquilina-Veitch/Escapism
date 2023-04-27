@@ -1,4 +1,4 @@
-- platformer player
+- platformer player X
 	- death
 - realk life player
 	- interact with objects/people
@@ -11,20 +11,32 @@
 	- sometimes unclickable
 	- sometimes unavailable
 - progress meter
-	- start msgs
 	- where you spawn in
-dialogue
+dialogue X
 	- sprite can glitch out while talking
 phone
 	- can be unclickable
 
 we need to make a dialogue box for real and game - different fonts and whatever
 
-glitch effect particle system thing
+glitch effect particle system thing X
 
-levels need to be made
+levels need to be made X
 
 interact with objects to trigger cutscenes and be unclickable 
 
 
 ### STRETCH GOAAL TEXT SIZE OTHERWISE DELETE IT !!!!
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
