@@ -94,8 +94,6 @@ public class PixelGlitch : MonoBehaviour
     IEnumerator Glitch()
     {
         yield return new WaitForEndOfFrame();
-
-
         Texture2D texture = new Texture2D(img.sprite.texture.width, img.sprite.texture.height, img.sprite.texture.format, false);
         Graphics.CopyTexture(img.sprite.texture, texture);
         texture.Apply();

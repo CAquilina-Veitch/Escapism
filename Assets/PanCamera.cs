@@ -11,6 +11,7 @@ public class PanCamera : MonoBehaviour
     public Vector3 panFrom = new Vector3(0, 0, -10);
     public Vector3 panTo = new Vector3(0, 0, -10);
     SpriteRenderer player;
+    public Color[] clrs;
     private void OnEnable()
     {
         cam = GetComponent<Camera>();
@@ -19,22 +20,18 @@ public class PanCamera : MonoBehaviour
     }
     IEnumerator Pan()
     {
-        bool y = true;
+
         float t = 0;
         while (t <= fadeTime)
         {
             if (t <= fadeTime / 2)
             {
-                player.color = Color.Lerp(Color.clear, Color.black, t / (fadeTime/2));
+                player.color = Color.Lerp(clrs[0], clrs[01], t / (fadeTime/2));
             }
             else
             {
-                player.color = Color.Lerp(Color.black, Color.white, (t / (fadeTime / 2)) -1);
-                if (y)
-                {
-                    player.GetComponent<RealPlayerController>().Stand();
-                    y = false;
-                }
+                player.color = Color.Lerp(clrs[01], clrs[02], (t / (fadeTime / 2)) -1);
+                
             }
 
             t += 1 / 60f;
@@ -49,6 +46,8 @@ public class PanCamera : MonoBehaviour
             t += 1/60f;
             yield return new WaitForSeconds(1/60f);
         }
+        
+        player.GetComponent<RealPlayerController>().Stand();
         GetComponent<SectionalCamera>().enabled = true;
         enabled = false;
     }
