@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine.PlayerLoop;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public enum speaker {player, mom, friend, knight, samurai, hunter, medievalman }
 public enum dialogueType { start, response, choice, link, end }
@@ -46,6 +48,7 @@ public class DialogueManager : MonoBehaviour
         public Dialogue dialogue;
         public Choice choice;
         public int link;
+        public UnityEvent evnt;
     }
 
     [Serializable]
@@ -130,6 +133,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (currentDialogueID < currentConversation.lines.Count)
         {
+            currentConversation.lines[currentDialogueID].evnt.Invoke();
 
             if (currentConversation.lines[currentDialogueID].type == dialogueType.choice)
             {
