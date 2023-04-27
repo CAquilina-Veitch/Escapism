@@ -15,6 +15,7 @@ public class TextDelay : MonoBehaviour
 
     private void OnEnable()
     {
+        textToShow = dialogueText.text;
         dialogueText.text = "";
         StartCoroutine(ShowCharacters());
 
