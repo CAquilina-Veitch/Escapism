@@ -10,15 +10,15 @@ public class PixelGlitch : MonoBehaviour
     public float delay = 0.5f;
     public bool isGlitching;
 
-    public void FadeOut()
+    public void FadeOut(bool to)
     {
         
-        StartCoroutine(GlitchOut());
+        StartCoroutine(GlitchOut(to));
     }
-    public void DoBoth()
+    public void DoBoth(bool to)
     {
         
-        StartCoroutine(Both());
+        StartCoroutine(Both(to));
     }
     public void Glitching(bool to)
     {
@@ -33,7 +33,7 @@ public class PixelGlitch : MonoBehaviour
     {
         img = GetComponent<Image>();
     }
-    IEnumerator GlitchOut()
+    IEnumerator GlitchOut(bool to)
     {
         yield return new WaitForEndOfFrame();
         Texture2D texture = new Texture2D(img.sprite.texture.width, img.sprite.texture.height, img.sprite.texture.format, false);
@@ -88,9 +88,10 @@ public class PixelGlitch : MonoBehaviour
             
             
         }
-
+        gameObject.SetActive(to);
 
     }
+
     IEnumerator Glitch()
     {
         yield return new WaitForEndOfFrame();
@@ -154,7 +155,7 @@ public class PixelGlitch : MonoBehaviour
 
 
     }
-    IEnumerator Both()
+    IEnumerator Both(bool to)
     {
         yield return new WaitForEndOfFrame();
 
@@ -240,6 +241,7 @@ public class PixelGlitch : MonoBehaviour
 
         }
 
+        gameObject.SetActive(to);
 
     }
 

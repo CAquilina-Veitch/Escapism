@@ -1,29 +1,21 @@
 - platformer player X
 	- death
-- realk life player
-	- interact with objects/people
-		-can trigger cutscenes
-		- can be unclickable
+
 - enemies
 	-boss
-		-unkillable and kills player
+		kills player
 - task cutscenes
 	- sometimes unclickable
 	- sometimes unavailable
-- progress meter
-	- where you spawn in
-dialogue X
+
+changing spawnpoints
+
+dialogue 
 	- sprite can glitch out while talking
-phone
-	- can be unclickable
 
 we need to make a dialogue box for real and game - different fonts and whatever
 
-glitch effect particle system thing X
-
-levels need to be made X
-
-interact with objects to trigger cutscenes and be unclickable 
+interact with objects to trigger cutscenes and be unclickable needs to have visible outline, needs to fail to be clicked and glitch out
 
 
 ### STRETCH GOAAL TEXT SIZE OTHERWISE DELETE IT !!!!

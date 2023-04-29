@@ -94,11 +94,11 @@ public class PhoneManager : MonoBehaviour
     public int currentMessageID;
     public List<GameObject> optionButtons;
 
-   /*private void OnEnable()
+   private void OnEnable()
     {
         //Time.timeScale = 100;
-        StartConversation(0);
-    }*/
+        StartConversation(1);
+    }
 
     public void StartConversation(int num)
     {
@@ -183,21 +183,47 @@ public class PhoneManager : MonoBehaviour
             Message msg = currentConversation.messages[currentMessageID].choice.messages[i];
             Choice ch = currentConversation.messages[currentMessageID].choice;
             int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
-            GameObject _message = ch.available[i] ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
-            
-            
-            _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
-            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
-            if (_msgLines <= 1)
-            {
-                _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
-            }
-            _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
+            bool unbroken = ch.available[i];
+            GameObject _message = unbroken ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
 
-            optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer/2;
-            _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
-            _message.GetComponent<MessageChoice>().optionId = i;
-            optionButtons.Add(_message);
+            if (unbroken)
+            {
+                _message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
+                _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
+                if (_msgLines <= 1)
+                {
+                    _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
+                }
+                _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
+
+                optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer / 2;
+                _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
+                _message.GetComponent<MessageChoice>().optionId = i;
+                optionButtons.Add(_message);
+            }
+            else
+            {
+                _message.GetComponent<BrokenMessage>().Work(optionMessagesLength, _msgLines, msg.text, messageLineLength,messageBubbleBuffer,messageCharacterWidth,messageBubbleHorizontalBuffer);
+                
+
+                
+
+                //_message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
+                //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
+                /*if (_msgLines <= 1)
+                {
+                    _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
+                }*/
+                //_message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
+
+                optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer / 2;
+                //_message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
+                //--_message.GetComponent<MessageChoice>().optionId = i;
+                optionButtons.Add(_message);
+            }
+
+            
+            
         }
 
     }
