@@ -8,8 +8,6 @@
 	- sometimes unclickable
 	- sometimes unavailable
 
-changing spawnpoints
-
 dialogue 
 	- sprite can glitch out while talking
 
@@ -17,6 +15,7 @@ we need to make a dialogue box for real and game - different fonts and whatever
 
 interact with objects to trigger cutscenes and be unclickable needs to have visible outline, needs to fail to be clicked and glitch out
 
+all the animations need to be fixed - maybe folder of images.
 
 ### STRETCH GOAAL TEXT SIZE OTHERWISE DELETE IT !!!!
 

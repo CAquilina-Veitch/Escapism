@@ -49,7 +49,13 @@ public class PlatformerPlayerController : MonoBehaviour
     public Interactable currentInteractable;
     public List<Interactable> inRange;
 
+    bool respawnOnDeath = true;
 
+
+    private void Awake()
+    {
+        RespawnHere();
+    }
     public void ChangeInteraction(Interactable interact, bool add)
     {
         if (add)
@@ -236,6 +242,12 @@ public class PlatformerPlayerController : MonoBehaviour
         deathMultiplier = 0;
 
         yield return new WaitForSeconds(1);
+        Respawn();
+
+
+    }   
+    public void Respawn()
+    {
         transform.position = spawnpoint;
 
         foreach (CapsuleCollider2D hitbox in GetComponents<CapsuleCollider2D>())
@@ -247,12 +259,6 @@ public class PlatformerPlayerController : MonoBehaviour
         healthScript.HealthChange(10000);
         healthScript.UpdateHealthBar();
         deathMultiplier = 1;
-
-
-    }   
-    public void Respawn()
-    {
-        healthScript.HealthChange(30);
     }
     public void RespawnHere()
     {

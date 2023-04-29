@@ -5,23 +5,24 @@ using UnityEngine.UI;
 
 public class PixelGlitch : MonoBehaviour
 {
-    Image img;
+    Sprite img;
     float totalTime = 1;
     public float delay = 0.5f;
     public bool isGlitching;
 
     public void FadeOut(bool to)
     {
-        
+        GetReady();
         StartCoroutine(GlitchOut(to));
     }
     public void DoBoth(bool to)
     {
-        
+        GetReady();
         StartCoroutine(Both(to));
     }
     public void Glitching(bool to)
     {
+        GetReady();
         if (!isGlitching && to)
         {
             isGlitching = to;
@@ -29,20 +30,32 @@ public class PixelGlitch : MonoBehaviour
         }
         isGlitching = to;
     }
+    public void GetReady()
+    {
+        if (TryGetComponent<Image>(out Image i))
+        {
+            img = i.sprite;
+        }
+        else
+        {
+            GetComponent<Animator>().StopPlayback();
+            img = GetComponent<SpriteRenderer>().sprite;
+        }
+    }
     private void OnEnable()
     {
-        img = GetComponent<Image>();
+        GetReady();
     }
     IEnumerator GlitchOut(bool to)
     {
         yield return new WaitForEndOfFrame();
-        Texture2D texture = new Texture2D(img.sprite.texture.width, img.sprite.texture.height, img.sprite.texture.format, false);
-        Graphics.CopyTexture(img.sprite.texture,texture);
+        Texture2D texture = new Texture2D(img.texture.width, img.texture.height, img.texture.format, false);
+        Graphics.CopyTexture(img.texture,texture);
         texture.Apply();
 
         Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
 
-        img.sprite = sprite;
+        img = sprite;
 
         List<Vector2Int> temp = new List<Vector2Int>();
         List<Vector2Int> tempto = new List<Vector2Int>();
@@ -95,13 +108,13 @@ public class PixelGlitch : MonoBehaviour
     IEnumerator Glitch()
     {
         yield return new WaitForEndOfFrame();
-        Texture2D texture = new Texture2D(img.sprite.texture.width, img.sprite.texture.height, img.sprite.texture.format, false);
-        Graphics.CopyTexture(img.sprite.texture, texture);
+        Texture2D texture = new Texture2D(img.texture.width, img.texture.height, img.texture.format, false);
+        Graphics.CopyTexture(img.texture, texture);
         texture.Apply();
 
         Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
 
-        img.sprite = sprite;
+        img = sprite;
 
 
         
@@ -159,13 +172,13 @@ public class PixelGlitch : MonoBehaviour
     {
         yield return new WaitForEndOfFrame();
 
-        Texture2D texture = new Texture2D(img.sprite.texture.width, img.sprite.texture.height, img.sprite.texture.format, false);
-        Graphics.CopyTexture(img.sprite.texture, texture);
+        Texture2D texture = new Texture2D(img.texture.width, img.texture.height, img.texture.format, false);
+        Graphics.CopyTexture(img.texture, texture);
         texture.Apply();
 
         Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), Vector2.one * 0.5f);
 
-        img.sprite = sprite;
+        img = sprite;
 
 
 

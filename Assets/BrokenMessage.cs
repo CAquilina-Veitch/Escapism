@@ -39,7 +39,7 @@ public class BrokenMessage : MonoBehaviour
         ColorBlock cb = ColorBlock.defaultColorBlock;
         cb.pressedColor = highlightColor;
         cb.highlightedColor = Color.Lerp(highlightColor,cb.highlightedColor,0.5f);
-        cb.fadeDuration = 1;
+        cb.fadeDuration = 1; 
         GetComponent<Button>().colors = cb;
     }
 

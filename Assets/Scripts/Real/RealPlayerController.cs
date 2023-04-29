@@ -25,7 +25,6 @@ public class RealPlayerController : MonoBehaviour
 
     [SerializeField] float acceleration = 10;
     Vector2 velocity;
-    Vector3 spawnpoint;
     public float moveMult = 0;
 
     public Interactable currentInteractable;
