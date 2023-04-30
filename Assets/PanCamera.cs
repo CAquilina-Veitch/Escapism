@@ -18,8 +18,11 @@ public class PanCamera : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<SpriteRenderer>();
         StartCoroutine(Pan());
     }
+    
     IEnumerator Pan()
     {
+        cam.orthographicSize = orthographicBounds.x;
+        transform.position = panFrom;
 
         float t = 0;
         while (t <= fadeTime)
@@ -46,7 +49,8 @@ public class PanCamera : MonoBehaviour
             t += 1/60f;
             yield return new WaitForSeconds(1/60f);
         }
-        
+        cam.orthographicSize = orthographicBounds.y;
+        transform.position = panTo;
         player.GetComponent<RealPlayerController>().Stand();
         GetComponent<SectionalCamera>().enabled = true;
         enabled = false;

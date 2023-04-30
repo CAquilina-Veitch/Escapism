@@ -17,6 +17,10 @@ interact with objects to trigger cutscenes and be unclickable needs to have visi
 
 all the animations need to be fixed - maybe folder of images.
 
+stand up needs to put the player in the correct position after - change pivots.
+
+
+
 ### STRETCH GOAAL TEXT SIZE OTHERWISE DELETE IT !!!!
 
 1
