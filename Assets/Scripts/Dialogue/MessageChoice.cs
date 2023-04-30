@@ -16,7 +16,7 @@ public class MessageChoice : MonoBehaviour
     public void setBackground(int lines, int length)
     {
         img = GetComponent<UnityEngine.UI.Image>();
-        Debug.Log(lines + "" + length);
+        //Debug.Log(lines + "" + length);
         if (lines > 1)
         {
             img.sprite = msgSprites[2];

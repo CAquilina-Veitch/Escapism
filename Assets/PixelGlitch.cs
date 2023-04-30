@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PixelGlitch : MonoBehaviour
 {
-    Sprite img;
+    public Sprite img;
     float totalTime = 1;
     public float delay = 0.5f;
     public bool isGlitching;
@@ -32,15 +32,19 @@ public class PixelGlitch : MonoBehaviour
     }
     public void GetReady()
     {
-        if (TryGetComponent<Image>(out Image i))
+        if (img == null)
         {
-            img = i.sprite;
+            if (TryGetComponent<Image>(out Image i))
+            {
+                img = i.sprite;
+            }
+            else
+            {
+                GetComponent<Animator>().StopPlayback();
+                img = GetComponent<SpriteRenderer>().sprite;
+            }
         }
-        else
-        {
-            GetComponent<Animator>().StopPlayback();
-            img = GetComponent<SpriteRenderer>().sprite;
-        }
+
     }
     private void OnEnable()
     {

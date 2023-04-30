@@ -136,7 +136,7 @@ public class PhoneManager : MonoBehaviour
 
             if (currentConversation.messages[currentMessageID].type == messageType.choice)
             {
-                Debug.LogWarning("CHOICE");
+                //Debug.LogWarning("CHOICE");
                 GenerateChoiceOptions();
             }else if(currentConversation.messages[currentMessageID].type == messageType.link)
             {
@@ -145,7 +145,7 @@ public class PhoneManager : MonoBehaviour
                 currentMessageID++;
             }else if (currentConversation.messages[currentMessageID].type == messageType.noChoice)
             {
-                Debug.LogWarning("NOCHOICE");
+                //Debug.LogWarning("NOCHOICE");
                 GenerateChoiceOptions();
                 currentMessageID++;
                 StartCoroutine(NextMessageAfterDelay(currentConversation.messages[currentMessageID-1].message.delay));

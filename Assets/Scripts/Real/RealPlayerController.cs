@@ -55,6 +55,9 @@ public class RealPlayerController : MonoBehaviour
         yield return new WaitForSeconds(2.17f);
         sR.flipX = true;
         moveMult = 1;
+
+
+
     }
     public void Sleep()
     {
@@ -108,9 +111,10 @@ public class RealPlayerController : MonoBehaviour
         else
         {
             inRange.Remove(interact);
-            if (inRange.Count == 0)
+            currentInteractable = null;
+            if (inRange.Count != 0)
             {
-                currentInteractable = null;
+                currentInteractable = inRange[inRange.Count - 1];
             }
         }
     }

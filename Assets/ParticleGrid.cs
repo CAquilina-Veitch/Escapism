@@ -53,8 +53,8 @@ public class ParticleGrid : MonoBehaviour
         boundsHalf = bounds / 2.0f;
 
 
-        scale.x = bounds.x / resolution.x;
-        scale.y = bounds.y / resolution.y;
+        scale.x = 1f / 10;
+        scale.y = 1f / 10;
 
          ep = new ParticleSystem.EmitParams();
         
@@ -68,5 +68,39 @@ public class ParticleGrid : MonoBehaviour
             StartCoroutine(Glitch());
         }
         isGlitching = to;
+    }
+    public void glitchFor(float secs)
+    {
+        StartCoroutine(LimGlitch(secs));
+    }
+    IEnumerator LimGlitch(float secs)
+    {
+        float t = 0;
+        while (t <secs)
+        {
+            for (int i = 0; i < resolution.x; i++)
+            {
+                for (int j = 0; j < resolution.y; j++)
+                {
+                    if (Random.Range(0, 1f) > random)
+                    {
+                        continue;
+                    }
+                    Vector3 position = Vector3.zero;
+
+                    position.x = (i * scale.x) - boundsHalf.x;
+                    position.y = (j * scale.y) - boundsHalf.y;
+                    position.z = 0;
+
+                    ep.position = position;
+                    ps.Emit(ep, 1);
+
+
+
+                }
+            }
+            yield return new WaitForSeconds(delay);
+            t += delay;
+        }
     }
 }

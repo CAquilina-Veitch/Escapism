@@ -54,5 +54,10 @@ public class PanCamera : MonoBehaviour
         player.GetComponent<RealPlayerController>().Stand();
         GetComponent<SectionalCamera>().enabled = true;
         enabled = false;
+        Interactable[] interactables = FindObjectsOfType<Interactable>();
+        foreach (Interactable interactable in interactables)
+        {
+            interactable.Show();
+        }
     }
 }

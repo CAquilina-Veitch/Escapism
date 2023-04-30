@@ -7,6 +7,7 @@ public enum Game { real, platformer}
 public class Interactable : MonoBehaviour
 {
     [SerializeField] GameObject buttonIndicator;
+    [SerializeField] GameObject background;
     public UnityEvent interact;
     public Game game;
     PlatformerPlayerController ppc;
@@ -14,11 +15,21 @@ public class Interactable : MonoBehaviour
     public bool hideIndicator;
     public bool alwaysActive;
 
+
+    public bool startsHidden;
+
+    public void Show()
+    {
+        IndicatorVisiblity(true);
+    }
+
+
     public void IndicatorVisiblity(bool to)
     {
         hideIndicator = !to;
-        buttonIndicator.SetActive(to);
-        buttonIndicator.SetActive(alwaysActive ? true : buttonIndicator.activeSelf);
+        //buttonIndicator.SetActive(to);
+        background.SetActive(to);
+        buttonIndicator.SetActive(alwaysActive ? true : false);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -80,6 +91,10 @@ public class Interactable : MonoBehaviour
     private void OnEnable()
     {
         buttonIndicator.SetActive(alwaysActive ? true : buttonIndicator.activeSelf);
+        if (startsHidden)
+        {
+            IndicatorVisiblity(false);
+        }
     }
     private void OnDisable()
     {
@@ -109,5 +124,9 @@ public class Interactable : MonoBehaviour
             }
             
         }
+    }
+    public void DestroyThis()
+    {
+        Destroy(this);
     }
 }
