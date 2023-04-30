@@ -1,6 +1,3 @@
-- platformer player X
-	- death
-
 - enemies
 	-boss
 		kills player 
