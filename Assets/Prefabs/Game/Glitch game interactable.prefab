@@ -127,8 +127,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
-  m_sharedMaterial: {fileID: -3704164700170750789, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1459af5a0e4b3bd48bce7d0145d9e97c, type: 2}
+  m_sharedMaterial: {fileID: 5734158721719699522, guid: 1459af5a0e4b3bd48bce7d0145d9e97c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 4877252106614814764}
   - component: {fileID: 4877252106614814763}
   m_Layer: 0
-  m_Name: Glitch real interactable
+  m_Name: Glitch game interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -333,7 +333,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  game: 0
+  game: 1
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 0
@@ -480,8 +480,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '!'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
-  m_sharedMaterial: {fileID: -3704164700170750789, guid: 4d1b23a4bb6110e42a4c0c6f464554e8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 1459af5a0e4b3bd48bce7d0145d9e97c, type: 2}
+  m_sharedMaterial: {fileID: 5734158721719699522, guid: 1459af5a0e4b3bd48bce7d0145d9e97c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
