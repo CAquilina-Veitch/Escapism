@@ -114,16 +114,48 @@ PrefabInstance:
     m_TransformParent: {fileID: 8413529789942519730}
     m_Modifications:
     - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 4877252107337126655}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: StartConversation
       objectReference: {fileID: 0}
     - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
       propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4877252106614814763, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+      propertyPath: interact.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4877252106614814765, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
       propertyPath: m_RootOrder
@@ -190,5 +222,10 @@ PrefabInstance:
 --- !u!4 &4877252107337126652 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4877252106614814765, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
+  m_PrefabInstance: {fileID: 1461185233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4877252107337126655 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4877252106614814766, guid: 5c414af94b1075147b78b6b1987d9b69, type: 3}
   m_PrefabInstance: {fileID: 1461185233}
   m_PrefabAsset: {fileID: 0}
