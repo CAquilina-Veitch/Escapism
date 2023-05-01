@@ -56,6 +56,7 @@ public class DialogueManager : MonoBehaviour
     {
         public int id;
         public List<DialogueComplex> lines;
+        public UnityEvent evnt;
     }
 
     [Header("Dependencies")]
@@ -105,6 +106,11 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation(int num)
     {
+        if (isGame)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = false;
+        }
+        Debug.Log(9);
         ShowBox(true);
         currentConversationID = num;
 
@@ -209,12 +215,18 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.LogWarning("End of conversation");
         ShowBox(false); 
-        if(isGame){
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 1;
-        }else{
-                    GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
-                     GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
+        if(isGame)
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 1;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = false;
         }
+        else
+        {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
+        }
+        currentConversation.evnt.Invoke();
+
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {

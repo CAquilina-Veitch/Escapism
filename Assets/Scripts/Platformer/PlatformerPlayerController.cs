@@ -37,7 +37,7 @@ public class PlatformerPlayerController : MonoBehaviour
     float deathMultiplier = 1;
     public float attackMult = 1;
     public Vector3 spawnpoint;
-    bool canJump = true;
+    public bool canJump = true;
     public int maxScene = 0;
 
     [Header("Data")]
@@ -236,8 +236,7 @@ public class PlatformerPlayerController : MonoBehaviour
     public void Die()
     {
         StartCoroutine(death());
-        canJump = true;
-        attackInterupted = false;
+
         //teleport back to the place.
     }
     IEnumerator death()
@@ -252,6 +251,8 @@ public class PlatformerPlayerController : MonoBehaviour
         deathMultiplier = 0;
 
         yield return new WaitForSeconds(1);
+        canJump = true;
+        attackInterupted = false;
         Respawn();
 
 
