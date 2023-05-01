@@ -1,0 +1,4461 @@
+fileFormatVersion: 2
+guid: 0af1da054306bf145a43fd6b6b8c4103
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 333e5f13ce44ea94d91b3b0728dd46b1
+      internalID: -87778120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_1
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7117f1e1bd9cd644a85fe867c109522
+      internalID: 65084205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_2
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b54f9e1f75e33449831692671274958
+      internalID: 1796366298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_3
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2d739691c348404695a890757ef7d35
+      internalID: -1430215307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_4
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9fa700fee1dbb4a98c653a574b9f94
+      internalID: -613771123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_5
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36301caf5a31860438ff68d00f87a479
+      internalID: 1472799893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_6
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bb1a3716089b647bb94a9b78c68954
+      internalID: 648604523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_7
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abfda72f1a935c4e851891b8590a0bf
+      internalID: 1598247957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_8
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302e47b645697454f9a916c39a0cb5c4
+      internalID: -67485439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_9
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ac5bdfece4dc944a1b3425974453fb
+      internalID: 806957589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_10
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1428
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b3e27082341bd94b9f124fdc861f104
+      internalID: -18555955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcf1ef03ea62f44dace988a28766432
+      internalID: -1835710384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_12
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc4ca23348ac964b8a66f88c520492f
+      internalID: 482365434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_13
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5d38b19bf03a141a5b9c52555f4b36
+      internalID: -1742943910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_14
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd922c52ed447c4896d1a8daa9ca907
+      internalID: -932413762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_15
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10dbd818d4b28ef40ac1813f45edd8fc
+      internalID: 2016172212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_16
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16f9e91918c3fd478bb43161ff06372
+      internalID: 1113428981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_17
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e38ed37ca9680946823b90df7d354c5
+      internalID: 1642875669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_18
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76219ee63d3985b41bb810f60dbb0ad0
+      internalID: -840490507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_19
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5b028188f926ad45907d56042bc372f
+      internalID: -1469635754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_20
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9385358e89f6b2746b49458d6a635ea2
+      internalID: 1527407365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_21
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0711f56209968f42a49e993de78684d
+      internalID: -2130427038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_22
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba4326f8115f8e4a8003bbe1f2f9da4
+      internalID: -666488692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_23
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1309
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6495da229f228914db747c5ea0f4c71a
+      internalID: -459991884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcdb442fda22c64ba1615798f8d939e
+      internalID: 965571566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_25
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6312264adba5c449b95bd9f78a41e8
+      internalID: 1435627389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_26
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f864fc3003df44cb5d72229a94500d
+      internalID: 63748080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_27
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7308ad21e3528f3459312a7171db21ac
+      internalID: -760323453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_28
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20d37b78dd8eb04881a8d5db5328a37
+      internalID: -939586736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_29
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cfcc8d3ebc8f74aa09b6ad72e00179
+      internalID: -1173054379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_30
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ecea5a544ee1d4f8c8f9ef2acb1675
+      internalID: 218508834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_31
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aeb68efb4f1ac74197c9880d54b116d
+      internalID: -1045711312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_32
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99601ac1f3486e5488b3b0a51a65dc27
+      internalID: -964904493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_33
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb677b06ae4409248bb9323bb33e0071
+      internalID: -1037831633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_34
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486fe5d9a06dd514fa57399a5e4d2093
+      internalID: -1857283056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_35
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa59cee387d8794197f02e32fd84997
+      internalID: -23364807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_36
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1190
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686d97f7cc6949a49a383e2be2826a27
+      internalID: 28543673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd712f6b6c8b65d4bad1282654dd638a
+      internalID: 1972704147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_38
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce01a5b9fe3df7548abb9295f7073476
+      internalID: 1973563820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_39
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f4c91829b933a40bbbc735f195da0a
+      internalID: 2082380959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_40
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 815c360436622874b99befe14a8fa93e
+      internalID: -1146615792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_41
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00bba64b64ed7c1408d5e8191144ceed
+      internalID: -567718489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_42
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72437ac09fdac948bf83a42bda7e65d
+      internalID: -775326780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_43
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb4866b1f3518649b474dd1fb972f9d
+      internalID: -436023265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_44
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa3cb7385b7e4046a25a06295217bd7
+      internalID: -437756939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_45
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7487e2fdff6828a45a8cd7fc531f8149
+      internalID: -2026073656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_46
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 1071
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3277846f50cf5da45a83c65fb12cec15
+      internalID: 57926760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f80579faeab4d4e8ef80fb844a1910
+      internalID: 2076983288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_48
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcb3b88c33d303449feee7c6177672e
+      internalID: -952476438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_49
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ad5ceec05b44c408eafddde6707527
+      internalID: 1812024356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_50
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e677c82632b2b542b271a66c55e43a1
+      internalID: 1264443040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_51
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487499596a87a4e4e817ad765de56d46
+      internalID: 1416704193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_52
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f5fd819c9b82b47bdb01fbb9ee6cac
+      internalID: 250341687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_53
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e19c297ce24ca87428a9f8cdeed1d2a6
+      internalID: 868691308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_54
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f689136b263074abfd707627b77300
+      internalID: 1703494037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_55
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c8b40c9a091e940a4ccb7615d41644
+      internalID: 500850277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_56
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2737c0204d06e5a41a8da158d94b5eef
+      internalID: -1977643546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_57
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 500214988e792ce408a46d3e590ebfdc
+      internalID: 2065211652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_58
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca4292cba1dfdf14690be1f611969003
+      internalID: 1466855817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_59
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 952
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac68d942743e3fa4ea9a3a3ee8d8c62f
+      internalID: -1711031379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0068e927c53472459a2894f2fbdd12f
+      internalID: 900988651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_61
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b26866cce4d164780a56701933e1d3
+      internalID: 412933180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_62
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fa80deeceaffb46ba6e56864af4c8b
+      internalID: 1640748119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_63
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81fe136aa5e22e0459fd1e32e8509a6f
+      internalID: -1120175187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_64
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3682fc53d4fe02546935c415b4860ce0
+      internalID: -147784561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_65
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3f454f20f9dc24e891b342a0942c85
+      internalID: 1596606641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_66
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 728e72af3a0265049b668abf9618abd2
+      internalID: -881239644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_67
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5893ea5392b0eb445b69e1f0932078c5
+      internalID: -116315808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_68
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d174f62b881ad4a87c671259384787
+      internalID: 2046550955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_69
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2de26977ad90d4995b58d505396d60
+      internalID: -916506083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_70
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75198a46c21cac4ebd5ad02834c084e
+      internalID: -2118593238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_71
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb0d140a1e9156408cbc18389e130bf
+      internalID: -1106024720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_72
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfc2e75e7e9f0e42ac779edf7818314
+      internalID: -1109641755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_73
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccbca448d1793f488b54d2a87cf2637
+      internalID: -2075668192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_74
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d75ed597882d3b4cb1601b89b3c6d4d
+      internalID: -1767191303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_75
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5187d3ce0bbb4604080d668da7dfb0e4
+      internalID: 2039280435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_76
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93304069bea976c4ea0a1e3dc2a3fb95
+      internalID: 1510710932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_77
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 833
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047b181f4f818404eb3a685f37bee70e
+      internalID: -341047391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_78
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72587eb047afd74bb6cb5af7d4dc3f2
+      internalID: -391806548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_79
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e453487e221b064483d4acfae488e5c
+      internalID: -2068624403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_80
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb841d03981bb14dad0ed88a110e948
+      internalID: 1711669735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_81
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5e8a5036fbf874e8ff52ebe9507251
+      internalID: 1936067807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_82
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f35e98e8a5d6fe49acb49df44bde046
+      internalID: -824985649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_83
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfff788160eeed54d97b4c7c411aad88
+      internalID: 1798418887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_84
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 249701af3539bbf47837292cf1e467aa
+      internalID: -1927765803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_85
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf9897e945bd664b8ee131cc3e53595
+      internalID: -1792798352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_86
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82218dea77dc7d40aba694533b570c1
+      internalID: -563439099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_87
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7182329bf585db44eb9c7834ad473a90
+      internalID: 1851915976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_88
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ecca00e737ca44d97e81d72e656828
+      internalID: -1844279543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_89
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e37b42e2569224ab18dc58265f7e0e
+      internalID: 1214370143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_90
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303287417f52dde499b42517e853ec8c
+      internalID: -579539717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_91
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0448a0d1f60f9404a99faf5942f5dfc4
+      internalID: 1464775297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_92
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2770d5bca63c1e49a053b67f250f670
+      internalID: 1209359175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_93
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169c5a785f0991b4cae0ded3fef22c58
+      internalID: 2037644523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_94
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba6b32af51c9a984fa40d9f3e1a8909c
+      internalID: -594749913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_95
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 714
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e5139bc0e3e4a49a2d712a2384d6bc
+      internalID: 769680160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_96
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad5edd0ca3bbb74fb2ff759c4b4b6a2
+      internalID: 1060382538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_97
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac577aad86333db4ab8c90618fe89e9d
+      internalID: -1067028672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_98
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6729702a4aeabf441ac2d6c39ef46c25
+      internalID: 1419352062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_99
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bec9cfa0d05f7445a593de9f3f6c33d
+      internalID: -36108632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_100
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d87e74c2d2fbcb42ac0b6ccc52be311
+      internalID: 755485469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_101
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 595
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93e28b7a226b294c8e290740fafa9eb
+      internalID: 987880960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_102
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838f75c617eeab7468082f573f6dc614
+      internalID: 1973446404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_103
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7c2ca34a58d664389dd9686815af6d
+      internalID: -429451348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_104
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24336c2579481144da26099ac62791df
+      internalID: -1357243624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_105
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379a554dc55e1e34698b27be858a8f83
+      internalID: 80473117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_106
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 474f523aadd0956499d194d29bc6ba88
+      internalID: -1373902966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_107
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b69cac28d4444142bbdf3173b7bdd32
+      internalID: 1705598216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_108
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26402c78b21e73a468fe461870a1ca3e
+      internalID: -534347944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_109
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 476
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02df9508bf14ac84a96153a54e964d82
+      internalID: 489617829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b12640b2efda64087cb334cadeff31
+      internalID: 1253931377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_111
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63276ed08342b5c4e9a3b3d60dab6a4e
+      internalID: 670206144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_112
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd1c67e0c654264eb3f636544eee9fd
+      internalID: -2112961815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_113
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5d733a664ecc845b8eaedef7bbf6bc
+      internalID: -267190689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_114
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922eecf813b0e134e9d8f69ddc23beed
+      internalID: -1068742513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_115
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0165c315389f4384e8aaaa8d65cc0fb4
+      internalID: -2146803405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_116
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102b167aa072bb44ab9717901f69d710
+      internalID: 1799280156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_117
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e68a0ed0e5c7c42b2ded8acbead5b3
+      internalID: -1075313705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_118
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2e82c90b70eb7478c39c6e526fd8e5
+      internalID: -682848499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_119
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13802c9bed874084bbac052dd47e1c6b
+      internalID: 346189441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_120
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 357
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32fa36f0b308a0c4d92552ad0842d079
+      internalID: 1895926685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_121
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa03e16b989af642b74adc89afff846
+      internalID: 1626586375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_122
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb255f829f4ebd48b04b8da638f5f86
+      internalID: -1640101399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_123
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c6da30bdbfb71744b02f5ee172de8e9
+      internalID: 1805456690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_124
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b833f215c54b5b4eab6799b6035e636
+      internalID: -1791520848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_125
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487cdb1738f94384383f488539a663ef
+      internalID: 2061227707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_126
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f7b7a99e148694884264eea03f763c
+      internalID: -795140114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_127
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead80a0b6dfda204aacf309f63afbe49
+      internalID: -1071159660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_128
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b433fd9297af24b47b1c2cb9008c18e1
+      internalID: 1600611061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_129
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e92412eb88765c4fb9f184bc38af6e2
+      internalID: -1030884314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_130
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07cd95668095cf44d9cc9f1d686b5739
+      internalID: -1381009401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_131
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 631d962571fd85d409cf397c1ab0427a
+      internalID: 1878643936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_132
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd012998fe15004c93b91a176580650
+      internalID: 1333681813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_133
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a94e98cd687ba47aee768f3224fc82
+      internalID: 1134545007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_134
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4051c0e7bdb42e746a2fc3ee5991539d
+      internalID: 1668454996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_135
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 238
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3545753e5a0cb2947a6f97fd8697e0df
+      internalID: -1784273663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_136
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce10a217cebba2a42b5881ac2ba03340
+      internalID: -1214481080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_137
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec79f319b0b17ac4595495f57decdf29
+      internalID: -1988707829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_138
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db016d1a634fc7b4aae63242192d6308
+      internalID: 1485808292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_139
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c098b58fe103af409e1e142a290690c
+      internalID: -1437210843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_140
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c411236798cf38447b35956725f9beb4
+      internalID: -1377943684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_141
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77361bdcdb71854469a663efe78984d3
+      internalID: -2044746890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_142
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3a34da29d0b6d448e7b5eb2c134d6f
+      internalID: 1861801946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_143
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abdec7990b12e514fbc78858f0750ce6
+      internalID: -932203602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_144
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285348e4b2c44aa4ba093e44c423a8fc
+      internalID: -2082260590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_145
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ebf7ca0c1c4f2b4d897cb62197e9157
+      internalID: 1755238308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_146
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d0bbd3e3d196948a33fe1b97c13e61
+      internalID: 1632227729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_147
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac317bdc65f98f441976b92b046cbe32
+      internalID: 81612369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_148
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54f2551c699cef4b8f0690df7da5aad
+      internalID: 994244330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_149
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ed7a4b05d09eee41bbdbf78527d43bf
+      internalID: -1241213293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_150
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76abc8964d56f82498d1b7d01bd414eb
+      internalID: 1008598291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_151
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b0d3de6f546d049ae6b32792513a9c
+      internalID: 995553551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_152
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7ca3a2c4ea4f854caf89b82ab683e99
+      internalID: -354784671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_153
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ec03e18217ba847ac514b6f94526c2
+      internalID: -209858615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_154
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45501475a08ca4946bd8912f5b399294
+      internalID: 898234101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_155
+      rect:
+        serializedVersion: 2
+        x: 6216
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6432284a553224444bd48d6efc56afb4
+      internalID: -769573536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_156
+      rect:
+        serializedVersion: 2
+        x: 6438
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050b5b617abe38845ba1ac042d6773c0
+      internalID: -1337046604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_157
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d785912dc99b0a146aa4ddd9af2e76ba
+      internalID: 98585857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_158
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 119
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e61df3e5c8ed064bb1690afd86d5055
+      internalID: 638084809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_159
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab09d22cc8bc0e40aaaa748b81a1c9f
+      internalID: 136746590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_160
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a001cabc0a03a4faf2296e5e347d89
+      internalID: 96936442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_161
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73eace36a71d1ab4cb695a4d82712325
+      internalID: 2103657701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_162
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abc2e09571aa3084096e561717235003
+      internalID: 1557865868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_163
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44adcd4ed07f1b4fb33b8bbbe0c6b94
+      internalID: 387600421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_164
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ade3607b403a934698e4ca6a994e94c
+      internalID: -2052082625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_165
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5101d82aa84cc19499859a3dc5a376e0
+      internalID: -295680046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_166
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c506127a87300504598687c30fd2aaf9
+      internalID: 931057517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_167
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd52671252c8ee4c947380b1634d802
+      internalID: 2094151711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_168
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08c9626ee113b1b4aa33ab3de6d3db04
+      internalID: -914632494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_169
+      rect:
+        serializedVersion: 2
+        x: 2220
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1b5b000286c62409978b854b52e21e
+      internalID: -1929397998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_170
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b560d02761021c1438b2c5a88e00d517
+      internalID: 721252630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_171
+      rect:
+        serializedVersion: 2
+        x: 2664
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bcf39bb4d62f4a489e5f0bdedde32a0
+      internalID: -287011990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_172
+      rect:
+        serializedVersion: 2
+        x: 2886
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3220861349052ed40ad748ebc5df6c96
+      internalID: 1610752375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_173
+      rect:
+        serializedVersion: 2
+        x: 3108
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a434218818dd4347b4a8c6fe24e2a2f
+      internalID: -494091480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_174
+      rect:
+        serializedVersion: 2
+        x: 3330
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d549563dd49960f44bda50240748242e
+      internalID: -205669024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_175
+      rect:
+        serializedVersion: 2
+        x: 3552
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cec0f3f926ce784cad2995d82fff982
+      internalID: -316624024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_176
+      rect:
+        serializedVersion: 2
+        x: 3774
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4b60f17e6b74b4998b5d81f9ff584c
+      internalID: 415302802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_177
+      rect:
+        serializedVersion: 2
+        x: 3996
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e68747531ae040747a3405a5a1e984ec
+      internalID: -1921635866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_178
+      rect:
+        serializedVersion: 2
+        x: 4218
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0008d451162214ab3132c795e09dcb
+      internalID: -263338466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_179
+      rect:
+        serializedVersion: 2
+        x: 4440
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07edf67f8b25f2c40b5a204ebc5496ba
+      internalID: -1548288205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_180
+      rect:
+        serializedVersion: 2
+        x: 4662
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26e37cd6de1a354a99fb240c4e4cc8d
+      internalID: -1031579079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_181
+      rect:
+        serializedVersion: 2
+        x: 4884
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72c8f42246b73b4cbdb493514d6d43d
+      internalID: 259455302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_182
+      rect:
+        serializedVersion: 2
+        x: 5106
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb1990ac4d800e449312fe1aa250502
+      internalID: 1686020625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_183
+      rect:
+        serializedVersion: 2
+        x: 5328
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c9b68d3790345469c888cd3ef4b0fb
+      internalID: -1334735045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_184
+      rect:
+        serializedVersion: 2
+        x: 5550
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ed9e8a79e7b2c4fbeecb778c2ce6e3
+      internalID: -740641624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_185
+      rect:
+        serializedVersion: 2
+        x: 5772
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1166fa4e675d9e44f9b3856d314a420f
+      internalID: 384396899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_186
+      rect:
+        serializedVersion: 2
+        x: 5994
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1624239b5f175454ca21f26711e7b416
+      internalID: 1367506709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_187
+      rect:
+        serializedVersion: 2
+        x: 6216
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d544d10ee7e5a3e409f4a14deb4f269d
+      internalID: -530010575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_188
+      rect:
+        serializedVersion: 2
+        x: 6438
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89c838d2fd3e924f84d7bfa08c2fde8
+      internalID: 596802227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_189
+      rect:
+        serializedVersion: 2
+        x: 6660
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e60ea512da36d74f9870fd15cd4d73b
+      internalID: 952998642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_190
+      rect:
+        serializedVersion: 2
+        x: 6882
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7743621a750cef4d8902e3b02a8dab5
+      internalID: -1815565896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_191
+      rect:
+        serializedVersion: 2
+        x: 7104
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a4768470ad78946ad1139782724206
+      internalID: -540882297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_192
+      rect:
+        serializedVersion: 2
+        x: 7326
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cc3eab8a19855409090b7235656040
+      internalID: -1636514193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_193
+      rect:
+        serializedVersion: 2
+        x: 7548
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a395df92b4066324c9b8d267c9488695
+      internalID: 1069300281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: The_Heart_Hoarder_Sprite_sheet Glitch_194
+      rect:
+        serializedVersion: 2
+        x: 7770
+        y: 0
+        width: 222
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a2e0c9f955adc4ea2a38083e844e33
+      internalID: 1396625259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      The_Heart_Hoarder_Sprite_sheet Glitch_5: 1472799893
+      The_Heart_Hoarder_Sprite_sheet Glitch_85: -1792798352
+      The_Heart_Hoarder_Sprite_sheet Glitch_106: -1373902966
+      The_Heart_Hoarder_Sprite_sheet Glitch_163: 387600421
+      The_Heart_Hoarder_Sprite_sheet Glitch_17: 1642875669
+      The_Heart_Hoarder_Sprite_sheet Glitch_124: -1791520848
+      The_Heart_Hoarder_Sprite_sheet Glitch_159: 136746590
+      The_Heart_Hoarder_Sprite_sheet Glitch_60: 900988651
+      The_Heart_Hoarder_Sprite_sheet Glitch_21: -2130427038
+      The_Heart_Hoarder_Sprite_sheet Glitch_107: 1705598216
+      The_Heart_Hoarder_Sprite_sheet Glitch_118: -682848499
+      The_Heart_Hoarder_Sprite_sheet Glitch_113: -267190689
+      The_Heart_Hoarder_Sprite_sheet Glitch_58: 1466855817
+      The_Heart_Hoarder_Sprite_sheet Glitch_186: 1367506709
+      The_Heart_Hoarder_Sprite_sheet Glitch_185: 384396899
+      The_Heart_Hoarder_Sprite_sheet Glitch_76: 1510710932
+      The_Heart_Hoarder_Sprite_sheet Glitch_0: -87778120
+      The_Heart_Hoarder_Sprite_sheet Glitch_13: -1742943910
+      The_Heart_Hoarder_Sprite_sheet Glitch_179: -1548288205
+      The_Heart_Hoarder_Sprite_sheet Glitch_57: 2065211652
+      The_Heart_Hoarder_Sprite_sheet Glitch_97: -1067028672
+      The_Heart_Hoarder_Sprite_sheet Glitch_162: 1557865868
+      The_Heart_Hoarder_Sprite_sheet Glitch_141: -2044746890
+      The_Heart_Hoarder_Sprite_sheet Glitch_147: 81612369
+      The_Heart_Hoarder_Sprite_sheet Glitch_16: 1113428981
+      The_Heart_Hoarder_Sprite_sheet Glitch_172: 1610752375
+      The_Heart_Hoarder_Sprite_sheet Glitch_4: -613771123
+      The_Heart_Hoarder_Sprite_sheet Glitch_125: 2061227707
+      The_Heart_Hoarder_Sprite_sheet Glitch_34: -1857283056
+      The_Heart_Hoarder_Sprite_sheet Glitch_14: -932413762
+      The_Heart_Hoarder_Sprite_sheet Glitch_131: 1878643936
+      The_Heart_Hoarder_Sprite_sheet Glitch_153: -209858615
+      The_Heart_Hoarder_Sprite_sheet Glitch_168: -914632494
+      The_Heart_Hoarder_Sprite_sheet Glitch_88: -1844279543
+      The_Heart_Hoarder_Sprite_sheet Glitch_98: 1419352062
+      The_Heart_Hoarder_Sprite_sheet Glitch_103: -429451348
+      The_Heart_Hoarder_Sprite_sheet Glitch_19: -1469635754
+      The_Heart_Hoarder_Sprite_sheet Glitch_51: 1416704193
+      The_Heart_Hoarder_Sprite_sheet Glitch_175: -316624024
+      The_Heart_Hoarder_Sprite_sheet Glitch_170: 721252630
+      The_Heart_Hoarder_Sprite_sheet Glitch_3: -1430215307
+      The_Heart_Hoarder_Sprite_sheet Glitch_115: -2146803405
+      The_Heart_Hoarder_Sprite_sheet Glitch_15: 2016172212
+      The_Heart_Hoarder_Sprite_sheet Glitch_155: -769573536
+      The_Heart_Hoarder_Sprite_sheet Glitch_114: -1068742513
+      The_Heart_Hoarder_Sprite_sheet Glitch_31: -1045711312
+      The_Heart_Hoarder_Sprite_sheet Glitch_151: 995553551
+      The_Heart_Hoarder_Sprite_sheet Glitch_32: -964904493
+      The_Heart_Hoarder_Sprite_sheet Glitch_66: -881239644
+      The_Heart_Hoarder_Sprite_sheet Glitch_167: 2094151711
+      The_Heart_Hoarder_Sprite_sheet Glitch_95: 769680160
+      The_Heart_Hoarder_Sprite_sheet Glitch_35: -23364807
+      The_Heart_Hoarder_Sprite_sheet Glitch_2: 1796366298
+      The_Heart_Hoarder_Sprite_sheet Glitch_112: -2112961815
+      The_Heart_Hoarder_Sprite_sheet Glitch_169: -1929397998
+      The_Heart_Hoarder_Sprite_sheet Glitch_18: -840490507
+      The_Heart_Hoarder_Sprite_sheet Glitch_89: 1214370143
+      The_Heart_Hoarder_Sprite_sheet Glitch_62: 1640748119
+      The_Heart_Hoarder_Sprite_sheet Glitch_101: 987880960
+      The_Heart_Hoarder_Sprite_sheet Glitch_128: 1600611061
+      The_Heart_Hoarder_Sprite_sheet Glitch_83: 1798418887
+      The_Heart_Hoarder_Sprite_sheet Glitch_136: -1214481080
+      The_Heart_Hoarder_Sprite_sheet Glitch_137: -1988707829
+      The_Heart_Hoarder_Sprite_sheet Glitch_44: -437756939
+      The_Heart_Hoarder_Sprite_sheet Glitch_6: 648604523
+      The_Heart_Hoarder_Sprite_sheet Glitch_119: 346189441
+      The_Heart_Hoarder_Sprite_sheet Glitch_65: 1596606641
+      The_Heart_Hoarder_Sprite_sheet Glitch_67: -116315808
+      The_Heart_Hoarder_Sprite_sheet Glitch_116: 1799280156
+      The_Heart_Hoarder_Sprite_sheet Glitch_9: 806957589
+      The_Heart_Hoarder_Sprite_sheet Glitch_8: -67485439
+      The_Heart_Hoarder_Sprite_sheet Glitch_74: -1767191303
+      The_Heart_Hoarder_Sprite_sheet Glitch_70: -2118593238
+      The_Heart_Hoarder_Sprite_sheet Glitch_181: 259455302
+      The_Heart_Hoarder_Sprite_sheet Glitch_77: -341047391
+      The_Heart_Hoarder_Sprite_sheet Glitch_187: -530010575
+      The_Heart_Hoarder_Sprite_sheet Glitch_48: -952476438
+      The_Heart_Hoarder_Sprite_sheet Glitch_117: -1075313705
+      The_Heart_Hoarder_Sprite_sheet Glitch_56: -1977643546
+      The_Heart_Hoarder_Sprite_sheet Glitch_191: -540882297
+      The_Heart_Hoarder_Sprite_sheet Glitch_11: -1835710384
+      The_Heart_Hoarder_Sprite_sheet Glitch_135: -1784273663
+      The_Heart_Hoarder_Sprite_sheet Glitch_148: 994244330
+      The_Heart_Hoarder_Sprite_sheet Glitch_20: 1527407365
+      The_Heart_Hoarder_Sprite_sheet Glitch_64: -147784561
+      The_Heart_Hoarder_Sprite_sheet Glitch_126: -795140114
+      The_Heart_Hoarder_Sprite_sheet Glitch_39: 2082380959
+      The_Heart_Hoarder_Sprite_sheet Glitch_12: 482365434
+      The_Heart_Hoarder_Sprite_sheet Glitch_84: -1927765803
+      The_Heart_Hoarder_Sprite_sheet Glitch_73: -2075668192
+      The_Heart_Hoarder_Sprite_sheet Glitch_26: 63748080
+      The_Heart_Hoarder_Sprite_sheet Glitch_30: 218508834
+      The_Heart_Hoarder_Sprite_sheet Glitch_96: 1060382538
+      The_Heart_Hoarder_Sprite_sheet Glitch_133: 1134545007
+      The_Heart_Hoarder_Sprite_sheet Glitch_81: 1936067807
+      The_Heart_Hoarder_Sprite_sheet Glitch_38: 1973563820
+      The_Heart_Hoarder_Sprite_sheet Glitch_40: -1146615792
+      The_Heart_Hoarder_Sprite_sheet Glitch_166: 931057517
+      The_Heart_Hoarder_Sprite_sheet Glitch_188: 596802227
+      The_Heart_Hoarder_Sprite_sheet Glitch_193: 1069300281
+      The_Heart_Hoarder_Sprite_sheet Glitch_53: 868691308
+      The_Heart_Hoarder_Sprite_sheet Glitch_91: 1464775297
+      The_Heart_Hoarder_Sprite_sheet Glitch_29: -1173054379
+      The_Heart_Hoarder_Sprite_sheet Glitch_164: -2052082625
+      The_Heart_Hoarder_Sprite_sheet Glitch_61: 412933180
+      The_Heart_Hoarder_Sprite_sheet Glitch_145: 1755238308
+      The_Heart_Hoarder_Sprite_sheet Glitch_122: -1640101399
+      The_Heart_Hoarder_Sprite_sheet Glitch_36: 28543673
+      The_Heart_Hoarder_Sprite_sheet Glitch_127: -1071159660
+      The_Heart_Hoarder_Sprite_sheet Glitch_41: -567718489
+      The_Heart_Hoarder_Sprite_sheet Glitch_37: 1972704147
+      The_Heart_Hoarder_Sprite_sheet Glitch_176: 415302802
+      The_Heart_Hoarder_Sprite_sheet Glitch_50: 1264443040
+      The_Heart_Hoarder_Sprite_sheet Glitch_109: 489617829
+      The_Heart_Hoarder_Sprite_sheet Glitch_156: -1337046604
+      The_Heart_Hoarder_Sprite_sheet Glitch_140: -1377943684
+      The_Heart_Hoarder_Sprite_sheet Glitch_79: -2068624403
+      The_Heart_Hoarder_Sprite_sheet Glitch_165: -295680046
+      The_Heart_Hoarder_Sprite_sheet Glitch_161: 2103657701
+      The_Heart_Hoarder_Sprite_sheet Glitch_190: -1815565896
+      The_Heart_Hoarder_Sprite_sheet Glitch_28: -939586736
+      The_Heart_Hoarder_Sprite_sheet Glitch_54: 1703494037
+      The_Heart_Hoarder_Sprite_sheet Glitch_129: -1030884314
+      The_Heart_Hoarder_Sprite_sheet Glitch_182: 1686020625
+      The_Heart_Hoarder_Sprite_sheet Glitch_144: -2082260590
+      The_Heart_Hoarder_Sprite_sheet Glitch_33: -1037831633
+      The_Heart_Hoarder_Sprite_sheet Glitch_69: -916506083
+      The_Heart_Hoarder_Sprite_sheet Glitch_99: -36108632
+      The_Heart_Hoarder_Sprite_sheet Glitch_7: 1598247957
+      The_Heart_Hoarder_Sprite_sheet Glitch_55: 500850277
+      The_Heart_Hoarder_Sprite_sheet Glitch_143: -932203602
+      The_Heart_Hoarder_Sprite_sheet Glitch_23: -459991884
+      The_Heart_Hoarder_Sprite_sheet Glitch_78: -391806548
+      The_Heart_Hoarder_Sprite_sheet Glitch_130: -1381009401
+      The_Heart_Hoarder_Sprite_sheet Glitch_184: -740641624
+      The_Heart_Hoarder_Sprite_sheet Glitch_160: 96936442
+      The_Heart_Hoarder_Sprite_sheet Glitch_183: -1334735045
+      The_Heart_Hoarder_Sprite_sheet Glitch_105: 80473117
+      The_Heart_Hoarder_Sprite_sheet Glitch_138: 1485808292
+      The_Heart_Hoarder_Sprite_sheet Glitch_24: 965571566
+      The_Heart_Hoarder_Sprite_sheet Glitch_94: -594749913
+      The_Heart_Hoarder_Sprite_sheet Glitch_158: 638084809
+      The_Heart_Hoarder_Sprite_sheet Glitch_149: -1241213293
+      The_Heart_Hoarder_Sprite_sheet Glitch_47: 2076983288
+      The_Heart_Hoarder_Sprite_sheet Glitch_72: -1109641755
+      The_Heart_Hoarder_Sprite_sheet Glitch_93: 2037644523
+      The_Heart_Hoarder_Sprite_sheet Glitch_43: -436023265
+      The_Heart_Hoarder_Sprite_sheet Glitch_192: -1636514193
+      The_Heart_Hoarder_Sprite_sheet Glitch_142: 1861801946
+      The_Heart_Hoarder_Sprite_sheet Glitch_10: -18555955
+      The_Heart_Hoarder_Sprite_sheet Glitch_177: -1921635866
+      The_Heart_Hoarder_Sprite_sheet Glitch_25: 1435627389
+      The_Heart_Hoarder_Sprite_sheet Glitch_146: 1632227729
+      The_Heart_Hoarder_Sprite_sheet Glitch_92: 1209359175
+      The_Heart_Hoarder_Sprite_sheet Glitch_86: -563439099
+      The_Heart_Hoarder_Sprite_sheet Glitch_150: 1008598291
+      The_Heart_Hoarder_Sprite_sheet Glitch_42: -775326780
+      The_Heart_Hoarder_Sprite_sheet Glitch_1: 65084205
+      The_Heart_Hoarder_Sprite_sheet Glitch_63: -1120175187
+      The_Heart_Hoarder_Sprite_sheet Glitch_157: 98585857
+      The_Heart_Hoarder_Sprite_sheet Glitch_173: -494091480
+      The_Heart_Hoarder_Sprite_sheet Glitch_45: -2026073656
+      The_Heart_Hoarder_Sprite_sheet Glitch_68: 2046550955
+      The_Heart_Hoarder_Sprite_sheet Glitch_121: 1626586375
+      The_Heart_Hoarder_Sprite_sheet Glitch_80: 1711669735
+      The_Heart_Hoarder_Sprite_sheet Glitch_100: 755485469
+      The_Heart_Hoarder_Sprite_sheet Glitch_108: -534347944
+      The_Heart_Hoarder_Sprite_sheet Glitch_71: -1106024720
+      The_Heart_Hoarder_Sprite_sheet Glitch_152: -354784671
+      The_Heart_Hoarder_Sprite_sheet Glitch_22: -666488692
+      The_Heart_Hoarder_Sprite_sheet Glitch_75: 2039280435
+      The_Heart_Hoarder_Sprite_sheet Glitch_139: -1437210843
+      The_Heart_Hoarder_Sprite_sheet Glitch_52: 250341687
+      The_Heart_Hoarder_Sprite_sheet Glitch_123: 1805456690
+      The_Heart_Hoarder_Sprite_sheet Glitch_87: 1851915976
+      The_Heart_Hoarder_Sprite_sheet Glitch_104: -1357243624
+      The_Heart_Hoarder_Sprite_sheet Glitch_194: 1396625259
+      The_Heart_Hoarder_Sprite_sheet Glitch_90: -579539717
+      The_Heart_Hoarder_Sprite_sheet Glitch_82: -824985649
+      The_Heart_Hoarder_Sprite_sheet Glitch_154: 898234101
+      The_Heart_Hoarder_Sprite_sheet Glitch_59: -1711031379
+      The_Heart_Hoarder_Sprite_sheet Glitch_49: 1812024356
+      The_Heart_Hoarder_Sprite_sheet Glitch_27: -760323453
+      The_Heart_Hoarder_Sprite_sheet Glitch_102: 1973446404
+      The_Heart_Hoarder_Sprite_sheet Glitch_171: -287011990
+      The_Heart_Hoarder_Sprite_sheet Glitch_134: 1668454996
+      The_Heart_Hoarder_Sprite_sheet Glitch_111: 670206144
+      The_Heart_Hoarder_Sprite_sheet Glitch_120: 1895926685
+      The_Heart_Hoarder_Sprite_sheet Glitch_180: -1031579079
+      The_Heart_Hoarder_Sprite_sheet Glitch_46: 57926760
+      The_Heart_Hoarder_Sprite_sheet Glitch_110: 1253931377
+      The_Heart_Hoarder_Sprite_sheet Glitch_178: -263338466
+      The_Heart_Hoarder_Sprite_sheet Glitch_132: 1333681813
+      The_Heart_Hoarder_Sprite_sheet Glitch_174: -205669024
+      The_Heart_Hoarder_Sprite_sheet Glitch_189: 952998642
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
