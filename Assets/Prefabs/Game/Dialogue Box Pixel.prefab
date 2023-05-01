@@ -397,6 +397,9 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 1
     lines:
     - type: 0
@@ -610,6 +613,9 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 2
     lines:
     - type: 0
@@ -718,6 +724,9 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 3
     lines:
     - type: 0
@@ -850,9 +859,12 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 4
     lines:
-    - type: 4
+    - type: 0
       dialogue:
         speaker: 3
         text: That vile wizard will die by my blade, mark my words.
@@ -865,9 +877,12 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 5
     lines:
-    - type: 4
+    - type: 0
       dialogue:
         speaker: 4
         text: 'A training dummy is one thing, but you must not underestimate the
@@ -881,9 +896,12 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 6
     lines:
-    - type: 4
+    - type: 0
       dialogue:
         speaker: 6
         text: Once I have had my fill of ale and food, we shall venture off to the
@@ -897,15 +915,22 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   isGame: 1
   currentConversationID: 0
   currentConversation:
     id: 0
     lines: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   scrollValue: 0
   currentDialogueID: 0
   optionButtons: []
   dState: 0
+  showing: 0
 --- !u!1 &2041612245324221420
 GameObject:
   m_ObjectHideFlags: 0
