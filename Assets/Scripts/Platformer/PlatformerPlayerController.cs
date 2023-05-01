@@ -21,8 +21,8 @@ public class PlatformerPlayerController : MonoBehaviour
 
     [SerializeField] Attack dmgHitbox;
 
-    [SerializeField]
-    Collider2D[] colliders;
+    
+    public Collider2D[] colliders;
     [SerializeField] Collider2D bosscollider;
 
 

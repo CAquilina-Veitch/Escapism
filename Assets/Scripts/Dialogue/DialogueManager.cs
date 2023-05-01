@@ -131,6 +131,7 @@ public class DialogueManager : MonoBehaviour
 
     public void NextDialogueLine()
     {
+        Debug.Log(1);
         if (currentDialogueID < currentConversation.lines.Count)
         {
             currentConversation.lines[currentDialogueID].evnt.Invoke();
@@ -217,6 +218,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {
+        Debug.Log(2);
         currentDialogue = dia;
         SetSpeaker(currentDialogue.dialogue.speaker);
         StartCoroutine(TypeLetters(dia.dialogue));
@@ -230,6 +232,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void PressedNextButton()
     {
+        Debug.Log(3);
         if (dState == dialogueState.typing)
         {
             dState = dialogueState.skipTriggered;
@@ -254,6 +257,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeLetters(Dialogue dia)
     {
+        Debug.Log(4);
         //Debug.Log("Triggered");
         dState = dialogueState.typing;
         //RectTransform textBase = dialogueText.GetComponent<RectTransform>();
@@ -280,6 +284,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void ShowBox(bool to)
     {
+        Debug.Log(6);
         showing = to;
         transform.GetChild(0).gameObject.SetActive(to);
         if (to)

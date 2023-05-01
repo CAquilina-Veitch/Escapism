@@ -19,7 +19,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7229795246770824556
 RectTransform:
   m_ObjectHideFlags: 0
@@ -239,6 +239,11 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: c8a69ecdf54ac8e4b873466605de27ff, type: 3}
     - {fileID: 21300000, guid: cdb88fdb0cf46b244a667edaff21c7df, type: 3}
+  - person: 5
+    name: Hunter
+    sprites:
+    - {fileID: 21300000, guid: dbbfc648542fc0f4faadb78796ca7d96, type: 3}
+    - {fileID: 21300000, guid: 3b2be39bb37c0964aaaa5e85c310b263, type: 3}
   listConversations:
   - id: 0
     lines:
@@ -252,6 +257,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -262,6 +270,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -272,6 +283,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -282,6 +296,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -292,6 +309,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -302,6 +322,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -312,6 +335,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -322,6 +348,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -333,6 +362,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 4
       dialogue:
         speaker: 0
@@ -343,6 +375,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
   - id: 1
     lines:
     - type: 0
@@ -355,6 +390,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -365,6 +403,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -375,6 +416,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 2
       dialogue:
         speaker: 0
@@ -391,6 +435,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -407,6 +454,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -423,6 +473,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -439,6 +492,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -455,6 +511,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -471,6 +530,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -487,6 +549,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -504,6 +569,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 4
       dialogue:
         speaker: 0
@@ -520,6 +588,9 @@ MonoBehaviour:
         to: 0400000004000000
         available: 0101
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
   - id: 2
     lines:
     - type: 0
@@ -533,6 +604,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -543,6 +617,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -553,6 +630,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -564,6 +644,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -574,6 +657,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -584,6 +670,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -594,6 +683,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -604,6 +696,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
   - id: 3
     lines:
     - type: 0
@@ -616,6 +711,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -626,6 +724,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -636,6 +737,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -646,6 +750,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -656,6 +763,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -666,6 +776,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -676,6 +789,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 1
@@ -686,6 +802,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 1
       dialogue:
         speaker: 0
@@ -696,6 +815,9 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     - type: 4
       dialogue:
         speaker: 1
@@ -706,6 +828,38 @@ MonoBehaviour:
         to: 
         available: 
       link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+  - id: 4
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 5
+        text: This is internal dialogue
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 5
+        text: This is also internal dialogue
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+  isGame: 1
   currentConversationID: 0
   currentConversation:
     id: 0
