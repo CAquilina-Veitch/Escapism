@@ -52,7 +52,8 @@ public class RealPlayerController : MonoBehaviour
     }
     IEnumerator StandAnimation()
     {
-        yield return new WaitForSeconds(2.16f);
+        yield return new WaitForSeconds(2.13f);
+        anim.SetTrigger("Release");
         sR.flipX = false;
         moveMult = 1;
         transform.position = new Vector3(xposAfterStand, transform.position.y);
@@ -60,6 +61,12 @@ public class RealPlayerController : MonoBehaviour
 
 
     }
+    public void CanWalk(bool to)
+    {
+        moveMult = to ? 1 : 0;
+    }
+
+
     public void Sleep()
     {
         anim.SetFloat("SitAnimMult", 1);
