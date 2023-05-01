@@ -39,8 +39,10 @@ public class PixelGlitch : MonoBehaviour
                 img = i.sprite;
             }
             else
-            {
-                GetComponent<Animator>().StopPlayback();
+            {if(TryGetComponent<Animator>(out Animator u)){
+                u.StopPlayback();
+            }
+                
                 img = GetComponent<SpriteRenderer>().sprite;
             }
         }
