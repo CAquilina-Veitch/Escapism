@@ -96,7 +96,7 @@ public class DialogueManager : MonoBehaviour
     public int currentDialogueID;
     public List<GameObject> optionButtons;
     [SerializeField] dialogueState dState;
-    bool showing = false;
+    public bool showing = false;
     DialogueComplex currentDialogue;
 
        /*private void OnEnable()
@@ -104,6 +104,14 @@ public class DialogueManager : MonoBehaviour
             StartConversation(1);
         }*/
 
+    IEnumerator jumpdelay()
+    {
+        //Debug.Log("jumpy");
+        //Debug.Log(GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump);
+        yield return new WaitForFixedUpdate();
+        //Debug.Log(GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump);
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = true;
+    }
     public void StartConversation(int num)
     {
         currentDialogueID = 0;
@@ -219,7 +227,7 @@ public class DialogueManager : MonoBehaviour
         if(isGame)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 1;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = true;
+            StartCoroutine(jumpdelay());
         }
         else
         {
@@ -242,7 +250,11 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.E))
         {
-            PressedNextButton();
+            if (showing)
+            {
+                PressedNextButton();
+            }
+
         }
     }
     public void PressedNextButton()

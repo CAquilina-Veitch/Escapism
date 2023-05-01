@@ -121,21 +121,21 @@ public class PlatformerPlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             //Debug.Log(grounded);
-            if (grounded && canJump)
+            if (grounded && canJump&&deathMultiplier!=0)
             {
-                velocity.y = jumpHeight * deathMultiplier;
-                anim.SetTrigger("Jump");
-                anim.ResetTrigger("Land");
+                if (!GameObject.FindGameObjectWithTag("DialogueController").GetComponent<DialogueManager>().showing)
+                {
+                    velocity.y = jumpHeight * deathMultiplier;
+                    anim.SetTrigger("Jump");
+                    anim.ResetTrigger("Land");
+                }
+
             }
 
 
         }
         rb.velocity = velocity;
 
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            Medicine();
-        }
         if (Input.GetKeyDown(KeyCode.Mouse0) /*&& grounded*/)
         {
             //attack
