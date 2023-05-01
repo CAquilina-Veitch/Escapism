@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -228,12 +228,15 @@ MonoBehaviour:
     name: Valerie
     sprites:
     - {fileID: 21300000, guid: 191d21804554bbb42b106e4a8811dd68, type: 3}
-    - {fileID: 21300000, guid: 191d21804554bbb42b106e4a8811dd68, type: 3}
+    - {fileID: 21300000, guid: 6fe54afc3bd05194fb222fd75971a7c4, type: 3}
+    - {fileID: 21300000, guid: ae447a24860d9f3418a196585adac278, type: 3}
   - person: 1
     name: Mum
     sprites:
     - {fileID: 21300000, guid: 24d760598a4192f4e8727e839c900958, type: 3}
-    - {fileID: 21300000, guid: 24d760598a4192f4e8727e839c900958, type: 3}
+    - {fileID: 21300000, guid: 8c1c7cf94b9d26c459133a1f71abc79a, type: 3}
+    - {fileID: 21300000, guid: 31146b795afc46a48a857573264dd443, type: 3}
+    - {fileID: 21300000, guid: 27d49a672b936f343bfbcc09c056aa47, type: 3}
   - person: 2
     name: friend
     sprites:
@@ -329,7 +332,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Did you stay up playing video games again:?
-        expression: 0
+        expression: 2
       choice:
         messages: []
         to: 
@@ -356,7 +359,7 @@ MonoBehaviour:
         speaker: 1
         text: Valerie, you know you need to prioritise things other than your video
           games
-        expression: 0
+        expression: 2
       choice:
         messages: []
         to: 
@@ -378,6 +381,9 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 1
     lines:
     - type: 0
@@ -461,7 +467,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: You bEEn p-p-p-pplaying a a a loT of VIDeO gaMeS aG-G-AgAin???
-        expression: 0
+        expression: 1
       choice:
         messages:
         - speaker: 0
@@ -480,7 +486,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: Mum?
-        expression: 0
+        expression: 2
       choice:
         messages:
         - speaker: 0
@@ -499,7 +505,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: ???
-        expression: 0
+        expression: 2
       choice:
         messages:
         - speaker: 0
@@ -537,7 +543,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: ...?
-        expression: 0
+        expression: 2
       choice:
         messages:
         - speaker: 0
@@ -591,6 +597,9 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 2
     lines:
     - type: 0
@@ -638,7 +647,7 @@ MonoBehaviour:
         speaker: 1
         text: Maybe do that instead of pPpPPPpppPlaying viDEo gA-A-A-Ames next-t-t
           time
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -646,12 +655,24 @@ MonoBehaviour:
       link: 0
       evnt:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+            m_MethodName: SetTrigger
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Glitch
+              m_BoolArgument: 1
+            m_CallState: 2
     - type: 1
       dialogue:
         speaker: 0
         text: ???
-        expression: 0
+        expression: 2
       choice:
         messages: []
         to: 
@@ -664,7 +685,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: Mum?
-        expression: 0
+        expression: 2
       choice:
         messages: []
         to: 
@@ -677,7 +698,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: Are you ok?
-        expression: 0
+        expression: 2
       choice:
         messages: []
         to: 
@@ -690,7 +711,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Ah Valerie-
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -698,14 +719,78 @@ MonoBehaviour:
       link: 0
       evnt:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+            m_MethodName: SetTrigger
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Boss
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: Goto, Assembly-CSharp
+            m_MethodName: go
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Ah Valerie-
+        expression: 1
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 2041612244637347652}
+            m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+            m_MethodName: EndConversation
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 2041612244637347652}
+            m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+            m_MethodName: StartConversation
+            m_Mode: 3
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   - id: 3
     lines:
     - type: 0
       dialogue:
         speaker: 1
         text: Hey Valerie
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -718,7 +803,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: ...
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -731,7 +816,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Are you alright?
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -744,7 +829,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: ... No
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -757,7 +842,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Thats ok dear, I'm right here
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -770,7 +855,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Do you want to talk about it
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -783,7 +868,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: I think I'm losing touch with reality
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -796,7 +881,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: Oh sweetie, how can I help  you?
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -809,7 +894,7 @@ MonoBehaviour:
       dialogue:
         speaker: 0
         text: I think should go to therapy
-        expression: 0
+        expression: 1
       choice:
         messages: []
         to: 
@@ -822,7 +907,7 @@ MonoBehaviour:
       dialogue:
         speaker: 1
         text: We can do that
-        expression: 0
+        expression: 3
       choice:
         messages: []
         to: 
@@ -831,25 +916,15 @@ MonoBehaviour:
       evnt:
         m_PersistentCalls:
           m_Calls: []
-  - id: 4
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 3
     lines:
-    - type: 0
-      dialogue:
-        speaker: 5
-        text: This is internal dialogue
-        expression: 0
-      choice:
-        messages: []
-        to: 
-        available: 
-      link: 0
-      evnt:
-        m_PersistentCalls:
-          m_Calls: []
     - type: 4
       dialogue:
-        speaker: 5
-        text: This is also internal dialogue
+        speaker: 0
+        text: What the??
         expression: 0
       choice:
         messages: []
@@ -858,16 +933,47 @@ MonoBehaviour:
       link: 0
       evnt:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: LoadScene, Assembly-CSharp
+            m_MethodName: LoadNext
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   isGame: 1
   currentConversationID: 0
   currentConversation:
     id: 0
     lines: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   scrollValue: 0
   currentDialogueID: 0
   optionButtons: []
   dState: 0
+  showing: 0
 --- !u!1 &2041612245324221420
 GameObject:
   m_ObjectHideFlags: 0
