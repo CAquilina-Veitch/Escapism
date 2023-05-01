@@ -919,7 +919,7 @@ MonoBehaviour:
     evnt:
       m_PersistentCalls:
         m_Calls: []
-  - id: 3
+  - id: 4
     lines:
     - type: 4
       dialogue:
@@ -958,6 +958,451 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 1
             m_CallState: 2
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 5
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: Not again! I'm stuck on that level!
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 6
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: What was that? That was a little weird...
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 7
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: What? Why can't I...?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 8
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 0
+        text: How did...?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: What just...?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: I must be seeing things
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 9
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: I have to clean my room... Why can't I do anything?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 10
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: ???
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 11
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 0
+        text: What the hell was that?
+        expression: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: I'm going crazy
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: What is wrong with me?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 12
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: Why can't I do anything?!?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 13
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: I should probably go outside, I've been going crazy in here. Some fresh
+          air would probably be good for me
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 14
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: How??? Why am I here?
+        expression: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 15
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 1
+        text: Valerie honey, why do you have a spear?
+        expression: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 5
+        text: What?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 16
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: What the hell was that? I'm going crazy, why is this happening to me?
+        expression: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 17
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: What is wrong with me?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 18
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: Why can't I just do anything?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 19
+    lines:
+    - type: 4
+      dialogue:
+        speaker: 0
+        text: Whu does this keep happening?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 20
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 1
+        text: Valerie?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: Yes, mum?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Don't you think things are going a little too far?
+        expression: 3
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: I'm fine
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: You've just spent so much time playing those video games
+        expression: 2
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 1
+        text: Are you sure nothing is wrong?
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 1
+      dialogue:
+        speaker: 0
+        text: I said I'm fine mum.
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 1
+        text: That's ok sweetie, I just want to make sure you're ok
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
     evnt:
       m_PersistentCalls:
         m_Calls: []
