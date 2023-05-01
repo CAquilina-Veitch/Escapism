@@ -918,6 +918,55 @@ MonoBehaviour:
     evnt:
       m_PersistentCalls:
         m_Calls: []
+  - id: 7
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 7
+        text: Ah another young hero coming to try and defeat me
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
+  - id: 8
+    lines:
+    - type: 0
+      dialogue:
+        speaker: 7
+        text: You have been playing too many video games
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    - type: 4
+      dialogue:
+        speaker: 5
+        text: ???
+        expression: 0
+      choice:
+        messages: []
+        to: 
+        available: 
+      link: 0
+      evnt:
+        m_PersistentCalls:
+          m_Calls: []
+    evnt:
+      m_PersistentCalls:
+        m_Calls: []
   isGame: 1
   currentConversationID: 0
   currentConversation:

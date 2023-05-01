@@ -48,6 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/LifeScenes/LifeScene11.unity
     guid: 6c17415ddeb65f04eb0d99e3fb95ca1b
   - enabled: 1
-    path: Assets/Scenes/LifeScenes/LifeScene13.unity
+    path: Assets/Scenes/LifeScenes/LifeScene12.unity
     guid: 26c266ab115b6de418b827f78ba8b076
   m_configObjects: {}
