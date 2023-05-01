@@ -31,7 +31,7 @@ public class PlatformerPlayerController : MonoBehaviour
     [SerializeField] float vertVel;
     [SerializeField] Vector2 velocity;
     float deathMultiplier = 1;
-    float attackMult = 1;
+    public float attackMult = 1;
     public Vector3 spawnpoint;
     bool canJump = true;
     public int maxScene = 0;
@@ -248,6 +248,8 @@ public class PlatformerPlayerController : MonoBehaviour
     }   
     public void Respawn()
     {
+        if(respawnOnDeath)
+        {
         transform.position = spawnpoint;
 
         foreach (CapsuleCollider2D hitbox in GetComponents<CapsuleCollider2D>())
@@ -259,10 +261,15 @@ public class PlatformerPlayerController : MonoBehaviour
         healthScript.HealthChange(10000);
         healthScript.UpdateHealthBar();
         deathMultiplier = 1;
+        }
+        
     }
     public void RespawnHere()
     {
         spawnpoint= transform.position;
+    }
+    public void StopRespawning(){
+        respawnOnDeath = false;
     }
 
 

@@ -83,7 +83,7 @@ public class DialogueManager : MonoBehaviour
     public List<Person> people;
     public List<Conversations> listConversations;
 
-
+    public bool isGame; 
 
 
     [Header("Runtime")]
@@ -208,8 +208,12 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.LogWarning("End of conversation");
         ShowBox(false); 
-        GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
-        GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
+        if(isGame){
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 1;
+        }else{
+                    GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
+                     GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
+        }
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {
@@ -280,8 +284,13 @@ public class DialogueManager : MonoBehaviour
         transform.GetChild(0).gameObject.SetActive(to);
         if (to)
         {
-            GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 0;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Idle");
+            if(isGame){
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 0;
+            }else{
+                GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 0;
+                GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Idle");
+            }
+
         }
     }
 
