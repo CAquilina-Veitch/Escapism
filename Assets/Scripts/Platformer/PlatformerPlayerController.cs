@@ -49,6 +49,7 @@ public class PlatformerPlayerController : MonoBehaviour
     public bool attackInterupted;
     int comboAttack;
 
+public UnityEvent deathEventNotRespawn;
 
     public Interactable currentInteractable;
     public List<Interactable> inRange;
@@ -275,6 +276,8 @@ public class PlatformerPlayerController : MonoBehaviour
         healthScript.HealthChange(10000);
         healthScript.UpdateHealthBar();
         deathMultiplier = 1;
+        }else{
+            deathEventNotRespawn.Invoke();
         }
         
     }
