@@ -95,11 +95,15 @@ public UnityEvent deathEventNotRespawn;
         anim.SetTrigger("Land");
         Time.timeScale = 1f;
 
-        foreach(Collider2D  c in colliders)
+        StopBossCollision();
+
+    }
+    public void StopBossCollision()
+    {
+        foreach (Collider2D c in colliders)
         {
             Physics2D.IgnoreCollision(c, bosscollider);
         }
-
     }
 
     // Update is called once per frame
@@ -196,7 +200,7 @@ public UnityEvent deathEventNotRespawn;
             anim.SetTrigger("Land");
             anim.ResetTrigger("Jump");
         }
-        anim.SetFloat("Horizontal", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        anim.SetFloat("Horizontal", Mathf.Abs(Input.GetAxisRaw("Horizontal")*attackMult));
         wasGrounded = grounded;
 
 

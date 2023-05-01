@@ -1447,6 +1447,7 @@ MonoBehaviour:
   orthographicBounds: {x: 0.6, y: 5}
   panFrom: {x: -3.92, y: -0.97, z: -10}
   panTo: {x: 0, y: 0, z: -10}
+  chair: {fileID: 1780124102}
   clrs:
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0, g: 0, b: 0, a: 0.56078434}
@@ -1648,7 +1649,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Glitch real interactable (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1584516825, guid: cf4d259da274a8946af83303c091d060, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cf4d259da274a8946af83303c091d060, type: 3}
 --- !u!1 &954395692 stripped
 GameObject:
@@ -2559,7 +2561,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1902492973
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2576,7 +2578,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!50 &1902492974
 Rigidbody2D:
   serializedVersion: 4
@@ -2995,7 +2997,7 @@ MonoBehaviour:
         m_CallState: 2
 --- !u!95 &95143971777726097
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3012,7 +3014,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!114 &95143971777726098
 MonoBehaviour:
   m_ObjectHideFlags: 0

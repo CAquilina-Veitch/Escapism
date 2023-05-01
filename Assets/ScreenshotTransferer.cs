@@ -32,6 +32,7 @@ public class ScreenshotTransferer : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y, -0.5f);
         //transform.position = new Vector3(-3.93f,-0.991f,-0.5f);
         transform.localScale = Vector3.one * 0.1115f;
+        //transform.localScale = Vector3.one * 0.32f;
         SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
         //GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().Stand();
 

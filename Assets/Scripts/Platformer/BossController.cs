@@ -33,7 +33,6 @@ public class BossController : MonoBehaviour
     private void OnEnable()
     {
         prb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-        
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         currentAttackDelay = 3;

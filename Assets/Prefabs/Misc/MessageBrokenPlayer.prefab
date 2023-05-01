@@ -201,6 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19a005329ebba54c969ed12896fa2a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  img: {fileID: 0}
   delay: 0.5
   isGlitching: 0
 --- !u!1 &7892511766595952118
@@ -364,6 +365,7 @@ GameObject:
   - component: {fileID: 7892511767234582275}
   - component: {fileID: 242441579828256256}
   - component: {fileID: 6046827876747800680}
+  - component: {fileID: -8949908074673899316}
   m_Layer: 5
   m_Name: MessageBrokenPlayer
   m_TagString: Untagged
@@ -467,3 +469,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-8949908074673899316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7892511767234582284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6b6ab1e0561744f88ffce6dd73dcf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  optionId: 0
+  msgSprites:
+  - {fileID: 21300000, guid: 04260093d9ed49342b161b8704220516, type: 3}
+  - {fileID: 21300000, guid: 1ce3cf58cce912d4caa4f317514ffe76, type: 3}
+  - {fileID: 21300000, guid: 487e28a015687b649887705edfbc5d0a, type: 3}

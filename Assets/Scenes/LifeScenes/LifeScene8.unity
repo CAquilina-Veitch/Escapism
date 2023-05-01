@@ -527,6 +527,7 @@ MonoBehaviour:
   orthographicBounds: {x: 0.6, y: 5}
   panFrom: {x: -3.92, y: -0.97, z: -10}
   panTo: {x: 0, y: 0, z: -10}
+  chair: {fileID: 0}
   clrs:
   - {r: 0, g: 0, b: 0, a: 0}
   - {r: 0, g: 0, b: 0, a: 0.56078434}
@@ -550,6 +551,67 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextScene: {fileID: 102900000, guid: f960c1f2a4ad43e479cf516c54ada8ac, type: 3}
   delay: 1
+--- !u!1001 &957742501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4562608797970093172, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: NextScene
+      value: 
+      objectReference: {fileID: 102900000, guid: 9c4d197abd8f5064ba88f1fbf39b587e, type: 3}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093173, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4562608797970093175, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
+      propertyPath: m_Name
+      value: ScreenshotTransfer
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8c24bb7d658477a4bb673a296167f64f, type: 3}
 --- !u!1001 &1070042605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1340,7 +1402,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &1902492973
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1357,7 +1419,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!50 &1902492974
 Rigidbody2D:
   serializedVersion: 4

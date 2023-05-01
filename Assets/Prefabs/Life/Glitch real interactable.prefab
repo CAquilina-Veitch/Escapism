@@ -347,7 +347,6 @@ GameObject:
   m_Component:
   - component: {fileID: 48196963105599969}
   - component: {fileID: 2198560731870914869}
-  - component: {fileID: 1584516825}
   m_Layer: 0
   m_Name: indicator
   m_TagString: Untagged
@@ -397,21 +396,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
---- !u!114 &1584516825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4877252107708405306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e19a005329ebba54c969ed12896fa2a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  img: {fileID: 0}
-  delay: 0.5
-  isGlitching: 0
 --- !u!1 &8230095347146178817
 GameObject:
   m_ObjectHideFlags: 0

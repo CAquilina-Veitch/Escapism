@@ -17,7 +17,7 @@ public class RealPlayerController : MonoBehaviour
     [SerializeField] LayerMask groundCheckMask;
     [SerializeField] SpriteRenderer sR;
     [SerializeField] Animator anim;
-
+    float xposAfterStand = -2.28f;
 
 
     [Header("STATS")]
@@ -52,9 +52,10 @@ public class RealPlayerController : MonoBehaviour
     }
     IEnumerator StandAnimation()
     {
-        yield return new WaitForSeconds(2.17f);
-        sR.flipX = true;
+        yield return new WaitForSeconds(2.16f);
+        sR.flipX = false;
         moveMult = 1;
+        transform.position = new Vector3(xposAfterStand, transform.position.y);
 
 
 
