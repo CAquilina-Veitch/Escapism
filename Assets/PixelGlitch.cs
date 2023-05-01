@@ -55,7 +55,7 @@ public class PixelGlitch : MonoBehaviour
     IEnumerator GlitchOut(bool to)
     {
         yield return new WaitForEndOfFrame();
-        Texture2D texture = new Texture2D(img.texture.width, img.texture.height, img.texture.format, false);
+        Texture2D texture = new Texture2D(img.texture.width, img.texture.height, TextureFormat.RGBA32, false);
         Graphics.CopyTexture(img.texture,texture);
         texture.Apply();
 
@@ -64,12 +64,13 @@ public class PixelGlitch : MonoBehaviour
         img = sprite;
 
         List<Vector2Int> temp = new List<Vector2Int>();
-        List<Vector2Int> tempto = new List<Vector2Int>();
+       // List<Vector2Int> tempto = new List<Vector2Int>();
 
         for (int x = 0; x <= 10; x++)
         {
             for (int y = 0; y <= 10; y++)
             {
+                Debug.Log(x+" "+y);
                 Vector2Int coord = new Vector2Int(x, y);
                 temp.Add(coord);
             }
@@ -79,7 +80,7 @@ public class PixelGlitch : MonoBehaviour
         {
             int i = Random.Range(0, temp.Count);
             Vector2Int coord = temp[i];
-            tempto.Add(coord);
+            //tempto.Add(coord);
             temp.RemoveAt(i);
 
             Vector2Int xBounds = new Vector2Int(texture.width/10*coord.x, texture.width / 10 * (coord.x+1));
@@ -89,8 +90,9 @@ public class PixelGlitch : MonoBehaviour
 {
                 for (int y = yBounds.x; y < yBounds.y; y++)
                 {
-
+                    Debug.Log(x + " " + y);
                     texture.SetPixel(x, y, Color.clear);
+                    texture.Apply();
                 }
             }
 
