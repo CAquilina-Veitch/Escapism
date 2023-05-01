@@ -9,7 +9,7 @@ using UnityEngine.PlayerLoop;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public enum speaker {player, mom, friend, knight, samurai, hunter, medievalman }
+public enum speaker {player, mom, friend, knight, samurai, hunter, medievalman, boss }
 public enum dialogueType { start, response, choice, link, end }
 
 enum dialogueState { empty, typing, skipTriggered, choosing, full }

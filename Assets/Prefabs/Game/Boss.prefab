@@ -24534,7 +24534,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3462941665764496020}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 784b2a0702715c5438d55de71a711269, type: 3}
   m_Name: 
@@ -24578,7 +24578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   owner: 2
-  killable: 1
+  killable: 0
   Hearts: []
   BossHealth: {fileID: 0}
   maxHealth: 20

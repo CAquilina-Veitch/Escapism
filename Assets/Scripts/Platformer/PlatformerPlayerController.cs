@@ -21,6 +21,10 @@ public class PlatformerPlayerController : MonoBehaviour
 
     [SerializeField] Attack dmgHitbox;
 
+    [SerializeField]
+    Collider2D[] colliders;
+    [SerializeField] Collider2D bosscollider;
+
 
     [Header("STATS")]
     [SerializeField] float jumpHeight;
@@ -89,6 +93,12 @@ public class PlatformerPlayerController : MonoBehaviour
         canJump = true;
         anim.SetTrigger("Land");
         Time.timeScale = 1f;
+
+        foreach(Collider2D  c in colliders)
+        {
+            Physics2D.IgnoreCollision(c, bosscollider);
+        }
+
     }
 
     // Update is called once per frame

@@ -33,7 +33,7 @@ public class BossController : MonoBehaviour
     private void OnEnable()
     {
         prb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-        Physics2D.IgnoreCollision(prb.GetComponent<Collider2D>(), GetComponent<Collider2D>()); 
+        
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         currentAttackDelay = 3;

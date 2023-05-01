@@ -650,6 +650,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: e269db06082f50743b3ce700265ba9e4, type: 3}
   - {fileID: 21300000, guid: de41d366c687a46beb6a9acaa88c12db, type: 3}
   - {fileID: 21300000, guid: a17a3966bf5741f46a5c91a32e08df46, type: 3}
+  - {fileID: 21300000, guid: d820878633723a94da07184b5ad5682a, type: 3}
   - {fileID: 1647000776, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
   - {fileID: -1599908286, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
   - {fileID: 1455832143, guid: 73671cb644e360840b3274b440b4a7be, type: 3}
@@ -965,6 +966,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 4d106ce971166481faa32de0ba5145c0, type: 3}
   - {fileID: 21300000, guid: 0049772a1acaf4a49b69bb504ffe2669, type: 3}
   - {fileID: 21300000, guid: a36e482a0b5584e5b9080bccd7305631, type: 3}
+  - {fileID: 21300000, guid: 036c882a5d677254fbe43db27b8f9baf, type: 3}
   - {fileID: 21300000, guid: 8e160a2a620644cd6afef9119dad1093, type: 3}
   - {fileID: 21300000, guid: c6803a2a3fe7f45e786b788e8ddb6771, type: 3}
   - {fileID: 21300000, guid: 4525736a9d0538940bce8f13f1227b26, type: 3}
@@ -1837,6 +1839,7 @@ SpriteAtlas:
   - layer 5
   - middle
   - Knight Icon
+  - Boss Icon
   - Idle_4
   - Idle_5
   - Idle_6
@@ -2152,6 +2155,7 @@ SpriteAtlas:
   - bg-2
   - spikes
   - trees
+  - Boss_Icon Glitched
   - back
   - spikes-top
   - TX Background Grid
