@@ -12,7 +12,7 @@ public class PanCamera : MonoBehaviour
     public Vector3 panTo = new Vector3(0, 0, -10);
     SpriteRenderer player;
     public SpriteRenderer chair;
-    public Color[] clrs;
+    Color[] clrs = {Color.black,new Color(0,0,0,56),Color.white };
     private void OnEnable()
     {
         cam = GetComponent<Camera>();
