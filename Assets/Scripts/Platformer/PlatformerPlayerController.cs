@@ -109,7 +109,10 @@ public class PlatformerPlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            currentInteractable.interact.Invoke();
+            if (currentInteractable != null)
+            {
+                currentInteractable.interact.Invoke();
+            }
         }
 
 

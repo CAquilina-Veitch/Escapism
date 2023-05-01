@@ -106,11 +106,12 @@ public class DialogueManager : MonoBehaviour
 
     public void StartConversation(int num)
     {
+        currentDialogueID = 0;
         if (isGame)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = false;
         }
-        Debug.Log(9);
+        Debug.Log("Start conversation");
         ShowBox(true);
         currentConversationID = num;
 
@@ -137,7 +138,7 @@ public class DialogueManager : MonoBehaviour
 
     public void NextDialogueLine()
     {
-        Debug.Log(1);
+        Debug.Log("Next dialogueLine");
         if (currentDialogueID < currentConversation.lines.Count)
         {
             currentConversation.lines[currentDialogueID].evnt.Invoke();
@@ -218,33 +219,35 @@ public class DialogueManager : MonoBehaviour
         if(isGame)
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().attackMult = 1;
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlatformerPlayerController>().canJump = true;
         }
         else
         {
             GameObject.FindGameObjectWithTag("Player").GetComponent<RealPlayerController>().moveMult = 1;
             GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetTrigger("Release");
         }
+        dState = dialogueState.empty;
+        currentDialogueID = 0;
         currentConversation.evnt.Invoke();
 
     }
     public void ShowNextDialogue(DialogueComplex dia)
     {
-        Debug.Log(2);
+        Debug.Log("showNext dialogueLine");
         currentDialogue = dia;
         SetSpeaker(currentDialogue.dialogue.speaker);
         StartCoroutine(TypeLetters(dia.dialogue));
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)||Input.GetKeyDown(KeyCode.E))
         {
             PressedNextButton();
         }
     }
     public void PressedNextButton()
     {
-        Debug.Log(3);
+        Debug.Log("Next button pressed");
         if (dState == dialogueState.typing)
         {
             dState = dialogueState.skipTriggered;
@@ -269,20 +272,21 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeLetters(Dialogue dia)
     {
-        Debug.Log(4);
+        Debug.Log("Starting to type");
         //Debug.Log("Triggered");
         dState = dialogueState.typing;
         //RectTransform textBase = dialogueText.GetComponent<RectTransform>();
         //Vector3 textBasePos = textBase.anchoredPosition;
         for (int i = 0; i <= dia.text.Length; i++)
         {
-            //Debug.Log($"{i}, length {dia.text.Length} of {dia.text}, {dState}");
+            Debug.Log($"{i}, length {dia.text.Length} of {dia.text}, {dState}");
             if (dState != dialogueState.typing)
             {
                 if(dState == dialogueState.skipTriggered)
                 {
                     dialogueText.text = dia.text;
                     dState = dialogueState.full;
+                    Debug.Log(98);
                 }
                 break;
 
@@ -292,11 +296,12 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(speakDelay);
             //textBase.anchoredPosition = textBasePos;
         }
+        Debug.Log(100);
         dState = dialogueState.full;
     }
     public void ShowBox(bool to)
     {
-        Debug.Log(6);
+        Debug.Log("showbox");
         showing = to;
         transform.GetChild(0).gameObject.SetActive(to);
         if (to)

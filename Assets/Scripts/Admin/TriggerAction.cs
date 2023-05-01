@@ -9,9 +9,9 @@ public class TriggerAction : MonoBehaviour
     public UnityEvent onPlayerEnter;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(8 + this.gameObject.name);
         if(collision.tag == "Player")
         {
+            Debug.Log(8 + this.gameObject.name);
             onPlayerEnter.Invoke();
         }
     }
