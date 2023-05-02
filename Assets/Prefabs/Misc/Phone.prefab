@@ -701,14 +701,18 @@ MonoBehaviour:
   optionsParent: {fileID: 4853636368407405094}
   msgOtherPrefab: {fileID: 7103466031102305365, guid: daef42f5e3e20474682bac980013bcd5, type: 3}
   msgPlayerPrefab: {fileID: 7892511767234582284, guid: ac82ecf71ea194443976eec24753d2f5, type: 3}
+  msgPlayerOptionPrefab: {fileID: 7892511767234582284, guid: f2bcbb7ed5583364fb48e8fb40c0f648, type: 3}
   brokenPlayerPrefab: {fileID: 7892511767234582284, guid: c33d955da795b404ba6529a1aa432e66, type: 3}
   scrollSpeed: 50
-  messageLineLength: 6
+  messageLineLength: 4
   messageBubbleBuffer: 10
-  messageBubbleHorizontalBuffer: 5
+  messageBubbleHorizontalBuffer: 12.3
   messageGapSpacer: 10
   messageCharacterWidth: 3
-  numCharPerLine: 15
+  numCharPerLine: 20
+  messageGapSpacerOptions: -100
+  numCharPerLineOptions: 35
+  font: {fileID: 0}
   contacts:
   - user: 0
     name: Mum
@@ -831,7 +835,7 @@ MonoBehaviour:
     - type: 4
       message:
         isPlayer: 1
-        text: 'Ye  '
+        text: Ye
         delay: 2
       choice:
         messages: []

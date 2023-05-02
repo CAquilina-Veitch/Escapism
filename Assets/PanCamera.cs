@@ -28,6 +28,7 @@ public class PanCamera : MonoBehaviour
         transform.position = panFrom;
 
         float t = 0;
+
         while (t <= fadeTime)
         {
             if (t <= fadeTime / 2)
@@ -47,7 +48,9 @@ public class PanCamera : MonoBehaviour
         }
         chair.color = clrs[02];
         player.color = clrs[02];
+
         t = 0;
+
         while (t <= panTime)
         {
             cam.orthographicSize = Mathf.Lerp(orthographicBounds.x, orthographicBounds.y, t/panTime);
