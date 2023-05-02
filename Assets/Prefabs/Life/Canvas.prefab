@@ -1433,6 +1433,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue Box
       objectReference: {fileID: 0}
+    - target: {fileID: 7229795246770824556, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7229795246770824556, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 220
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
 --- !u!224 &6245628531600716893 stripped
