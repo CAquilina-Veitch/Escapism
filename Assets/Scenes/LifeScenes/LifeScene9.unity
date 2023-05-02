@@ -286,17 +286,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 624070191}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 5402540036818665541}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: ChangeIsGame
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 331596699}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
@@ -12492,11 +12492,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4877252106614814766, guid: a1915f175263ce546bedcb382c8e8c0a, type: 3}
   m_PrefabInstance: {fileID: 623358297}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &624070191 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6245628531600716892, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
-  m_PrefabInstance: {fileID: 5402540036818665537}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &686717493
 GameObject:
   m_ObjectHideFlags: 0
@@ -12836,6 +12831,7 @@ MonoBehaviour:
   panFrom: {x: -3.92, y: -0.97, z: -10}
   panTo: {x: 0, y: 0, z: -10}
   chair: {fileID: 1643997059}
+  inBed: 0
 --- !u!1 &835910870
 GameObject:
   m_ObjectHideFlags: 0
@@ -38685,6 +38681,7 @@ MonoBehaviour:
     m_Bits: 64
   sR: {fileID: 1902492971}
   anim: {fileID: 1902492973}
+  xposAfterStand: -2.28
   speed: 3.55
   acceleration: 5
   moveMult: 0
@@ -39685,7 +39682,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
   m_PrefabInstance: {fileID: 5402540036818665537}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624070191}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f856bdce1253b64690fc2a25cfa0709, type: 3}
