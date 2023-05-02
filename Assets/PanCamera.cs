@@ -12,6 +12,7 @@ public class PanCamera : MonoBehaviour
     public Vector3 panTo = new Vector3(0, 0, -10);
     SpriteRenderer player;
     public SpriteRenderer chair;
+    public bool inBed;
     Color[] clrs = {new Color(0,0,0,0),new Color(0,0,0,56),Color.white };
     private void OnEnable()
     {
@@ -56,7 +57,18 @@ public class PanCamera : MonoBehaviour
         }
         cam.orthographicSize = orthographicBounds.y;
         transform.position = panTo;
-        player.GetComponent<RealPlayerController>().Stand();
+
+        if (inBed)
+        {
+            player.GetComponent<RealPlayerController>().GetOutOfBed();
+        }
+        else
+        {
+            player.GetComponent<RealPlayerController>().Stand();
+        }
+
+
+
         GetComponent<SectionalCamera>().enabled = true;
         enabled = false;
         Interactable[] interactables = FindObjectsOfType<Interactable>();
