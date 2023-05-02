@@ -94,12 +94,6 @@ public class PhoneManager : MonoBehaviour
     public int currentMessageID;
     public List<GameObject> optionButtons;
 
-   private void OnEnable()
-    {
-        //Time.timeScale = 100;
-        StartConversation(1);
-    }
-
     public void StartConversation(int num)
     {
         if (started)
