@@ -719,7 +719,7 @@ MonoBehaviour:
     photo: {fileID: 21300000, guid: 24d760598a4192f4e8727e839c900958, type: 3}
   - user: 1
     name: Jamie
-    photo: {fileID: 21300000, guid: 3a0c527d7f890d64a9b56b086e6e766a, type: 3}
+    photo: {fileID: 21300000, guid: d393aa2806c808c4db28e0183b20b712, type: 3}
   listMessageConversations:
   - id: 0
     with: 1
