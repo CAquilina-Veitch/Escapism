@@ -1345,7 +1345,7 @@ MonoBehaviour:
     - type: 4
       dialogue:
         speaker: 0
-        text: Whu does this keep happening?
+        text: Why does this keep happening?
         expression: 0
       choice:
         messages: []

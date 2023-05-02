@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RestartScript : MonoBehaviour
 {
-  void Awake()
+  public void Restart()
     {
         SceneManager.LoadScene(0);
     }
