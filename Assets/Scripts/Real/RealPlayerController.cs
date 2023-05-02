@@ -61,6 +61,19 @@ public class RealPlayerController : MonoBehaviour
 
 
     }
+    public void GetOutOfBed()
+    {
+        anim.SetFloat("BedAnimMult", 1);
+        StartCoroutine(BedAnimation());
+    }
+    IEnumerator BedAnimation()
+    {
+        yield return new WaitForSeconds(2.13f);
+        anim.SetTrigger("Release");
+        sR.flipX = false;
+        moveMult = 1;
+        transform.position = new Vector3(xposAfterStand, transform.position.y);
+    }
     public void CanWalk(bool to)
     {
         moveMult = to ? 1 : 0;
