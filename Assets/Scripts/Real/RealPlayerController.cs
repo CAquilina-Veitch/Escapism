@@ -17,7 +17,7 @@ public class RealPlayerController : MonoBehaviour
     [SerializeField] LayerMask groundCheckMask;
     [SerializeField] SpriteRenderer sR;
     [SerializeField] Animator anim;
-    float xposAfterStand = -2.28f;
+    public float xposAfterStand = -2.28f;
 
 
     [Header("STATS")]

@@ -327,5 +327,9 @@ public class DialogueManager : MonoBehaviour
 
         }
     }
+    public void ChangeIsGame(bool to)
+    {
+        isGame = to;
+    }
 
 }
