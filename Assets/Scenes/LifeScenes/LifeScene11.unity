@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3541351
 Transform:
   m_ObjectHideFlags: 0
@@ -58281,6 +58281,38 @@ PrefabInstance:
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: isGame
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3541350}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[20].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6829080223820168779, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_IsActive
