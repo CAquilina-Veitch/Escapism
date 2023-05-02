@@ -370,6 +370,7 @@ MonoBehaviour:
   panFrom: {x: -3.92, y: -0.97, z: -10}
   panTo: {x: 0, y: 0, z: -10}
   chair: {fileID: 699981900}
+  inBed: 0
 --- !u!1 &954395692 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1028141294950346261, guid: 4af4031e1a36de14a810d5353adc2452, type: 3}
@@ -1547,6 +1548,8 @@ MonoBehaviour:
     m_Bits: 64
   sR: {fileID: 1902492971}
   anim: {fileID: 1902492973}
+  getOutOfBed: 0
+  xposAfterStand: -2.28
   speed: 3.55
   acceleration: 5
   moveMult: 0
@@ -1878,6 +1881,10 @@ PrefabInstance:
     - target: {fileID: 6245628531600716893, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: isGame
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6829080223820168779, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_IsActive

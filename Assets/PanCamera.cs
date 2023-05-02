@@ -28,16 +28,22 @@ public class PanCamera : MonoBehaviour
         transform.position = panFrom;
 
         float t = 0;
+        if (inBed)
+        {
+            clrs[0] = clrs[2];
+            clrs[1] = clrs[2];
+        }
+        
         while (t <= fadeTime)
         {
             if (t <= fadeTime / 2)
             {
-                player.color = Color.Lerp(clrs[0], clrs[01], t / (fadeTime/2));
-                chair.color = Color.Lerp(clrs[0], clrs[01], t / (fadeTime/2));
+                player.color = Color.Lerp(clrs[0], clrs[01], t / (fadeTime / 2));
+                chair.color = Color.Lerp(clrs[0], clrs[01], t / (fadeTime / 2));
             }
             else
             {
-                player.color = Color.Lerp(clrs[01], clrs[02], (t / (fadeTime / 2)) -1);
+                player.color = Color.Lerp(clrs[01], clrs[02], (t / (fadeTime / 2)) - 1);
                 chair.color = Color.Lerp(clrs[01], clrs[02], (t / (fadeTime / 2)) - 1);
 
             }

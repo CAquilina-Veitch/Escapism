@@ -17,6 +17,7 @@ public class RealPlayerController : MonoBehaviour
     [SerializeField] LayerMask groundCheckMask;
     [SerializeField] SpriteRenderer sR;
     [SerializeField] Animator anim;
+    public bool getOutOfBed = false;
     public float xposAfterStand = -2.28f;
 
 
@@ -34,7 +35,7 @@ public class RealPlayerController : MonoBehaviour
     private void OnEnable()
     {
         //Stand();
-        sR.flipX = true;
+        sR.flipX = !getOutOfBed;
         //moveMult = 1;
     }
 
@@ -68,11 +69,12 @@ public class RealPlayerController : MonoBehaviour
     }
     IEnumerator BedAnimation()
     {
-        yield return new WaitForSeconds(2.13f);
+        yield return new WaitForSeconds(1.01f);
         anim.SetTrigger("Release");
-        sR.flipX = false;
+        sR.flipX = true;
         moveMult = 1;
         transform.position = new Vector3(xposAfterStand, transform.position.y);
+        GetComponent<Goto>().go();
     }
     public void CanWalk(bool to)
     {
