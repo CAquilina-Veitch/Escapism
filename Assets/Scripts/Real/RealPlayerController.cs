@@ -86,6 +86,10 @@ public class RealPlayerController : MonoBehaviour
         moveMult = 0;
         sR.enabled = false;
     }
+    public void ChangeSpeed(float to)
+    {
+        speed = to;
+    }
 
     // Update is called once per frame
     void Update()
