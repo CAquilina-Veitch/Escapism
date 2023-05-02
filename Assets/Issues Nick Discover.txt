@@ -1,0 +1,25 @@
+- Life scene 2 doesn't have the zoom out and player appears to be missing
+- Text messages in life scene 2 also require you to click messages twice before they glitch out (first time the original message is in front of the old)
+- Phone appears to continue to vibrate occasionally after clicking the message (particularly after choosing a message)
+- Phone continues to vibrate after you finish conversation
+- after making bed it doesn't switch to neat bed (tested in life scene 4)
+- Lacks indication of where to go to talk to mum once tasks are done
+- Cant interact with Mum in scene 4
+- Neep to get friend icon and replace skeleton head sprite
+- Some message icons go off the screen (e.g. LifeScene 6)
+- Bunch of glitches occured in LifeScene 6 messages (not sure if once off)
+- Again it continues to vibrate when no new messages occur
+- Walk cycle doesn't match walk speed
+- Cant interact with Mum life scene 6
+- Cant interact with NPC's Game scene 7
+- Life Scene 6 and 8 have same message dialogue
+- Door appears in Life Scene 8, can't interact and seems to be for scene 9, not scene 8
+- Life scene 9 has same dialogue
+- No platformer section in Life scene 9
+- Life scene 10 has no zoom out and you don't wake up in bed
+- No zoom out life scene 11
+- Sometimes player sprite doesn't do the die animation when killed
+- Also sometimes goes back to idle animation after death (as if respawning)
+- Potentially have boss fight cycle happen faster??
+- Screenshot transfer on certain levels makes the screenshot not the same size as computer screen
+- Two lines of dialogue in GameScene 5 playing at same time again (two collider issue?)
