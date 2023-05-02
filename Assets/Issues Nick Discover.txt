@@ -1,4 +1,3 @@
-- Life scene 2 doesn't have the zoom out and player appears to be missing
 - Text messages in life scene 2 also require you to click messages twice before they glitch out (first time the original message is in front of the old)
 - Phone appears to continue to vibrate occasionally after clicking the message (particularly after choosing a message)
 - Phone continues to vibrate after you finish conversation
@@ -11,7 +10,6 @@
 - Again it continues to vibrate when no new messages occur
 - Walk cycle doesn't match walk speed
 - Cant interact with Mum life scene 6
-- Cant interact with NPC's Game scene 7
 - Life Scene 6 and 8 have same message dialogue
 - Door appears in Life Scene 8, can't interact and seems to be for scene 9, not scene 8
 - Life scene 9 has same dialogue
