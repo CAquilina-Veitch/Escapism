@@ -64,6 +64,7 @@ public class PhoneManager : MonoBehaviour
     [Header("Prefabs")]
     [SerializeField] GameObject msgOtherPrefab;
     [SerializeField] GameObject msgPlayerPrefab;
+    [SerializeField] GameObject msgPlayerOptionPrefab;
     [SerializeField] GameObject brokenPlayerPrefab;
 
     [Header("Stats")]
@@ -71,9 +72,17 @@ public class PhoneManager : MonoBehaviour
     public float messageLineLength = 10;
     public float messageBubbleBuffer = 10;
     public float messageBubbleHorizontalBuffer = 10;
-    public float messageGapSpacer = 40;
+    public float messageGapSpacer = 10;
     public float messageCharacterWidth = 8;
     public float numCharPerLine = 10;
+
+
+    public float messageGapSpacerOptions = 20;
+    public float numCharPerLineOptions = 20;
+
+    public Font font;
+
+
     float scrollParentStartBuffer = 10;
     float scrollMinimumPageLength = 90;
     bool started = false;
@@ -176,9 +185,9 @@ public class PhoneManager : MonoBehaviour
         {
             Message msg = currentConversation.messages[currentMessageID].choice.messages[i];
             Choice ch = currentConversation.messages[currentMessageID].choice;
-            int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLine);
+            int _msgLines = Mathf.CeilToInt((float)msg.text.Length / numCharPerLineOptions);
             bool unbroken = ch.available[i];
-            GameObject _message = unbroken ? Instantiate(msgPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
+            GameObject _message = unbroken ? Instantiate(msgPlayerOptionPrefab, Vector3.zero, Quaternion.identity, optionsParent) : Instantiate(brokenPlayerPrefab, Vector3.zero, Quaternion.identity, optionsParent);
 
             if (unbroken)
             {
@@ -186,22 +195,20 @@ public class PhoneManager : MonoBehaviour
                 _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
                 if (_msgLines <= 1)
                 {
-                    _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
+                    _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.PhoneTextWidth(7, font) + msg.text.specialMult(10));
+                    //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
                 }
                 _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
+                optionMessagesLength += _message.GetComponent<RectTransform>().sizeDelta.y;
 
-                optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer / 2;
+                //optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacerOptions / 2;
                 _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
                 _message.GetComponent<MessageChoice>().optionId = i;
                 optionButtons.Add(_message);
             }
             else
             {
-                _message.GetComponent<BrokenMessage>().Work(optionMessagesLength, _msgLines, msg.text, messageLineLength,messageBubbleBuffer,messageCharacterWidth,messageBubbleHorizontalBuffer);
-                
-
-                
-
+                _message.GetComponent<BrokenMessage>().Work(optionMessagesLength, _msgLines, msg.text, messageLineLength,messageBubbleBuffer,messageCharacterWidth,messageBubbleHorizontalBuffer,font);
                 //_message.GetComponent<RectTransform>().anchoredPosition = new Vector3(0, -optionMessagesLength);
                 //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
                 /*if (_msgLines <= 1)
@@ -209,8 +216,8 @@ public class PhoneManager : MonoBehaviour
                     _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length * messageCharacterWidth + messageBubbleHorizontalBuffer);
                 }*/
                 //_message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
-
-                optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer / 2;
+                optionMessagesLength += _message.GetComponent<RectTransform>().sizeDelta.y;
+                //optionMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacerOptions / 2;
                 //_message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
                 //--_message.GetComponent<MessageChoice>().optionId = i;
                 optionButtons.Add(_message);
@@ -252,11 +259,14 @@ public class PhoneManager : MonoBehaviour
         _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, _msgLines * messageLineLength + messageBubbleBuffer);
         if (_msgLines <= 1)
         {
-            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length*messageCharacterWidth + messageBubbleHorizontalBuffer);
+            //_message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.Length*messageCharacterWidth + messageBubbleHorizontalBuffer);
+            _message.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, msg.text.PhoneTextWidth(7, font)+msg.text.specialMult(0));
         }
         _message.GetComponent<MessageChoice>().setBackground(_msgLines, msg.text.Length);
-        currentMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
-        scrollValue += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
+        /*currentMessagesLength += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;
+        scrollValue += _msgLines * messageLineLength + messageBubbleBuffer + messageGapSpacer;*/
+        currentMessagesLength += _message.GetComponent<RectTransform>().sizeDelta.y;
+        scrollValue += _message.GetComponent<RectTransform>().sizeDelta.y;
         _message.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = msg.text;
         ScrollMessages(0);
 

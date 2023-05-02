@@ -53,7 +53,9 @@ public class PanCamera : MonoBehaviour
         }
         chair.color = clrs[02];
         player.color = clrs[02];
+
         t = 0;
+
         while (t <= panTime)
         {
             cam.orthographicSize = Mathf.Lerp(orthographicBounds.x, orthographicBounds.y, t/panTime);
