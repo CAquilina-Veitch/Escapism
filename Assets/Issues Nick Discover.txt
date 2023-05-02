@@ -1,13 +1,17 @@
-- Text messages in life scene 2 also require you to click messages twice before they glitch out (first time the original message is in front of the old)
+PHONE VIBRATE ISSUES
 - Phone appears to continue to vibrate occasionally after clicking the message (particularly after choosing a message)
 - Phone continues to vibrate after you finish conversation
+
+ART ISSUES
 - Need to get friend icon and replace skeleton head sprite
-- Bunch of glitches occured in LifeScene 6 messages (not sure if once off)
-- Again it continues to vibrate when no new messages occur
+- Need to put in friend icon on text
 - Life scene 10 + 11 waking up animation required
 
+DIALOGUE ISSUES
 - Two lines of dialogue in GameScene 5 playing at same time again (two collider issue?)
 - All life scenes have same dialogue, default to convo 1
+- Bunch of glitches occured in LifeScene 6 messages (not sure if once off)
+Text messages in life scene 2 also require you to click messages twice before they glitch out (first time the original message is in front of the old)
 
 
 REFINING
