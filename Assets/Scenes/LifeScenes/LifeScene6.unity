@@ -3328,6 +3328,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4853636368781527377, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
+      propertyPath: font
+      value: 
+      objectReference: {fileID: 12800000, guid: e331ffad6c3bad64eba49b1807024066, type: 3}
     - target: {fileID: 4853636368781527388, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

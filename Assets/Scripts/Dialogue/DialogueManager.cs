@@ -284,14 +284,14 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeLetters(Dialogue dia)
     {
-        Debug.Log("Starting to type");
+        
         //Debug.Log("Triggered");
         dState = dialogueState.typing;
         //RectTransform textBase = dialogueText.GetComponent<RectTransform>();
         //Vector3 textBasePos = textBase.anchoredPosition;
         for (int i = 0; i <= dia.text.Length; i++)
         {
-            Debug.Log($"{i}, length {dia.text.Length} of {dia.text}, {dState}");
+           
             if (dState != dialogueState.typing)
             {
                 if(dState == dialogueState.skipTriggered)

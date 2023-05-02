@@ -712,7 +712,7 @@ MonoBehaviour:
   numCharPerLine: 20
   messageGapSpacerOptions: -100
   numCharPerLineOptions: 35
-  font: {fileID: 0}
+  font: {fileID: 12800000, guid: e331ffad6c3bad64eba49b1807024066, type: 3}
   contacts:
   - user: 0
     name: Mum
@@ -981,7 +981,7 @@ MonoBehaviour:
           text: I feel like I'm losing my mind
           delay: 2
         - isPlayer: 1
-          text: I'm fine haha
+          text: 'I''m fine haha       '
           delay: 2
         to: 0000000002000000
         available: 0001
