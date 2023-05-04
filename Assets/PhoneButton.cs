@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +14,10 @@ public class PhoneButton : MonoBehaviour
     bool phoneUnchecked = true;
     float amt = 2;
 
+    public void OpenPhone()
+    {
+        phoneUnchecked = false;
+    }
 
     private void OnEnable()
     {
