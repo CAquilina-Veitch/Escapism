@@ -10,6 +10,7 @@ public struct SoundEffectData
     public AudioClip clip;
     public float relativeVolume;
     public bool looping;
+    public bool isMusic;
 }
 
 
@@ -18,7 +19,9 @@ public class SoundEffectManager : MonoBehaviour
     public List<SoundEffectData> sfxd;
     public GameObject sfxPrefab;
     public float SFXVolume = 1;
-    
+    GameObject music;
+
+
     public void SetVolume(float to)
     {
         SFXVolume = to;
@@ -35,11 +38,20 @@ public class SoundEffectManager : MonoBehaviour
             return;
         }
         currentSfx = sfxd.Find(x => x.name == id);
+        if(currentSfx.isMusic&&music!=null)
+        {
+            Destroy(music);
+
+        }
         GameObject obj = Instantiate(sfxPrefab,transform);
         obj.name = $"SFX - {currentSfx.name}";
         obj.GetComponent<AudioSource>().volume = currentSfx.relativeVolume * SFXVolume;
         obj.GetComponent<AudioSource>().clip = currentSfx.clip;
         obj.GetComponent<SoundEffect>().Init(currentSfx);
+        if (currentSfx.isMusic)
+        {
+            music = obj;
+        }
     }
     public void PlaySoundEffectWithDelay(string id,float delay)
     {
