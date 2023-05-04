@@ -235,7 +235,7 @@ public class BossController : MonoBehaviour
 
     public void EndAttack()
     {
-        currentAttackDelay = Random.Range(1, 4);
+        currentAttackDelay = Random.Range(0, 1);
         hasCooledDown = true;
         atkMotor = Vector2.zero;
     }
