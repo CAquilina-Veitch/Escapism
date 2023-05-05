@@ -2395,6 +2395,7 @@ GameObject:
   - component: {fileID: 1732480332}
   - component: {fileID: 1732480331}
   - component: {fileID: 1732480333}
+  - component: {fileID: 1732480334}
   m_Layer: 5
   m_Name: Text on screen
   m_TagString: Untagged
@@ -2415,7 +2416,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5402540036818665540}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2547,6 +2548,21 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   delay: 4
+--- !u!114 &1732480334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732480329}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch2
+  delay: 0
+  playOnStart: 1
 --- !u!1 &1895114085
 GameObject:
   m_ObjectHideFlags: 0
@@ -3718,7 +3734,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 114459133282968790, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1449959068778070236, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: font
@@ -3750,7 +3766,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4515643808768907024, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4646457702977796265, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder

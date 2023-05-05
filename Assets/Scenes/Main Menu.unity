@@ -6436,6 +6436,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[3].name
+      value: glitch2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[4].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3ed0109cdc50dff40a516c469c6d034c, type: 3}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[4].name
+      value: glitch3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[4].looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[2].relativeVolume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[3].relativeVolume
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[4].relativeVolume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
       propertyPath: m_RootOrder
       value: 3
