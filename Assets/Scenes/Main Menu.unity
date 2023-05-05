@@ -6591,7 +6591,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
       propertyPath: sfxd.Array.data[4].looping
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
       propertyPath: sfxd.Array.data[2].relativeVolume
@@ -6604,6 +6604,14 @@ PrefabInstance:
     - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
       propertyPath: sfxd.Array.data[4].relativeVolume
       value: 0.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[0].dontDeleteNewScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550275244183200368, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
+      propertyPath: sfxd.Array.data[1].dontDeleteNewScene
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6550275244183200369, guid: f35be514f7134e3488792e74f52a11b3, type: 3}
       propertyPath: m_RootOrder

@@ -2396,6 +2396,7 @@ GameObject:
   - component: {fileID: 1732480331}
   - component: {fileID: 1732480333}
   - component: {fileID: 1732480334}
+  - component: {fileID: 1732480335}
   m_Layer: 5
   m_Name: Text on screen
   m_TagString: Untagged
@@ -2555,7 +2556,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732480329}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
   m_Name: 
@@ -2563,6 +2564,20 @@ MonoBehaviour:
   soundID: glitch2
   delay: 0
   playOnStart: 1
+--- !u!114 &1732480335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732480329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da5bda5ca37c4334f8a76e5f6ed82832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateOnEnable: 1
+  trueIfYouWantToPause: 1
 --- !u!1 &1895114085
 GameObject:
   m_ObjectHideFlags: 0
