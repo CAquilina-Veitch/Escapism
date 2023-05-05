@@ -485,6 +485,42 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1902492971}
+        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
+        m_MethodName: set_flipX
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1902492973}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Knees
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1902492975}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   delay: 7
 --- !u!4 &545979233
 Transform:
@@ -1308,6 +1344,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114459133282968790, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1449959068778070236, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: font
       value: 
@@ -1338,7 +1378,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344849846322576802, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515643808768907024, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4646457702977796265, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
@@ -1348,9 +1392,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4713271496251130189, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4998617820599136827, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5402540037153201506, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
