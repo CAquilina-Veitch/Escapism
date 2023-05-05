@@ -11,6 +11,7 @@ public struct SoundEffectData
     public float relativeVolume;
     public bool looping;
     public bool isMusic;
+    public bool dontDeleteNewScene;
 }
 
 
@@ -21,6 +22,7 @@ public class SoundEffectManager : MonoBehaviour
     public float SFXVolume = 1;
     GameObject music;
 
+    public List<SoundEffect> sfxPlayers;
 
     public void SetVolume(float to)
     {
@@ -53,6 +55,14 @@ public class SoundEffectManager : MonoBehaviour
             music = obj;
         }
     }
+    public void StopSound(string id)
+    {
+
+    }
+    public void PauseMusic(bool paused)
+    {
+
+    }
     public void PlaySoundEffectWithDelay(string id,float delay)
     {
         StartCoroutine(DelayedSFX(id,delay));
@@ -63,6 +73,9 @@ public class SoundEffectManager : MonoBehaviour
         PlaySoundEffect(id);
         
     }
+
+
+
 
 
     private void OnEnable()
