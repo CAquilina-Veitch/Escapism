@@ -22,7 +22,8 @@ public class SoundEffectManager : MonoBehaviour
     public float SFXVolume = 1;
     GameObject music;
 
-    public List<SoundEffect> sfxPlayers;
+    int currentScene;
+    public List<GameObject> sfxPlayers;
 
     public void SetVolume(float to)
     {
@@ -50,6 +51,7 @@ public class SoundEffectManager : MonoBehaviour
         obj.GetComponent<AudioSource>().volume = currentSfx.relativeVolume * SFXVolume;
         obj.GetComponent<AudioSource>().clip = currentSfx.clip;
         obj.GetComponent<SoundEffect>().Init(currentSfx);
+        sfxPlayers.Add(obj);
         if (currentSfx.isMusic)
         {
             music = obj;
@@ -57,8 +59,14 @@ public class SoundEffectManager : MonoBehaviour
     }
     public void StopSound(string id)
     {
-
+        foreach(GameObject sfxi in sfxPlayers.FindAll(x => x.name == id))
+        {
+            sfxPlayers.Remove(sfxi);
+            Destroy(sfxi);
+        }
     }
+    // void 
+
     public void PauseMusic(bool setToPaused)
     {
         if (setToPaused)
@@ -82,8 +90,15 @@ public class SoundEffectManager : MonoBehaviour
         PlaySoundEffect(id);
         
     }
-
-
+    private void OnLevelWasLoaded(int level)
+    {
+        foreach(GameObject g in sfxPlayers)
+        {
+            SoundEffectData currentSfx;
+            currentSfx = sfxd.Find(x => x.name == g.name);
+            Destroy(g);
+        }
+    }
 
 
 
