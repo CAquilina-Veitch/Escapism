@@ -2415,7 +2415,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5402540036818665540}
-  m_RootOrder: 11
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3225,6 +3225,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4877252106679298424}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
@@ -3284,6 +3296,7 @@ GameObject:
   - component: {fileID: 4877252106679298420}
   - component: {fileID: 4877252106679298421}
   - component: {fileID: 4877252106679298418}
+  - component: {fileID: 4877252106679298424}
   m_Layer: 0
   m_Name: Glitch real interactable (1)
   m_TagString: Untagged
@@ -3291,6 +3304,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4877252106679298424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252106679298423}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!114 &4877252107135106760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3392,6 +3420,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4877252107135106768}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
@@ -3407,6 +3447,7 @@ GameObject:
   - component: {fileID: 4877252107135106766}
   - component: {fileID: 4877252107135106767}
   - component: {fileID: 4877252107135106760}
+  - component: {fileID: 4877252107135106768}
   m_Layer: 0
   m_Name: Glitch real interactable
   m_TagString: Untagged
@@ -3458,6 +3499,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.930448, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4877252107135106768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252107135106765}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!4 &4877252107347565272
 Transform:
   m_ObjectHideFlags: 0
@@ -3513,6 +3569,7 @@ GameObject:
   - component: {fileID: 4877252107347565272}
   - component: {fileID: 4877252107347565273}
   - component: {fileID: 4877252107347565278}
+  - component: {fileID: 4877252107347565279}
   m_Layer: 0
   m_Name: Glitch real interactable (2)
   m_TagString: Untagged
@@ -3621,10 +3678,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4877252107347565279}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 0
+--- !u!114 &4877252107347565279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252107347565275}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!1001 &5402540036818665537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3632,6 +3716,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114459133282968790, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 1449959068778070236, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: font
       value: 
@@ -3658,7 +3746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344849846322576802, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4515643808768907024, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4646457702977796265, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
@@ -3668,9 +3760,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4713271496251130189, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4998617820599136827, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5402540037153201506, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: m_RootOrder

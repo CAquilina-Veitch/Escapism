@@ -9471,6 +9471,7 @@ GameObject:
   - component: {fileID: 4877252105673016192}
   - component: {fileID: 4877252105673016193}
   - component: {fileID: 4877252105673016198}
+  - component: {fileID: 4877252105673016199}
   m_Layer: 0
   m_Name: Glitch real interactable (1)
   m_TagString: Untagged
@@ -9579,10 +9580,37 @@ MonoBehaviour:
           m_StringArgument: Desk
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4877252105673016199}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 1
+--- !u!114 &4877252105673016199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252105673016195}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!1 &4877252106007165625
 GameObject:
   m_ObjectHideFlags: 0
@@ -9594,6 +9622,7 @@ GameObject:
   - component: {fileID: 4877252106007165626}
   - component: {fileID: 4877252106007165627}
   - component: {fileID: 4877252106007165628}
+  - component: {fileID: 4877252106007165629}
   m_Layer: 0
   m_Name: Glitch real interactable
   m_TagString: Untagged
@@ -9746,10 +9775,37 @@ MonoBehaviour:
           m_StringArgument: Laundry
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 4877252106007165629}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 1
+--- !u!114 &4877252106007165629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252106007165625}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!114 &4877252106029533554
 MonoBehaviour:
   m_ObjectHideFlags: 0

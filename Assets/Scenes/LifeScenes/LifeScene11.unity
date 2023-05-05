@@ -59235,6 +59235,7 @@ GameObject:
   - component: {fileID: 4877252105569074394}
   - component: {fileID: 4877252105569074395}
   - component: {fileID: 4877252105569074396}
+  - component: {fileID: 4877252105569074397}
   m_Layer: 0
   m_Name: Glitch real interactable
   m_TagString: Untagged
@@ -59387,22 +59388,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RequirementsToEnable, Assembly-CSharp
-        m_MethodName: FinishRequirement
-        m_Mode: 5
+      - m_Target: {fileID: 4877252105569074397}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Laundry
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 1
+--- !u!114 &4877252105569074397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252105569074393}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!114 &4877252106584585619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59504,10 +59520,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RequirementsToEnable, Assembly-CSharp
-        m_MethodName: FinishRequirement
-        m_Mode: 5
+      - m_Target: {fileID: 4877252106584585623}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -59575,6 +59591,7 @@ GameObject:
   - component: {fileID: 4877252106584585621}
   - component: {fileID: 4877252106584585620}
   - component: {fileID: 4877252106584585619}
+  - component: {fileID: 4877252106584585623}
   m_Layer: 0
   m_Name: Glitch real interactable (1)
   m_TagString: Untagged
@@ -59582,6 +59599,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &4877252106584585623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252106584585622}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!4 &4877252107225892600
 Transform:
   m_ObjectHideFlags: 0
@@ -59637,6 +59669,7 @@ GameObject:
   - component: {fileID: 4877252107225892600}
   - component: {fileID: 4877252107225892601}
   - component: {fileID: 4877252107225892606}
+  - component: {fileID: 4877252107225892607}
   m_Layer: 0
   m_Name: Glitch real interactable (2)
   m_TagString: Untagged
@@ -59745,22 +59778,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RequirementsToEnable, Assembly-CSharp
-        m_MethodName: FinishRequirement
-        m_Mode: 5
+      - m_Target: {fileID: 4877252107225892607}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Laundry
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   game: 0
   hideIndicator: 0
   alwaysActive: 0
   startsHidden: 1
+--- !u!114 &4877252107225892607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877252107225892603}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8106d4b399230b448b031081b9aa60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundID: glitch1
+  delay: 0
+  playOnStart: 1
 --- !u!1001 &5402540036818665537
 PrefabInstance:
   m_ObjectHideFlags: 0

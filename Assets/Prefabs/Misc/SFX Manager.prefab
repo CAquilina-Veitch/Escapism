@@ -45,9 +45,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sfxd:
-  - name: 
-    clip: {fileID: 0}
-    relativeVolume: 0
+  - name: 8-Bit
+    clip: {fileID: 8300000, guid: 5516c1847aa044843a62dc4fa55d7e61, type: 3}
+    relativeVolume: 0.2
+    looping: 1
+    isMusic: 1
+  - name: Normal
+    clip: {fileID: 8300000, guid: e97dfbaef10fe20428fd7ccce39c7135, type: 3}
+    relativeVolume: 0.2
+    looping: 1
+    isMusic: 1
+  - name: glitch1
+    clip: {fileID: 8300000, guid: 427705b4003005d42a3a2d822900dd46, type: 3}
+    relativeVolume: 0.8
     looping: 0
+    isMusic: 0
+  - name: Computer glitch
+    clip: {fileID: 8300000, guid: c457e25a212026e488242fa77c6d626d, type: 3}
+    relativeVolume: 0.2
+    looping: 0
+    isMusic: 0
   sfxPrefab: {fileID: 5795389021107064261, guid: 5de739a2eba7c88458d7bc7873ff55d5, type: 3}
   SFXVolume: 1
