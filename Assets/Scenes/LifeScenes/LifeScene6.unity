@@ -2552,6 +2552,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
+      propertyPath: listConversations.Array.data[2].lines.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041612244637347652, guid: b60d5b10df4b51648bf12a76214e52c3, type: 3}
       propertyPath: listConversations.Array.data[2].evnt.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3933,7 +3937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5699aa52c1b1a4a833ab0011aa4457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: {fileID: 102900000, guid: f960c1f2a4ad43e479cf516c54ada8ac, type: 3}
+  NextScene: 7
   delay: 1
 --- !u!1 &970592290
 GameObject:
@@ -7563,7 +7567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5699aa52c1b1a4a833ab0011aa4457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: {fileID: 102900000, guid: bb29c048a2ce5bd49889295a822871a9, type: 3}
+  NextScene: 7
   delay: 16
 --- !u!1 &1902492970
 GameObject:

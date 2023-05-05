@@ -5,21 +5,30 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: b69ea7a02e9bae244bd1f5bb486460c2
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/GameScenes/GameScene1.unity
     guid: 4a2d0491613681245aa5e99dc24df290
   - enabled: 1
+    path: Assets/Scenes/LifeScenes/LifeScene2.unity
+    guid: 8eb1615c81b65fd47910fa14154262e9
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/GameScene3.unity
+    guid: f51dcb44d357a994cbae54150f743589
+  - enabled: 1
     path: Assets/Scenes/LifeScenes/LifeScene4.unity
     guid: effa25cad7f0a294190f9f8aa5afe0aa
   - enabled: 1
+    path: Assets/Scenes/GameScenes/GameScene5.unity
+    guid: 1d9e26ec6a6b6f84194cef488728a5a0
+  - enabled: 1
     path: Assets/Scenes/LifeScenes/LifeScene6.unity
     guid: b05a2fd9ce75fdb4db09f633139ea448
+  - enabled: 1
+    path: Assets/Scenes/GameScenes/GameScene7.unity
+    guid: bb29c048a2ce5bd49889295a822871a9
   - enabled: 1
     path: Assets/Scenes/LifeScenes/LifeScene8.unity
     guid: 7051115512d56c347b7ac5f4f13e2e8b
@@ -29,12 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LifeScenes/LifeScene10.unity
     guid: 86e9f15ea64fe4c4e85b363bbf43cb64
-  - enabled: 1
-    path: Assets/Scenes/GameScenes/GameScene3.unity
-    guid: f51dcb44d357a994cbae54150f743589
-  - enabled: 1
-    path: Assets/Scenes/GameScenes/GameScene5.unity
-    guid: 1d9e26ec6a6b6f84194cef488728a5a0
   - enabled: 1
     path: Assets/Scenes/LifeScenes/LifeScene11.unity
     guid: 6c17415ddeb65f04eb0d99e3fb95ca1b

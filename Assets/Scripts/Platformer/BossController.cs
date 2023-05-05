@@ -33,6 +33,13 @@ public class BossController : MonoBehaviour
     private void OnEnable()
     {
         prb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
+        foreach (Collider2D c in prb.GetComponent<PlatformerPlayerController>().colliders)
+        {
+            Physics2D.IgnoreCollision(c, GetComponent<Collider2D>()); 
+        }
+        
+        
+
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         currentAttackDelay = 3;
@@ -235,7 +242,7 @@ public class BossController : MonoBehaviour
 
     public void EndAttack()
     {
-        currentAttackDelay = Random.Range(0, 1);
+        currentAttackDelay = Random.Range(1, 4);
         hasCooledDown = true;
         atkMotor = Vector2.zero;
     }
