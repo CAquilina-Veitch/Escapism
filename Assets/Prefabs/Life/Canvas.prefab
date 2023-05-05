@@ -2130,10 +2130,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7080551275697369208}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 2104948505548064493}
+        m_TargetAssemblyTypeName: ExitScript, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6372,6 +6372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9167910243792633444}
     m_Modifications:
+    - target: {fileID: 43754580380617332, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4853636368781527388, guid: 2211b4b833f26c74e8bf0be11217d7ba, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
