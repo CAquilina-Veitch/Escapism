@@ -59,9 +59,18 @@ public class SoundEffectManager : MonoBehaviour
     {
 
     }
-    public void PauseMusic(bool paused)
+    public void PauseMusic(bool setToPaused)
     {
-
+        if (setToPaused)
+        {
+            music.GetComponent<AudioSource>().Pause();
+        }
+        else
+        {
+            music.GetComponent<AudioSource>().UnPause();
+        }
+        
+        
     }
     public void PlaySoundEffectWithDelay(string id,float delay)
     {
