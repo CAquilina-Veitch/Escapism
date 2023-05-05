@@ -24,6 +24,7 @@ public class SoundEffectManager : MonoBehaviour
 
     int currentScene;
     public List<GameObject> sfxPlayers;
+    public List<GameObject> paused;
 
     public void SetVolume(float to)
     {
@@ -43,6 +44,7 @@ public class SoundEffectManager : MonoBehaviour
         currentSfx = sfxd.Find(x => x.name == id);
         if(currentSfx.isMusic&&music!=null)
         {
+            sfxPlayers.Remove(music);
             Destroy(music);
 
         }
@@ -57,13 +59,25 @@ public class SoundEffectManager : MonoBehaviour
             music = obj;
         }
     }
-    public void StopSound(string id)
+    public void PauseSound(string id,bool trueifpause)
     {
-        foreach(GameObject sfxi in sfxPlayers.FindAll(x => x.name == id))
+        if (trueifpause)
         {
-            sfxPlayers.Remove(sfxi);
-            Destroy(sfxi);
+            foreach (GameObject sfxi in sfxPlayers.FindAll(x => x.name == id))
+            {
+                paused.Add(sfxi);
+                sfxi.GetComponent<AudioSource>().Pause();
+            }
         }
+        else
+        {
+            foreach(GameObject o in paused)
+            {
+                o.GetComponent<AudioSource>().UnPause();
+                paused.Remove(o);
+            }
+        }
+
     }
     // void 
 
