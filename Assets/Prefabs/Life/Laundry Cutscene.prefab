@@ -90,20 +90,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: -2041173098, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 800868536, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: -1307714543, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1577535698, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 804998979, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1895223408, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: -911087614, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: -1206496298, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1619720625, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 729668781, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1545899447, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: -1948857605, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1812279857, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: 1257323819, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
-  - {fileID: -301113123, guid: f3294869093e2f24eb0eaf4d1434c9ec, type: 3}
+  - {fileID: 21300000, guid: 6af715469cce70d429e8658a3eb6da97, type: 3}
+  - {fileID: 21300000, guid: d56e1b3848e7a07408eef85530cdb3ae, type: 3}
+  - {fileID: 21300000, guid: 0ca13cd804e41214cb0ae4a54a443c75, type: 3}
+  - {fileID: 21300000, guid: a15a9b02a7ddb6a44be478d7a03d775f, type: 3}
+  - {fileID: 21300000, guid: 97a833d8716ef0c4bb554b19c70720da, type: 3}
+  - {fileID: 21300000, guid: d9e899b37b9a04d4cb7f7ea5fc7a49dc, type: 3}
+  - {fileID: 21300000, guid: ccbae6b802d30c5479eb6e75d538441b, type: 3}
+  - {fileID: 21300000, guid: d6fd0740ffcab8341aba9afa376502e1, type: 3}
+  - {fileID: 21300000, guid: 26635c01b4c51de4a9b1622eec3223fe, type: 3}
+  - {fileID: 21300000, guid: 3693d965ce5e3764096336cfec77899d, type: 3}
+  - {fileID: 21300000, guid: 18ae343b38e54024889744921ddfc0ce, type: 3}
+  - {fileID: 21300000, guid: f8832d550247c2b4b84cedf49d2bf289, type: 3}
+  - {fileID: 21300000, guid: 5b3a9a8f685bfdc4c86630d8f31b2ae5, type: 3}
+  - {fileID: 21300000, guid: 29b9fac9790f0564dac76e132926e052, type: 3}
+  - {fileID: 21300000, guid: f850266da361fe14aac1faa0a0573466, type: 3}
   fps: 12
   Looping: 1
