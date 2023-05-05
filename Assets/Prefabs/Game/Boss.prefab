@@ -4889,7 +4889,7 @@ MonoBehaviour:
   owner: 2
   preDelay: 2.75
   activeTime: 0.4
-  cooldown: 2
+  cooldown: 0.5
   interupt: 0
 --- !u!1 &3462941664945759139
 GameObject:
@@ -19613,7 +19613,7 @@ MonoBehaviour:
   damage: 1
   ownerSprite: {fileID: 0}
   owner: 2
-  preDelay: 0.8
+  preDelay: 1.2
   activeTime: 0.25
   cooldown: 0.4
   interupt: 0
