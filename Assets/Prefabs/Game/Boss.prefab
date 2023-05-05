@@ -19613,7 +19613,7 @@ MonoBehaviour:
   damage: 1
   ownerSprite: {fileID: 0}
   owner: 2
-  preDelay: 1.3
+  preDelay: 0.8
   activeTime: 0.25
   cooldown: 0.4
   interupt: 0

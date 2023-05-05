@@ -1219,7 +1219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5699aa52c1b1a4a833ab0011aa4457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: {fileID: 102900000, guid: 1d9e26ec6a6b6f84194cef488728a5a0, type: 3}
+  NextScene: 5
   delay: 1
 --- !u!1 &994129435
 GameObject:

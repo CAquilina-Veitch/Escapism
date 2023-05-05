@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScreenshotTransferer : MonoBehaviour
 {
     public SpriteRenderer spriteRenderer;
-    public Object NextScene;
+    public int NextScene;
     public GameObject cam;
 
     private void OnEnable()
@@ -26,7 +26,7 @@ public class ScreenshotTransferer : MonoBehaviour
 
         // Set the sprite as the sprite renderer's sprite
         spriteRenderer.sprite = sprite;
-        SceneManager.LoadScene(NextScene.name);
+        SceneManager.LoadScene(NextScene);
         yield return new WaitForFixedUpdate();
         transform.position = GameObject.FindGameObjectWithTag("MainCamera").transform.position;
         transform.position = new Vector3(transform.position.x, transform.position.y, -0.5f);

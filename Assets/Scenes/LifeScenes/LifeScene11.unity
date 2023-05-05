@@ -332,6 +332,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2078073230148249146, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078073230148249146, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078073230148249146, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078073230148249146, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2078073230148249146, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2078073230454956544, guid: f3fa4db3dacb87e4ca57e83002e6dd6e, type: 3}
       propertyPath: speed
       value: 3
@@ -745,7 +765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e5699aa52c1b1a4a833ab0011aa4457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScene: {fileID: 102900000, guid: 26c266ab115b6de418b827f78ba8b076, type: 3}
+  NextScene: 12
   delay: 1
 --- !u!61 &138407711
 BoxCollider2D:
