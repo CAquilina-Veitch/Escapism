@@ -63,7 +63,7 @@ public class SoundEffectManager : MonoBehaviour
     {
         if (trueifpause)
         {
-            foreach (GameObject sfxi in sfxPlayers.FindAll(x => x.name == id))
+            foreach (GameObject sfxi in sfxPlayers.FindAll(x => $"SFX - {x.name}" == id))
             {
                 paused.Add(sfxi);
                 sfxi.GetComponent<AudioSource>().Pause();
@@ -109,7 +109,7 @@ public class SoundEffectManager : MonoBehaviour
         foreach(GameObject g in sfxPlayers)
         {
             SoundEffectData currentSfx;
-            currentSfx = sfxd.Find(x => x.name == g.name);
+            currentSfx = sfxd.Find(x => x.name == $"SFX - {g.name}");
             Destroy(g);
         }
     }

@@ -3156,6 +3156,21 @@ MonoBehaviour:
   soundID: glitch3
   delay: 0
   playOnStart: 1
+--- !u!114 &95143971777726095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95143971777726093}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9465849f37c77dc49a5412590d2d45dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateOnEnable: 1
+  trueIfYouWantToPause: 1
+  id: glitch3
 --- !u!1 &3776915273970160511 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9120882041349083966, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
@@ -3588,7 +3603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[5].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -3603,6 +3618,10 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[5].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1903470978}
@@ -3615,6 +3634,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1903470978}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 95143971777726095}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[5].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
@@ -3624,6 +3647,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
@@ -3639,6 +3666,10 @@ PrefabInstance:
       value: SetTrigger
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[5].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.Animator, UnityEngine
       objectReference: {fileID: 0}
@@ -3651,7 +3682,15 @@ PrefabInstance:
       value: UnityEngine.Animator, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UnityEngine.Behaviour, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[5].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
@@ -3672,6 +3711,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
       propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6245628531600716897, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
+      propertyPath: listConversations.Array.data[1].lines.Array.data[7].evnt.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6829080223820168779, guid: 60040af1b4ad6f04bbaa2f83ecce4308, type: 3}
